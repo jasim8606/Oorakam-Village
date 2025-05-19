@@ -502,346 +502,308 @@
             outline: none;
             cursor: pointer;
             transition: all 0.4s;
-        }
+       }
 
-        .btn:hover {
-            box-shadow: inset 0 0 0 4px #ef476f,
-                inset 0 0 0 8px #ffd166,
-                inset 0 0 0 12px #06d6a0,
-                inset 0 0 0 16px #118ab2;
-            background: #073b4c;
-            color: #fff;
-        }
+.btn:hover {
+    box-shadow: inset 0 0 0 4px #ef476f,
+        inset 0 0 0 8px #ffd166,
+        inset 0 0 0 12px #06d6a0,
+        inset 0 0 0 16px #118ab2;
+    background: #073b4c;
+    color: #fff;
+}
 
-        .social-icons {
-            display: flex;
-            gap: 15px;
-            justify-content: center;
-            padding: 20px;
-        }
+.social-icons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    padding: 20px;
+}
 
-        .social-icons a {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            background-color: #f3f4f6;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #4b5563;
-            text-decoration: none;
-            transition: all 0.3s ease-in-out;
-        }
+.social-icons a {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #f3f4f6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #4b5563;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
 
-        .social-icons a:hover {
-            transform: scale(1.2) rotate(15deg);
-            background-color: #3b82f6;
-            color: #ffffff;
-            box-shadow: 0 0 10px rgba(59, 130, 246, 0.5);
-        }
+.social-icons a:hover {
+    transform: scale(1.2) rotate(15deg);
+    background-color: #3b82f6;
+    color: #ffffff;
+    box-shadow: 0 0 10px rgba(59, 130, 246, 0.5);
+}
 
-        .social-icons a.facebook:hover {
-            background-color: #1877f2;
-        }
+.social-icons a.facebook:hover {
+    background-color: #1877f2;
+}
 
-        .social-icons a.instagram:hover {
-            background-color: #e1306c;
-        }
+.social-icons a.instagram:hover {
+    background-color: #e1306c;
+}
 
-        .social-icons a.twitter:hover {
-            background-color: #000000;
-        }
+.social-icons a.twitter:hover {
+    background-color: #000000;
+}
 
-        .social-icons a.youtube:hover {
-            background-color: #ff0000;
-        }
+.social-icons a.youtube:hover {
+    background-color: #ff0000;
+}
 
-        @keyframes bounce {
-            0%, 100% {
-                transform: scale(1);
-            }
-            50% {
-                transform: scale(1.3);
-            }
-        }
-
-        .social-icons a:active {
-            animation: bounce 0.2s ease;
-        }
-
-        .social-icons a:hover {
-            animation: pulse 0.5s infinite alternate;
-        }
-
-        @keyframes pulse {
-            from {
-                transform: scale(1);
-            }
-            to {
-                transform: scale(1.1);
-            }
-        }
-
-        /* Responsive Styles */
-        @media (max-width: 1024px) {
-            .hero-section h1 {
-                font-size: 3.5rem;
-            }
-
-            .hero-section p {
-                font-size: 1.125rem;
-            }
-
-            .grid-cols-4 {
-                grid-template-columns: repeat(2, minmax(0, 1fr));
-            }
-
-            .grid-cols-3 {
-                grid-template-columns: repeat(2, minmax(0, 1fr));
-            }
-
-            .timeline::before {
-                left: 20px;
-            }
-
-            .event-card::before {
-                left: -15px;
-            }
-        }
-
-        @media (max-width: 768px) {
-            .hero-section {
-                height: 80vh;
-            }
-
-            .hero-section h1 {
-                font-size: 2.5rem;
-            }
-
-            .hero-section p {
-                font-size: 1rem;
-            }
-
-            .nav-link {
-                font-size: 0.875rem;
-            }
-
-            .grid-cols-2 {
-                grid-template-columns: 1fr;
-            }
-
-            .grid-cols-3 {
-                grid-template-columns: 1fr;
-            }
-
-            .grid-cols-4 {
-                grid-template-columns: 1fr;
-            }
-
-            .flex-col-md\:flex-row {
-                flex-direction: column;
-            }
-
-            .w-full-md\:w-1\/2 {
-                width: 100%;
-            }
-
-            .inline-flex.rounded-full {
-                flex-wrap: wrap;
-                justify-content: center;
-            }
-
-            .inline-flex.rounded-full button {
-                margin: 0.25rem;
-            }
-
-            .gallery-item {
-                height: 200px;
-            }
-
-            .attraction-card .h-64 {
-                height: 200px;
-            }
-
-            .animated-button {
-                padding: 12px 24px;
-                font-size: 14px;
-            }
-
-            .animated-button svg {
-                width: 20px;
-            }
-
-            .btn {
-                width: 150px;
-                height: 50px;
-                font-size: 16px;
-            }
-        }
-
-        @media (max-width: 640px) {
-            .hero-section {
-                height: 70vh;
-            }
-
-            .hero-section h1 {
-                font-size: 2rem;
-            }
-
-            .hero-section p {
-                font-size: 0.875rem;
-            }
-
-            .text-4xl {
-                font-size: 2rem;
-            }
-
-            .text-2xl {
-                font-size: 1.5rem;
-            }
-
-            .text-xl {
-                font-size: 1.125rem;
-            }
-
-            .container {
-                padding-left: 1rem;
-                padding-right: 1rem;
-            }
-
-            .gallery-item {
-                height: 150px;
-            }
-
-            .attraction-card .h-64 {
-                height: 150px;
-            }
-
-            .social-icons a {
-                width: 35px;
-                height: 35px;
-            }
-
-            .back-to-top {
-                bottom: 20px;
-                right: 20px;
-                width: 40px;
-                height: 40px;
-            }
-
-            .animated-button {
-                padding: 10px 20px;
-                font-size: 12px;
-            }
-
-            .animated-button svg {
-                width: 18px;
-            }
-
-            .btn {
-                width: 130px;
-                height: 45px;
-                font-size: 14px;
-            }
-
-            .footer .grid-cols-4 {
-                grid-template-columns: 1fr;
-            }
-
-            .footer .flex {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .footer .flex > * {
-                margin-bottom: 1rem;
-            }
-        }
-        /* New Animations */
-    @keyframes fadeInUp {
-        from {
-            opacity: 0;
-            transform: translateY(40px);
-        }
-        to {
-            opacity: 1;
-            transform: translateY(0);
-        }
+@keyframes bounce {
+    0%, 100% {
+        transform: scale(1);
     }
-
-    @keyframes fadeIn {
-        from { opacity: 0; }
-        to { opacity: 1; }
+    50% {
+        transform: scale(1.3);
     }
+}
 
-    @keyframes slideInLeft {
-        from {
-            transform: translateX(-100%);
-            opacity: 0;
-        }
-        to {
-            transform: translateX(0);
-            opacity: 1;
-        }
+.social-icons a:active {
+    animation: bounce 0.2s ease;
+}
+
+.social-icons a:hover {
+    animation: pulse 0.5s infinite alternate;
+}
+
+@keyframes pulse {
+    from {
+        transform: scale(1);
     }
-
-    @keyframes zoomIn {
-        from {
-            transform: scale(0.95);
-            opacity: 0;
-        }
-        to {
-            transform: scale(1);
-            opacity: 1;
-        }
+    to {
+        transform: scale(1.1);
     }
+}
 
-    /* Scroll Animation Classes */
-    .scroll-animation {
-        opacity: 0;
-        transition: all 0.6s ease-out;
-    }
-
-    .animate {
-        opacity: 1;
-    }
-
-    .fadeInUp {
-        animation: fadeInUp 1s ease-out forwards;
-    }
-
-    .slideInLeft {
-        animation: slideInLeft 0.8s ease-out forwards;
-    }
-
-    .zoomIn {
-        animation: zoomIn 0.6s ease-out forwards;
-    }
-
-    /* Enhanced Existing Animations */
-    .attraction-card {
-        transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    }
-
-    .attraction-card:hover {
-        transform: translateY(-10px) scale(1.02);
-        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
-    }
-
-    /* Hero Text Animation */
+/* Responsive Styles */
+@media (max-width: 1024px) {
     .hero-section h1 {
-        animation: fadeInUp 1.2s ease-out 0.3s both;
+        font-size: 3.5rem;
     }
 
     .hero-section p {
-        animation: fadeInUp 1.2s ease-out 0.6s both;
+        font-size: 1.125rem;
     }
-    .scroll-animation {
+
+    .grid-cols-4 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .grid-cols-3 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .timeline::before {
+        left: 20px;
+    }
+
+    .event-card::before {
+        left: -15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        height: 80vh;
+    }
+
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-section p {
+        font-size: 1rem;
+    }
+
+    .nav-link {
+        font-size: 0.875rem;
+    }
+
+    .grid-cols-2 {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-cols-3 {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-cols-4 {
+        grid-template-columns: 1fr;
+    }
+
+    .flex-col-md\:flex-row {
+        flex-direction: column;
+    }
+
+    .w-full-md\:w-1\/2 {
+        width: 100%;
+    }
+
+    .inline-flex.rounded-full {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .inline-flex.rounded-full button {
+        margin: 0.25rem;
+    }
+
+    .gallery-item {
+        height: 200px;
+    }
+
+    .attraction-card .h-64 {
+        height: 200px;
+    }
+
+    .animated-button {
+        padding: 12px 24px;
+        font-size: 14px;
+    }
+
+    .animated-button svg {
+        width: 20px;
+    }
+
+    .btn {
+        width: 150px;
+        height: 50px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 640px) {
+    .hero-section {
+        height: 70vh;
+    }
+
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+
+    .hero-section p {
+        font-size: 0.875rem;
+    }
+
+    .text-4xl {
+        font-size: 2rem;
+    }
+
+    .text-2xl {
+        font-size: 1.5rem;
+    }
+
+    .text-xl {
+        font-size: 1.125rem;
+    }
+
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .gallery-item {
+        height: 150px;
+    }
+
+    .attraction-card .h-64 {
+        height: 150px;
+    }
+
+    .social-icons a {
+        width: 35px;
+        height: 35px;
+    }
+
+    .back-to-top {
+        bottom: 20px;
+        right: 20px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .animated-button {
+        padding: 10px 20px;
+        font-size: 12px;
+    }
+
+    .animated-button svg {
+        width: 18px;
+    }
+
+    .btn {
+        width: 130px;
+        height: 45px;
+        font-size: 14px;
+    }
+
+    .footer .grid-cols-4 {
+        grid-template-columns: 1fr;
+    }
+
+    .footer .flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer .flex > * {
+        margin-bottom: 1rem;
+    }
+}
+
+/* New Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.95);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Scroll Animation Classes */
+.scroll-animation {
     opacity: 0;
     transition: all 0.6s ease-out;
 }
 
-.scroll-animation.animate {
+.animate {
     opacity: 1;
 }
 
@@ -886,6 +848,7 @@
         transform: rotate(0);
     }
 }
+
 /* Add these new keyframes */
 @keyframes scaleUp {
     from {
@@ -908,6 +871,7 @@
         opacity: 1;
     }
 }
+
 /* Modify existing animation classes */
 .attraction-card {
     transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -920,12 +884,10 @@
 .scroll-animation.delay-1 { animation-delay: 0.2s; }
 .scroll-animation.delay-2 { animation-delay: 0.4s; }
 .scroll-animation.delay-3 { animation-delay: 0.6s; }
-
     </style>
 </head>
 
 <body>
-    <div class="scroll-animation fadeInUp delay-1"></div>
     <!-- Header Section -->
     <header class="hero-section relative">
         <div class="hero-overlay absolute inset-0"></div>
@@ -937,8 +899,6 @@
             <div class="hidden md:flex items-center space-x-8">
                 <a href="#" class="nav-link text-white hover:text-secondary">Home</a>
                 <a href="#about" class="nav-link text-white hover:text-secondary">About</a>
-                <a href="#attractions" class="nav-link text-white hover:text-secondary">Attractions</a>
-                <a href="#culture" class="nav-link text-white hover:text-secondary">Culture</a>
                 <a href="#gallery" class="nav-link text-white hover:text-secondary">Gallery</a>
                 <a href="#contact" class="nav-link text-white hover:text-secondary">Contact</a>
             </div>
@@ -958,9 +918,7 @@
     </header>
 
     <!-- About Section -->
-     <div class="bg-white p-5 rounded shadow-md border-l-4 border-primary scroll-animation fadeInUp">
-
-    <section id="about" class="py-20 relative overflow-hidden">
+    <section id="about" class="py-20 relative overflow-hidden scroll-animation fadeInUp">
         <div class="kerala-pattern absolute inset-0"></div>
         <div class="container mx-auto px-6 relative z-10">
             <div class="text-center mb-16">
@@ -974,7 +932,6 @@
                         <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Oorakam_or_Arimbramala.jpg" alt="Oorakam Kunnath Village" class="w-full h-auto object-cover">
                     </div>
                 </div>
-                
 
                 <div class="w-full md:w-1/2">
                     <h3 class="text-2xl font-semibold mb-4 playfair">A Timeless Heritage</h3>
@@ -1006,16 +963,15 @@
     </section>
 
     <!-- Village Highlights -->
-     <div class="attraction-card bg-white rounded-lg overflow-hidden shadow-md scroll-animation slideInLeft"></div>
-    <section id="culture" class="py-20 bg-gray-50">
+    <section class="py-20 bg-gray-50">
         <div class="container mx-auto px-6">
-            <div class="text-center mb-16">
+            <div class="text-center mb-16 scroll-animation fadeInUp">
                 <h2 class="text-4xl font-bold playfair mb-4 custom-border inline-block">Village Highlights</h2>
                 <p class="text-gray-600 max-w-3xl mx-auto">I love those connections that make this big old world feel like a little village...</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 scroll-animation slideInLeft delay-1">
                     <div class="h-56 overflow-hidden">
                         <img src="https://files.yappe.in/place/small/pulikkaparambu-juma-masjid-9292728.webp" alt="Traditional Dance" class="w-full h-full object-cover">
                     </div>
@@ -1025,7 +981,7 @@
                     </div>
                 </div>
 
-                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 scroll-animation slideInLeft delay-2">
                     <div class="h-56 overflow-hidden">
                         <img src="https://www.infobharath.com/temples/uploads/61f23221f34f3.jpg" alt="Temple Festivals" class="w-full h-full object-cover">
                     </div>
@@ -1035,7 +991,7 @@
                     </div>
                 </div>
 
-                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 scroll-animation slideInLeft delay-3">
                     <div class="h-56 overflow-hidden">
                         <img src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4nrB32qzjJQROV_kts_Ze-TmDjW6CbQOZcIZHXKXy9EEsOujIkp2my21YeCivlZnp0-ClqYvDOKDWkbIAhJUaWLjhH4uYoOSk_Q-zvcXXKQ-YkLnzgLiddvWHPTM3VdSAvPkVeHP=s680-w680-h510-rw" alt="Handloom Weaving" class="w-full h-full object-cover">
                     </div>
@@ -1045,7 +1001,7 @@
                     </div>
                 </div>
 
-                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 scroll-animation slideInLeft delay-4">
                     <div class="h-56 overflow-hidden">
                         <img src="https://content.jdmagicbox.com/comp/malappuram/p6/9999px483.x483.180827104126.z1p6/catalogue/paloor-kotta-waterfall-palachode-malappuram-k80h8eitwq.jpg" alt="Traditional Cuisine" class="w-full h-full object-cover">
                     </div>
@@ -1059,18 +1015,16 @@
     </section>
 
     <!-- Village Attractions -->
-     <div class="attraction-card bg-white rounded-lg overflow-hidden shadow-md scroll-animation slideInLeft">
-
-    <section id="attractions" class="py-20 relative overflow-hidden">
+    <section class="py-20 relative overflow-hidden">
         <div class="kerala-pattern absolute inset-0"></div>
         <div class="container mx-auto px-6 relative z-10">
-            <div class="text-center mb-16">
+            <div class="text-center mb-16 scroll-animation fadeInUp">
                 <h2 class="text-4xl font-bold playfair mb-4 custom-border inline-block">Village Attractions</h2>
                 <p class="text-gray-600 max-w-3xl mx-auto">Explore the natural and cultural wonders of Oorakam</p>
             </div>
 
             <!-- Attraction Categories -->
-            <div class="flex justify-center mb-12">
+            <div class="flex justify-center mb-12 scroll-animation fadeInUp delay-1">
                 <div class="inline-flex bg-gray-100 p-1 rounded-full">
                     <button class="px-6 py-2 rounded-full bg-primary text-white !rounded-button whitespace-nowrap">All Attractions</button>
                     <button class="px-6 py-2 rounded-full text-gray-700 hover:bg-gray-200 !rounded-button whitespace-nowrap">Natural Sites</button>
@@ -1081,7 +1035,7 @@
 
             <!-- Attractions Grid -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="attraction-card bg-white rounded-lg overflow-hidden shadow-md">
+                <div class="attraction-card bg-white rounded-lg overflow-hidden shadow-md scroll-animation slideInLeft delay-1">
                     <div class="h-64 overflow-hidden">
                         <img src="https://www.touristplaces.net.in/images/pp/5/p104578.jpg" alt="Ancient Temple" class="w-full h-full object-cover">
                     </div>
@@ -1097,7 +1051,7 @@
                     </div>
                 </div>
 
-                <div class="attraction-card bg-white rounded-lg overflow-hidden shadow-md">
+                <div class="attraction-card bg-white rounded-lg overflow-hidden shadow-md scroll-animation slideInLeft delay-2">
                     <div class="h-64 overflow-hidden">
                         <img src="https://files.yappe.in/place/full/oorakam-mala-travel-1803070.webp" alt="Backwaters" class="w-full h-full object-cover">
                     </div>
@@ -1113,7 +1067,7 @@
                     </div>
                 </div>
 
-                <div class="attraction-card bg-white rounded-lg overflow-hidden shadow-md">
+                <div class="attraction-card bg-white rounded-lg overflow-hidden shadow-md scroll-animation slideInLeft delay-3">
                     <div class="h-64 overflow-hidden">
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Mini_Ooty_Glass_Bridge.jpg/640px-Mini_Ooty_Glass_Bridge.jpg" alt="Spice Garden" class="w-full h-full object-cover">
                     </div>
@@ -1129,7 +1083,7 @@
                     </div>
                 </div>
 
-                <div class="attraction-card bg-white rounded-lg overflow-hidden shadow-md">
+                <div class="attraction-card bg-white rounded-lg overflow-hidden shadow-md scroll-animation slideInLeft delay-4">
                     <div class="h-64 overflow-hidden">
                         <img src="https://content.jdmagicbox.com/v2/comp/malappuram/c2/9999px483.x483.191216165114.d4c2/catalogue/mahar-ayurvedic-hospital-and-research-center-pulikkal-malappuram-ayurvedic-doctors-gmcvhpr77u.jpg" alt="Ayurveda Center" class="w-full h-full object-cover">
                     </div>
@@ -1145,7 +1099,7 @@
                     </div>
                 </div>
 
-                <div class="attraction-card bg-white rounded-lg overflow-hidden shadow-md">
+                <div class="attraction-card bg-white rounded-lg overflow-hidden shadow-md scroll-animation slideInLeft delay-5">
                     <div class="h-64 overflow-hidden">
                         <img src="https://thumb.photo-ac.com/17/1784e9df4b5275dcbc2d2cc0da218f8a_t.jpeg" alt="Paddy Fields" class="w-full h-full object-cover">
                     </div>
@@ -1161,7 +1115,7 @@
                     </div>
                 </div>
 
-                <div class="attraction-card bg-white rounded-lg overflow-hidden shadow-md">
+                <div class="attraction-card bg-white rounded-lg overflow-hidden shadow-md scroll-animation slideInLeft delay-6">
                     <div class="h-64 overflow-hidden">
                         <img src="https://irinjalakudadiocese.com/wp-content/uploads/2020/07/oorakam-cr.jpg" alt="Craft Village" class="w-full h-full object-cover">
                     </div>
@@ -1179,7 +1133,7 @@
             </div>
 
             <!-- Village Map -->
-            <div class="mt-20">
+            <div class="mt-20 scroll-animation fadeInUp">
                 <h3 class="text-2xl font-semibold mb-8 text-center playfair">Explore Our Village</h3>
                 <div class="w-full h-96 rounded-lg overflow-hidden shadow-lg relative">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1955.1951704801359!2d76.00532957893776!3d11.056092847078467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba64b0037d665c5%3A0x837848e4ccf7e385!2sOorakam%20kunnath!5e0!3m2!1sen!2sin!4v1747201164298!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -1195,7 +1149,7 @@
     </section>
 
     <!-- Gallery Section -->
-    <section id="gallery" class="py-20 bg-gray-50">
+    <section id="gallery" class="py-20 bg-gray-50 scroll-animation fadeInUp">
         <div class="container mx-auto px-6">
             <div class="text-center mb-16">
                 <h2 class="text-4xl font-bold playfair mb-4 custom-border inline-block">Village Gallery</h2>
@@ -1203,7 +1157,7 @@
             </div>
 
             <!-- Gallery Filter -->
-            <div class="flex justify-center mb-12">
+            <div class="flex justify-center mb-12 scroll-animation fadeInUp delay-1">
                 <div class="inline-flex bg-gray-100 p-1 rounded-full">
                     <button class="px-6 py-2 rounded-full bg-primary text-white !rounded-button whitespace-nowrap">All Photos</button>
                     <button class="px-6 py-2 rounded-full text-gray-700 hover:bg-gray-200 !rounded-button whitespace-nowrap">Festivals</button>
@@ -1215,33 +1169,33 @@
 
             <!-- Gallery Grid -->
             <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-                <div class="gallery-item rounded-lg overflow-hidden shadow-md h-64">
+                <div class="gallery-item rounded-lg overflow-hidden shadow-md h-64 scroll-animation slideInLeft delay-1">
                     <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj5AJERFDtKzOYJaXmbxxbRm-i1zaZJbijjGecpvo91jpJAvYDczRD4p1dcS-STF1MG8WHdkfcvEYsy4NU_rO2KZeotgsEfhJqM7xTI5hpTZ5_ekQ-NVdzOWbMwB7qmlBbFkd2szsMncKI/s1600/MUHSSS.jpg" alt="Temple Festival" class="w-full h-full object-cover">
                 </div>
-                <div class="gallery-item rounded-lg overflow-hidden shadow-md h-64">
+                <div class="gallery-item rounded-lg overflow-hidden shadow-md h-64 scroll-animation slideInLeft delay-2">
                     <img src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4nrZtuyroLxp_l0XlM3kw1T6mJyn6HSHNirXe2AL9FsNPypHNCGLthNOKFRB9oWDFlJqHqh62VOUXrhUR8mtuakEHmkye2ZPze_ikjg9spwoPdK5yQx3ddGoc3X8BPtdF_emhMe1=w540-h312-n-k-no" alt="Backwaters" class="w-full h-full object-cover">
                 </div>
-                <div class="gallery-item rounded-lg overflow-hidden shadow-md h-64">
+                <div class="gallery-item rounded-lg overflow-hidden shadow-md h-64 scroll-animation slideInLeft delay-3">
                     <img src="https://yt3.googleusercontent.com/EfjccgglH3n-4liAFf3l-PM8BuOH5DdxEudpKYZ2lX0HBwm7y44hkiQkqCXvFjbyJo1qpXWdMw=s900-c-k-c0x00ffffff-no-rj" alt="Village Elder" class="w-full h-full object-cover">
                 </div>
-                <div class="gallery-item rounded-lg overflow-hidden shadow-md h-64">
+                <div class="gallery-item rounded-lg overflow-hidden shadow-md h-64 scroll-animation slideInLeft delay-4">
                     <img src="https://schoolwiki.in/images/thumb/4/42/19879_school.jpeg/1200px-19879_school.jpeg" alt="Temple Architecture" class="w-full h-full object-cover">
                 </div>
-                <div class="gallery-item rounded-lg overflow-hidden shadow-md h-64">
+                <div class="gallery-item rounded-lg overflow-hidden shadow-md h-64 scroll-animation slideInLeft delay-5">
                     <img src="https://content3.jdmagicbox.com/comp/malappuram/w6/9999px483.x483.181011110345.q4w6/catalogue/al-ihsan-dawa-college-vengara-malappuram-colleges-onnbmanexf.jpg" alt="Theyyam Performance" class="w-full h-full object-cover">
                 </div>
-                <div class="gallery-item rounded-lg overflow-hidden shadow-md h-64">
+                <div class="gallery-item rounded-lg overflow-hidden shadow-md h-64 scroll-animation slideInLeft delay-6">
                     <img src="https://content.jdmagicbox.com/comp/malappuram/e5/9999px483.x483.231201191857.i4e5/catalogue/al-ihsan-language-academy-vengara-malappuram-language-classes-for-english-ry4xsrxwge-250.jpg" alt="Rice Harvest" class="w-full h-full object-cover">
                 </div>
-                <div class="gallery-item rounded-lg overflow-hidden shadow-md h-64">
+                <div class="gallery-item rounded-lg overflow-hidden shadow-md h-64 scroll-animation slideInLeft delay-7">
                     <img src="https://lh3.googleusercontent.com/p/AF1QipOVwwNrU7DbrOsBpIR8j-lVWGgIU72yDzoUj5cZ=w1280-h1280-no" alt="Boat Race" class="w-full h-full object-cover">
                 </div>
-                <div class="gallery-item rounded-lg overflow-hidden shadow-md h-64">
+                <div class="gallery-item rounded-lg overflow-hidden shadow-md h-64 scroll-animation slideInLeft delay-8">
                     <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjzUOfSQTFIeJxKOAF_0MEZyHTHJIusjREORbbbFWI0UHmrvzLjNIKMkUFKTmmQNoRUQY1YzfST50NHtwq_B6qkj-iV7ZPdBtJpfB3ZWWdx7-zk3HoZQfFz0x_xqwF-asr1GjTmZlEMr5nstKHQ0Zrp3Q808gCtMfa1BjA-svM-Ikx6Ohs1o2p_yE-6/w1200-h675-p-k-no-nu/IMG_20221015_112321.jpg" alt="Traditional Home" class="w-full h-full object-cover">
                 </div>
             </div>
 
-            <div class="text-center mt-12">
+            <div class="text-center mt-12 scroll-animation fadeInUp">
                 <button class="animated-button">
                     <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
                         <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
@@ -1257,7 +1211,7 @@
     </section>
 
     <!-- News & Events -->
-    <section class="py-20 relative overflow-hidden">
+    <section class="py-20 relative overflow-hidden scroll-animation fadeInUp">
         <div class="kerala-pattern absolute inset-0"></div>
         <div class="container mx-auto px-6 relative z-10">
             <div class="text-center mb-16">
@@ -1271,7 +1225,7 @@
                     <h3 class="text-2xl font-semibold mb-8 playfair">Village Events</h3>
 
                     <div class="relative timeline pl-12">
-                        <div class="event-card mb-10">
+                        <div class="event-card mb-10 scroll-animation fadeInUp delay-1">
                             <div class="bg-white p-6 rounded-lg shadow-md">
                                 <div class="flex items-center mb-4">
                                     <div class="bg-primary bg-opacity-10 text-primary px-3 py-1 rounded text-sm font-medium">February</div>
@@ -1287,7 +1241,7 @@
                             </div>
                         </div>
 
-                        <div class="event-card mb-10">
+                        <div class="event-card mb-10 scroll-animation fadeInUp delay-2">
                             <div class="bg-white p-6 rounded-lg shadow-md">
                                 <div class="flex items-center mb-4">
                                     <div class="bg-primary bg-opacity-10 text-primary px-3 py-1 rounded text-sm font-medium">June 5, 2025</div>
@@ -1303,7 +1257,7 @@
                             </div>
                         </div>
 
-                        <div class="event-card mb-10">
+                        <div class="event-card mb-10 scroll-animation fadeInUp delay-3">
                             <div class="bg-white p-6 rounded-lg shadow-md">
                                 <div class="flex items-center mb-4">
                                     <div class="bg-primary bg-opacity-10 text-primary px-3 py-1 rounded text-sm font-medium">Sept, 4</div>
@@ -1319,7 +1273,7 @@
                             </div>
                         </div>
 
-                        <div class="event-card">
+                        <div class="event-card scroll-animation fadeInUp delay-4">
                             <div class="bg-white p-6 rounded-lg shadow-md">
                                 <div class="flex items-center mb-4">
                                     <div class="bg-primary bg-opacity-10 text-primary px-3 py-1 rounded text-sm font-medium">Jan, 1</div>
@@ -1338,7 +1292,7 @@
                 </div>
 
                 <!-- Newsletter -->
-                <div class="w-full lg:w-1/3">
+                <div class="w-full lg:w-1/3 scroll-animation fadeInUp">
                     <div class="bg-white p-8 rounded-lg shadow-md">
                         <h3 class="text-2xl font-semibold mb-6 playfair">Stay Connected</h3>
                         <p class="text-gray-600 mb-6">Subscribe to our newsletter to receive updates about village events, cultural programs, and community initiatives.</p>
@@ -1396,7 +1350,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-20 bg-gray-50">
+    <section id="contact" class="py-20 bg-gray-50 scroll-animation fadeInUp">
         <div class="container mx-auto px-6">
             <div class="text-center mb-16">
                 <h2 class="text-4xl font-bold playfair mb-4 custom-border inline-block">Contact Us</h2>
@@ -1520,8 +1474,6 @@
                     <ul class="space-y-3">
                         <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Home</a></li>
                         <li><a href="#about" class="text-gray-400 hover:text-white transition duration-300">About Us</a></li>
-                        <li><a href="#attractions" class="text-gray-400 hover:text-white transition duration-300">Village Attractions</a></li>
-                        <li><a href="#culture" class="text-gray-400 hover:text-white transition duration-300">Cultural Heritage</a></li>
                         <li><a href="#gallery" class="text-gray-400 hover:text-white transition duration-300">Photo Gallery</a></li>
                         <li><a href="#contact" class="text-gray-400 hover:text-white transition duration-300">Contact Us</a></li>
                     </ul>
@@ -1581,8 +1533,6 @@
         <div class="flex flex-col items-center justify-center h-full">
             <a href="#" class="text-white text-2xl mb-8 hover:text-secondary transition duration-300">Home</a>
             <a href="#about" class="text-white text-2xl mb-8 hover:text-secondary transition duration-300">About</a>
-            <a href="#attractions" class="text-white text-2xl mb-8 hover:text-secondary transition duration-300">Attractions</a>
-            <a href="#culture" class="text-white text-2xl mb-8 hover:text-secondary transition duration-300">Culture</a>
             <a href="#gallery" class="text-white text-2xl mb-8 hover:text-secondary transition duration-300">Gallery</a>
             <a href="#contact" class="text-white text-2xl hover:text-secondary transition duration-300">Contact</a>
         </div>
@@ -1635,33 +1585,43 @@
                     e.preventDefault();
 
                     const targetId = this.getAttribute('href');
-                    if (targetId === '#') return;
+                    if (targetId === '#') {
+                        // Scroll to top for "Home" link
+                        window.scrollTo({
+                            top: 0,
+                            behavior: 'smooth'
+                        });
+                        return;
+                    }
 
                     const targetElement = document.querySelector(targetId);
                     if (targetElement) {
+                        const headerHeight = document.querySelector('nav').offsetHeight || 80;
+                        const offsetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - headerHeight;
+
                         window.scrollTo({
-                            top: targetElement.offsetTop - 80,
+                            top: offsetPosition,
                             behavior: 'smooth'
                         });
                     }
                 });
             });
+
+            // Scroll animation observer
+            const scrollElements = document.querySelectorAll('.scroll-animation');
+            const observer = new IntersectionObserver(
+                (entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('animate');
+                        }
+                    });
+                },
+                { threshold: 0.15 }
+            );
+
+            scrollElements.forEach(el => observer.observe(el));
         });
-        const scrollElements = document.querySelectorAll('.scroll-animation');
-
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('animate');
-        }
-    });
-}, { threshold: 0.15 });
-
-scrollElements.forEach(el => observer.observe(el));
-
-        
-
     </script>
 </body>
-
 </html>
