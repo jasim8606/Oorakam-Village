@@ -1,10 +1,12 @@
  :where([class^="ri-"])::before {
             content: "\f3c2";
         }
+        
 
         body {
             font-family: 'Poppins', sans-serif;
             scroll-behavior: smooth;
+            
         }
 
         .playfair {
