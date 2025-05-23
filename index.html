@@ -1,5 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -35,53 +43,77 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.5.0/echarts.min.js"></script>
     <style>
-       
+
 
     </style>
-    
+
 </head>
 
 <body>
-    
+
 
     <!-- Scroll Down Button -->
-<div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
-    <a href="#about" class="scroll-down flex flex-col items-center text-white hover:text-secondary transition duration-300">
-        <span class="text-sm font-medium mb-2">Scroll Down</span>
-        <i class="ri-arrow-down-s-line ri-2x animate-bounce"></i>
-    </a>
-</div>
+    <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
+        <a href="#about"
+            class="scroll-down flex flex-col items-center text-white hover:text-secondary transition duration-300">
+            <span class="text-sm font-medium mb-2">Scroll Down</span>
+            <i class="ri-arrow-down-s-line ri-2x animate-bounce"></i>
+        </a>
+    </div>
     <!-- Header Section -->
     <header class="hero-section relative">
         <div class="hero-overlay absolute inset-0"></div>
 
-        <!-- Navigation -->
+      <!-- Navigation -->
 <nav class="fixed top-0 left-0 w-full z-50 px-6 py-4 flex justify-between items-center bg-transparent">
-            <a href="#" class="text-white text-3xl font-['Pacifico']">Oorakam</a>
-            
+    <a href="#" class="text-white text-3xl font-['Pacifico']">Oorakam</a>
+    
+    <div class="hidden md:flex items-center space-x-8">
+        <a href="#" class="nav-link text-white hover:text-secondary">Home</a>
+        <a href="#about" class="nav-link text-white hover:text-secondary">About</a>
+        <a href="#gallery" class="nav-link text-white hover:text-secondary">Gallery</a>
+        <a href="#contact" class="nav-link text-white hover:text-secondary">Contact</a>
+    </div>
 
-            <div class="hidden md:flex items-center space-x-8">
-                <a href="#" class="nav-link text-white hover:text-secondary">Home</a>
-                <a href="#about" class="nav-link text-white hover:text-secondary">About</a>
-                <a href="#gallery" class="nav-link text-white hover:text-secondary">Gallery</a>
-                <a href="#contact" class="nav-link text-white hover:text-secondary">Contact</a>
-            </div>
-
-            <button class="md:hidden w-10 h-10 flex items-center justify-center text-white">
-                <i class="ri-menu-line ri-lg"></i>
-            </button>
-        </nav>
+    <div class="flex items-center space-x-4">
+        <button class="md:hidden w-10 h-10 flex items-center justify-center text-white">
+            <i class="ri-menu-line ri-lg"></i>
+        </button>
+        <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
+            <!-- Sun Icon -->
+            <svg class="sun-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="5"></circle>
+                <line x1="12" y1="1" x2="12" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="23"></line>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                <line x1="1" y1="12" x2="3" y2="12"></line>
+                <line x1="21" y1="12" x2="23" y2="12"></line>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <!-- Moon Icon -->
+            <svg class="moon-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+        </button>
+    </div>
+</nav>
 
         <!-- Hero Content -->
         <div class="container mx-auto px-6 relative z-10 h-4/5 flex items-center">
             <div class="max-w-2xl">
-                <h1 class="text-5xl md:text-6xl lg:text-7xl text-white font-bold playfair mb-4">Oorakam Kunnath Village</h1>
-                <p class="text-xl text-white opacity-90 mb-8">Experience the authentic charm of Kerala's hidden gem, where tradition meets natural beauty.</p>
+                <h1 class="text-5xl md:text-6xl lg:text-7xl text-white font-bold playfair mb-4">Oorakam Kunnath Village
+                </h1>
+                <p class="text-xl text-white opacity-90 mb-8">Experience the authentic charm of Kerala's hidden gem,
+                    where tradition meets natural beauty.</p>
             </div>
         </div>
     </header>
@@ -92,21 +124,27 @@
         <div class="container mx-auto px-6 relative z-10">
             <div class="text-center mb-16">
                 <h2 class="text-4xl font-bold playfair mb-4 custom-border inline-block">About Our Village</h2>
-                <p class="text-gray-600 max-w-3xl mx-auto">Discover the rich heritage and natural splendor of Oorakam Kunnath</p>
+                <p class="text-gray-600 max-w-3xl mx-auto">Discover the rich heritage and natural splendor of Oorakam
+                    Kunnath</p>
             </div>
 
             <div class="flex flex-col md:flex-row items-center gap-12">
                 <div class="w-full md:w-1/2">
                     <div class="rounded-lg overflow-hidden shadow-xl">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Oorakam_or_Arimbramala.jpg" alt="Oorakam Kunnath Village" class="w-full h-auto object-cover">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Oorakam_or_Arimbramala.jpg"
+                            alt="Oorakam Kunnath Village" class="w-full h-auto object-cover">
                     </div>
                 </div>
 
                 <div class="w-full md:w-1/2">
                     <h3 class="text-2xl font-semibold mb-4 playfair">A Timeless Heritage</h3>
-                    <p class="text-gray-700 mb-6">Nestled in the heart of Kerala, Oorakam Kunnath Village has stood as a testament to the rich cultural heritage of God's Own Country for centuries. Founded in the early 1800s, our village has preserved its traditional charm while embracing sustainable progress.</p>
+                    <p class="text-gray-700 mb-6">Nestled in the heart of Kerala, Oorakam Kunnath Village has stood as a
+                        testament to the rich cultural heritage of God's Own Country for centuries. Founded in the early
+                        1800s, our village has preserved its traditional charm while embracing sustainable progress.</p>
 
-                    <p class="text-gray-700 mb-8">The village derives its name from "Oorakam" meaning "heart of the settlement" and "Kunnath" referring to the hillside location, perfectly capturing our geographical and cultural significance in the region.</p>
+                    <p class="text-gray-700 mb-8">The village derives its name from "Oorakam" meaning "heart of the
+                        settlement" and "Kunnath" referring to the hillside location, perfectly capturing our
+                        geographical and cultural significance in the region.</p>
 
                     <div class="grid grid-cols-2 gap-6">
                         <div class="bg-white p-5 rounded shadow-md border-l-4 border-primary">
@@ -136,35 +174,45 @@
         <div class="container mx-auto px-6">
             <div class="text-center mb-16 scroll-animation fadeInUp">
                 <h2 class="text-4xl font-bold playfair mb-4 custom-border inline-block">Village Highlights</h2>
-                <p class="text-gray-600 max-w-3xl mx-auto">I love those connections that make this big old world feel like a little village...</p>
+                <p class="text-gray-600 max-w-3xl mx-auto">I love those connections that make this big old world feel
+                    like a little village...</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 scroll-animation slideInLeft delay-1">
+                <div
+                    class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 scroll-animation slideInLeft delay-1">
                     <div class="h-56 overflow-hidden">
-                        
-                        <img src="https://files.yappe.in/place/small/pulikkaparambu-juma-masjid-9292728.webp" alt="Traditional Dance" class="w-full h-full object-cover">
-                       
+
+                        <img src="https://files.yappe.in/place/small/pulikkaparambu-juma-masjid-9292728.webp"
+                            alt="Traditional Dance" class="w-full h-full object-cover">
+
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-semibold mb-3 playfair">Oorakam JumaMasjid</h3>
-                        <p class="text-gray-600">I love you when you bow in your mosque, kneel in your temple, pray in your church. For you and I are sons of one religion, and it is the spirit.</p>
+                        <p class="text-gray-600">I love you when you bow in your mosque, kneel in your temple, pray in
+                            your church. For you and I are sons of one religion, and it is the spirit.</p>
                     </div>
                 </div>
 
-                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 scroll-animation slideInLeft delay-2">
+                <div
+                    class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 scroll-animation slideInLeft delay-2">
                     <div class="h-56 overflow-hidden">
-                        <img src="https://www.infobharath.com/temples/uploads/61f23221f34f3.jpg" alt="Temple Festivals" class="w-full h-full object-cover">
+                        <img src="https://www.infobharath.com/temples/uploads/61f23221f34f3.jpg" alt="Temple Festivals"
+                            class="w-full h-full object-cover">
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-semibold mb-3 playfair">Temple</h3>
-                        <p class="text-gray-600">The annual Pooram festival at Sri Ammancherikkavu Temple attracts visitors from across Kerala with its procession of decorated elephants and traditional percussion ensembles.</p>
+                        <p class="text-gray-600">The annual Pooram festival at Sri Ammancherikkavu Temple attracts
+                            visitors from across Kerala with its procession of decorated elephants and traditional
+                            percussion ensembles.</p>
                     </div>
                 </div>
 
-                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 scroll-animation slideInLeft delay-3">
+                <div
+                    class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 scroll-animation slideInLeft delay-3">
                     <div class="h-56 overflow-hidden">
-                        <img src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4nrB32qzjJQROV_kts_Ze-TmDjW6CbQOZcIZHXKXy9EEsOujIkp2my21YeCivlZnp0-ClqYvDOKDWkbIAhJUaWLjhH4uYoOSk_Q-zvcXXKQ-YkLnzgLiddvWHPTM3VdSAvPkVeHP=s680-w680-h510-rw" alt="Handloom Weaving" class="w-full h-full object-cover">
+                        <img src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4nrB32qzjJQROV_kts_Ze-TmDjW6CbQOZcIZHXKXy9EEsOujIkp2my21YeCivlZnp0-ClqYvDOKDWkbIAhJUaWLjhH4uYoOSk_Q-zvcXXKQ-YkLnzgLiddvWHPTM3VdSAvPkVeHP=s680-w680-h510-rw"
+                            alt="Handloom Weaving" class="w-full h-full object-cover">
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-semibold mb-3 playfair">Ajmal Bismi</h3>
@@ -172,13 +220,17 @@
                     </div>
                 </div>
 
-                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 scroll-animation slideInLeft delay-4">
+                <div
+                    class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 scroll-animation slideInLeft delay-4">
                     <div class="h-56 overflow-hidden">
-                        <img src="https://content.jdmagicbox.com/comp/malappuram/p6/9999px483.x483.180827104126.z1p6/catalogue/paloor-kotta-waterfall-palachode-malappuram-k80h8eitwq.jpg" alt="Traditional Cuisine" class="w-full h-full object-cover">
+                        <img src="https://content.jdmagicbox.com/comp/malappuram/p6/9999px483.x483.180827104126.z1p6/catalogue/paloor-kotta-waterfall-palachode-malappuram-k80h8eitwq.jpg"
+                            alt="Traditional Cuisine" class="w-full h-full object-cover">
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-semibold mb-3 playfair">Waterfall</h3>
-                        <p class="text-gray-600">Surrender to the flow. Go with the flow. Run wild and free like a waterfall. Every teardrop is a waterfall. Just let go – and fall like a little waterfall.</p>
+                        <p class="text-gray-600">Surrender to the flow. Go with the flow. Run wild and free like a
+                            waterfall. Every teardrop is a waterfall. Just let go – and fall like a little waterfall.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -197,23 +249,34 @@
             <!-- Attraction Categories -->
             <div class="flex justify-center mb-12 scroll-animation fadeInUp delay-1">
                 <div class="inline-flex bg-gray-100 p-1 rounded-full">
-                    <button class="category-btn px-6 py-2 rounded-full bg-primary text-white !rounded-button whitespace-nowrap active-category" data-category="all">All Attractions</button>
-                    <button class="category-btn px-6 py-2 rounded-full text-gray-700 hover:bg-gray-200 !rounded-button whitespace-nowrap" data-category="natural">Natural Sites</button>
-                    <button class="category-btn px-6 py-2 rounded-full text-gray-700 hover:bg-gray-200 !rounded-button whitespace-nowrap" data-category="heritage">Heritage</button>
-                    <button class="category-btn px-6 py-2 rounded-full text-gray-700 hover:bg-gray-200 !rounded-button whitespace-nowrap" data-category="activities">Activities</button>
+                    <button
+                        class="category-btn px-6 py-2 rounded-full bg-primary text-white !rounded-button whitespace-nowrap active-category"
+                        data-category="all">All Attractions</button>
+                    <button
+                        class="category-btn px-6 py-2 rounded-full text-gray-700 hover:bg-gray-200 !rounded-button whitespace-nowrap"
+                        data-category="natural">Natural Sites</button>
+                    <button
+                        class="category-btn px-6 py-2 rounded-full text-gray-700 hover:bg-gray-200 !rounded-button whitespace-nowrap"
+                        data-category="heritage">Heritage</button>
+                    <button
+                        class="category-btn px-6 py-2 rounded-full text-gray-700 hover:bg-gray-200 !rounded-button whitespace-nowrap"
+                        data-category="activities">Activities</button>
                 </div>
             </div>
 
             <!-- Attractions Grid -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="attractions-grid">
-                <div class="attraction-card bg-white rounded-lg overflow-hidden shadow-md scroll-animation slideInLeft delay-1" data-category="natural">
-                    <div class="h-64 overflow-hidden"> <a href="https://maps.app.goo.gl/4TKJsigAEQDY82tLA">                     
-                        <img src="https://www.touristplaces.net.in/images/pp/5/p104578.jpg" alt="Oorakam River" class="w-full h-full object-cover">
+                <div class="attraction-card bg-white rounded-lg overflow-hidden shadow-md scroll-animation slideInLeft delay-1"
+                    data-category="natural">
+                    <div class="h-64 overflow-hidden"> <a href="https://maps.app.goo.gl/4TKJsigAEQDY82tLA">
+                            <img src="https://www.touristplaces.net.in/images/pp/5/p104578.jpg" alt="Oorakam River"
+                                class="w-full h-full object-cover">
                         </a>
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-semibold mb-2 playfair">Oorakam River</h3>
-                        <p class="text-gray-600 mb-4">Life is like the river, sometimes it sweeps you gently along and sometimes the rapids come out of nowhere.</p>
+                        <p class="text-gray-600 mb-4">Life is like the river, sometimes it sweeps you gently along and
+                            sometimes the rapids come out of nowhere.</p>
                         <div class="flex items-center text-sm text-gray-500">
                             <span class="w-5 h-5 flex items-center justify-center mr-2">
                                 <i class="ri-map-pin-line"></i>
@@ -223,108 +286,126 @@
                     </div>
                 </div>
 
-                <div class="attraction-card bg-white rounded-lg overflow-hidden shadow-md scroll-animation slideInLeft delay-2" data-category="natural">
+                <div class="attraction-card bg-white rounded-lg overflow-hidden shadow-md scroll-animation slideInLeft delay-2"
+                    data-category="natural">
                     <div class="h-64 overflow-hidden">
-                        <img src="https://files.yappe.in/place/full/oorakam-mala-travel-1803070.webp" alt="Oorakam Mountain" class="w-full h-full object-cover">
+                        <img src="https://files.yappe.in/place/full/oorakam-mala-travel-1803070.webp"
+                            alt="Oorakam Mountain" class="w-full h-full object-cover">
                     </div>
                     <div class="p-6"><a href="https://maps.app.goo.gl/4pPa4c6zN8egnzxt8">
-                        <h3 class="text-xl font-semibold mb-2 playfair">Oorakam Mountain</h3>
-                        <p class="text-gray-600 mb-4">No matter how tall the mountain is, it cannot block the sun. —Chinese Proverb.</p>
-                        <div class="flex items-center text-sm text-gray-500">
-                            <span class="w-5 h-5 flex items-center justify-center mr-2">
-                                <i class="ri-map-pin-line"></i>
-                            </span>
-                            <span>5.5km from Vengara BusStand</span>
-                        </div>
+                            <h3 class="text-xl font-semibold mb-2 playfair">Oorakam Mountain</h3>
+                            <p class="text-gray-600 mb-4">No matter how tall the mountain is, it cannot block the sun.
+                                —Chinese Proverb.</p>
+                            <div class="flex items-center text-sm text-gray-500">
+                                <span class="w-5 h-5 flex items-center justify-center mr-2">
+                                    <i class="ri-map-pin-line"></i>
+                                </span>
+                                <span>5.5km from Vengara BusStand</span>
+                            </div>
                         </a>
                     </div>
                 </div>
 
-                <div class="attraction-card bg-white rounded-lg overflow-hidden shadow-md scroll-animation slideInLeft delay-3" data-category="activities">
+                <div class="attraction-card bg-white rounded-lg overflow-hidden shadow-md scroll-animation slideInLeft delay-3"
+                    data-category="activities">
                     <div class="h-64 overflow-hidden">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Mini_Ooty_Glass_Bridge.jpg/640px-Mini_Ooty_Glass_Bridge.jpg" alt="Mini Ooty Glass Bridge" class="w-full h-full object-cover">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Mini_Ooty_Glass_Bridge.jpg/640px-Mini_Ooty_Glass_Bridge.jpg"
+                            alt="Mini Ooty Glass Bridge" class="w-full h-full object-cover">
                     </div>
                     <div class="p-6"><a href="https://maps.app.goo.gl/Yq5WgjZ6ou6tuAs2A">
-                        <h3 class="text-xl font-semibold mb-2 playfair">Mini Ooty Glass Bridge</h3>
-                        <p class="text-gray-600 mb-4">You cannot have the right to cross a bridge without respecting it! You cannot have the right to use the things without respecting them!</p>
-                        <div class="flex items-center text-sm text-gray-500">
-                            <span class="w-5 h-5 flex items-center justify-center mr-2">
-                                <i class="ri-map-pin-line"></i>
-                            </span>
-                            <span>4km from Malappuram</span>
-                        </div>
+                            <h3 class="text-xl font-semibold mb-2 playfair">Mini Ooty Glass Bridge</h3>
+                            <p class="text-gray-600 mb-4">You cannot have the right to cross a bridge without respecting
+                                it! You cannot have the right to use the things without respecting them!</p>
+                            <div class="flex items-center text-sm text-gray-500">
+                                <span class="w-5 h-5 flex items-center justify-center mr-2">
+                                    <i class="ri-map-pin-line"></i>
+                                </span>
+                                <span>4km from Malappuram</span>
+                            </div>
                         </a>
                     </div>
                 </div>
 
-                <div class="attraction-card bg-white rounded-lg overflow-hidden shadow-md scroll-animation slideInLeft delay-4" data-category="activities">
+                <div class="attraction-card bg-white rounded-lg overflow-hidden shadow-md scroll-animation slideInLeft delay-4"
+                    data-category="activities">
                     <div class="h-64 overflow-hidden">
-                        <img src="https://content.jdmagicbox.com/v2/comp/malappuram/c2/9999px483.x483.191216165114.d4c2/catalogue/mahar-ayurvedic-hospital-and-research-center-pulikkal-malappuram-ayurvedic-doctors-gmcvhpr77u.jpg" alt="Ayurveda Wellness Center" class="w-full h-full object-cover">
+                        <img src="https://content.jdmagicbox.com/v2/comp/malappuram/c2/9999px483.x483.191216165114.d4c2/catalogue/mahar-ayurvedic-hospital-and-research-center-pulikkal-malappuram-ayurvedic-doctors-gmcvhpr77u.jpg"
+                            alt="Ayurveda Wellness Center" class="w-full h-full object-cover">
                     </div>
                     <div class="p-6"><a href="https://maps.app.goo.gl/v9bK9P1nVYK3EN2s9">
-                        <h3 class="text-xl font-semibold mb-2 playfair">Ayurveda Wellness Center</h3>
-                        <p class="text-gray-600 mb-4">Experience traditional Ayurvedic treatments and therapies at our authentic wellness center using local herbs and oils.</p>
-                        <div class="flex items-center text-sm text-gray-500">
-                            <span class="w-5 h-5 flex items-center justify-center mr-2">
-                                <i class="ri-map-pin-line"></i>
-                            </span>
-                            <span>Village Center, near bus stand</span>
-                            </a>
-                        </div>
+                            <h3 class="text-xl font-semibold mb-2 playfair">Ayurveda Wellness Center</h3>
+                            <p class="text-gray-600 mb-4">Experience traditional Ayurvedic treatments and therapies at
+                                our authentic wellness center using local herbs and oils.</p>
+                            <div class="flex items-center text-sm text-gray-500">
+                                <span class="w-5 h-5 flex items-center justify-center mr-2">
+                                    <i class="ri-map-pin-line"></i>
+                                </span>
+                                <span>Village Center, near bus stand</span>
+                        </a>
                     </div>
                 </div>
+            </div>
 
-                <div class="attraction-card bg-white rounded-lg overflow-hidden shadow-md scroll-animation slideInLeft delay-5" data-category="activities">
-                    <div class="h-64 overflow-hidden">
-                        <img src="https://thumb.photo-ac.com/17/1784e9df4b5275dcbc2d2cc0da218f8a_t.jpeg" alt="Emerald Paddy Fields" class="w-full h-full object-cover">
-                    </div>
-                    <div class="p-6"><a href="https://maps.app.goo.gl/BUbEpNX9fmiP9WJr5">
+            <div class="attraction-card bg-white rounded-lg overflow-hidden shadow-md scroll-animation slideInLeft delay-5"
+                data-category="activities">
+                <div class="h-64 overflow-hidden">
+                    <img src="https://thumb.photo-ac.com/17/1784e9df4b5275dcbc2d2cc0da218f8a_t.jpeg"
+                        alt="Emerald Paddy Fields" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6"><a href="https://maps.app.goo.gl/BUbEpNX9fmiP9WJr5">
                         <h3 class="text-xl font-semibold mb-2 playfair">Emerald Paddy Fields</h3>
-                        <p class="text-gray-600 mb-4">Witness traditional farming methods and participate in seasonal activities like planting and harvesting rice in our lush fields.</p>
+                        <p class="text-gray-600 mb-4">Witness traditional farming methods and participate in seasonal
+                            activities like planting and harvesting rice in our lush fields.</p>
                         <div class="flex items-center text-sm text-gray-500">
                             <span class="w-5 h-5 flex items-center justify-center mr-2">
                                 <i class="ri-map-pin-line"></i>
                             </span>
                             <span>2.5km from Vengara</span>
-                            
-                         </a>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="attraction-card bg-white rounded-lg overflow-hidden shadow-md scroll-animation slideInLeft delay-6" data-category="heritage">
-                    <div class="h-64 overflow-hidden">
-                        <img src="https://irinjalakudadiocese.com/wp-content/uploads/2020/07/oorakam-cr.jpg" alt="St. Joseph’s Church" class="w-full h-full object-cover">
-                    </div>
-                    <div class="p-6"><a href="https://maps.app.goo.gl/RyZnxceB4JmWH3Cj8">
-                        <h3 class="text-xl font-semibold mb-2 playfair">Oorakam, St. Joseph’s Church</h3>
-                        <p class="text-gray-600 mb-4">St. Joseph’s Church, Oorakam Pullur – 680 683</p>
-                        <div class="flex items-center text-sm text-gray-500">
-                            <span class="w-5 h-5 flex items-center justify-center mr-2">
-                                <i class="ri-map-pin-line"></i>
-                            </span>
-                            <span>2.5km from Oorakam</span>
-                        </div>
-                        </a>
-                    </div>
+                    </a>
                 </div>
             </div>
+        </div>
+
+        <div class="attraction-card bg-white rounded-lg overflow-hidden shadow-md scroll-animation slideInLeft delay-6"
+            data-category="heritage">
+            <div class="h-64 overflow-hidden">
+                <img src="https://irinjalakudadiocese.com/wp-content/uploads/2020/07/oorakam-cr.jpg"
+                    alt="St. Joseph’s Church" class="w-full h-full object-cover">
+            </div>
+            <div class="p-6"><a href="https://maps.app.goo.gl/RyZnxceB4JmWH3Cj8">
+                    <h3 class="text-xl font-semibold mb-2 playfair">Oorakam, St. Joseph’s Church</h3>
+                    <p class="text-gray-600 mb-4">St. Joseph’s Church, Oorakam Pullur – 680 683</p>
+                    <div class="flex items-center text-sm text-gray-500">
+                        <span class="w-5 h-5 flex items-center justify-center mr-2">
+                            <i class="ri-map-pin-line"></i>
+                        </span>
+                        <span>2.5km from Oorakam</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        </div>
         </div>
     </section>
-            <!-- Village Map -->
-            <div class="mt-20 scroll-animation fadeInUp">
-                <h3 class="text-2xl font-semibold mb-8 text-center playfair">Explore Our Village</h3>
-                <div class="w-full h-96 rounded-lg overflow-hidden shadow-lg relative">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1955.1951704801359!2d76.00532957893776!3d11.056092847078467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba64b0037d665c5%3A0x837848e4ccf7e385!2sOorakam%20kunnath!5e0!3m2!1sen!2sin!4v1747201164298!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    <button class="bg-white text-primary px-6 py-3 rounded-button shadow-md hover:bg-gray-100 transition duration-300 flex items-center !rounded-button whitespace-nowrap absolute bottom-4 left-4">
-                        <span class="w-5 h-5 flex items-center justify-center mr-2">
-                            <i class="ri-map-2-line"></i>
-                        </span>
-                        View Interactive Map
-                    </button>
-                </div>
-            </div>
+    <!-- Village Map -->
+    <div class="mt-20 scroll-animation fadeInUp">
+        <h3 class="text-2xl font-semibold mb-8 text-center playfair">Explore Our Village</h3>
+        <div class="w-full h-96 rounded-lg overflow-hidden shadow-lg relative">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1955.1951704801359!2d76.00532957893776!3d11.056092847078467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba64b0037d665c5%3A0x837848e4ccf7e385!2sOorakam%20kunnath!5e0!3m2!1sen!2sin!4v1747201164298!5m2!1sen!2sin"
+                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <button
+                class="bg-white text-primary px-6 py-3 rounded-button shadow-md hover:bg-gray-100 transition duration-300 flex items-center !rounded-button whitespace-nowrap absolute bottom-4 left-4">
+                <span class="w-5 h-5 flex items-center justify-center mr-2">
+                    <i class="ri-map-2-line"></i>
+                </span>
+                View Interactive Map
+            </button>
         </div>
+    </div>
+    </div>
     </section>
 
     <!-- Gallery Section -->
@@ -332,61 +413,87 @@
         <div class="container mx-auto px-6">
             <div class="text-center mb-16">
                 <h2 class="text-4xl font-bold playfair mb-4 custom-border inline-block">Village Gallery</h2>
-                <p class="text-gray-600 max-w-3xl mx-auto">Glimpses of life, culture, and natural beauty in Oorakam Kunnath</p>
+                <p class="text-gray-600 max-w-3xl mx-auto">Glimpses of life, culture, and natural beauty in Oorakam
+                    Kunnath</p>
             </div>
 
             <!-- Gallery Filter -->
             <div class="flex justify-center mb-12 scroll-animation fadeInUp delay-1">
                 <div class="inline-flex bg-gray-100 p-1 rounded-full">
-                    <button class="px-6 py-2 rounded-full bg-primary text-white !rounded-button whitespace-nowrap">All Photos</button>
-                    <button class="px-6 py-2 rounded-full text-gray-700 hover:bg-gray-200 !rounded-button whitespace-nowrap">Festivals</button>
-                    <button class="px-6 py-2 rounded-full text-gray-700 hover:bg-gray-200 !rounded-button whitespace-nowrap">Nature</button>
-                    <button class="px-6 py-2 rounded-full text-gray-700 hover:bg-gray-200 !rounded-button whitespace-nowrap">People</button>
-                    <button class="px-6 py-2 rounded-full text-gray-700 hover:bg-gray-200 !rounded-button whitespace-nowrap">Heritage</button>
+                    <button class="px-6 py-2 rounded-full bg-primary text-white !rounded-button whitespace-nowrap">All
+                        Photos</button>
+                    <button
+                        class="px-6 py-2 rounded-full text-gray-700 hover:bg-gray-200 !rounded-button whitespace-nowrap">Festivals</button>
+                    <button
+                        class="px-6 py-2 rounded-full text-gray-700 hover:bg-gray-200 !rounded-button whitespace-nowrap">Nature</button>
+                    <button
+                        class="px-6 py-2 rounded-full text-gray-700 hover:bg-gray-200 !rounded-button whitespace-nowrap">People</button>
+                    <button
+                        class="px-6 py-2 rounded-full text-gray-700 hover:bg-gray-200 !rounded-button whitespace-nowrap">Heritage</button>
                 </div>
             </div>
 
             <!-- Gallery Grid -->
-            
+
             <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-                
-                <div class="gallery-item rounded-lg overflow-hidden shadow-md h-64 scroll-animation slideInLeft delay-1">
-                    
-                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj5AJERFDtKzOYJaXmbxxbRm-i1zaZJbijjGecpvo91jpJAvYDczRD4p1dcS-STF1MG8WHdkfcvEYsy4NU_rO2KZeotgsEfhJqM7xTI5hpTZ5_ekQ-NVdzOWbMwB7qmlBbFkd2szsMncKI/s1600/MUHSSS.jpg" alt="Temple Festival" class="w-full h-full object-cover">
-                  
+
+                <div
+                    class="gallery-item rounded-lg overflow-hidden shadow-md h-64 scroll-animation slideInLeft delay-1">
+
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj5AJERFDtKzOYJaXmbxxbRm-i1zaZJbijjGecpvo91jpJAvYDczRD4p1dcS-STF1MG8WHdkfcvEYsy4NU_rO2KZeotgsEfhJqM7xTI5hpTZ5_ekQ-NVdzOWbMwB7qmlBbFkd2szsMncKI/s1600/MUHSSS.jpg"
+                        alt="Temple Festival" class="w-full h-full object-cover">
+
                 </div>
-                <div class="gallery-item rounded-lg overflow-hidden shadow-md h-64 scroll-animation slideInLeft delay-2">
-                    <img src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4nrZtuyroLxp_l0XlM3kw1T6mJyn6HSHNirXe2AL9FsNPypHNCGLthNOKFRB9oWDFlJqHqh62VOUXrhUR8mtuakEHmkye2ZPze_ikjg9spwoPdK5yQx3ddGoc3X8BPtdF_emhMe1=w540-h312-n-k-no" alt="Backwaters" class="w-full h-full object-cover">
+                <div
+                    class="gallery-item rounded-lg overflow-hidden shadow-md h-64 scroll-animation slideInLeft delay-2">
+                    <img src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4nrZtuyroLxp_l0XlM3kw1T6mJyn6HSHNirXe2AL9FsNPypHNCGLthNOKFRB9oWDFlJqHqh62VOUXrhUR8mtuakEHmkye2ZPze_ikjg9spwoPdK5yQx3ddGoc3X8BPtdF_emhMe1=w540-h312-n-k-no"
+                        alt="Backwaters" class="w-full h-full object-cover">
                 </div>
-                <div class="gallery-item rounded-lg overflow-hidden shadow-md h-64 scroll-animation slideInLeft delay-3">
-                    <img src="https://yt3.googleusercontent.com/EfjccgglH3n-4liAFf3l-PM8BuOH5DdxEudpKYZ2lX0HBwm7y44hkiQkqCXvFjbyJo1qpXWdMw=s900-c-k-c0x00ffffff-no-rj" alt="Village Elder" class="w-full h-full object-cover">
+                <div
+                    class="gallery-item rounded-lg overflow-hidden shadow-md h-64 scroll-animation slideInLeft delay-3">
+                    <img src="https://yt3.googleusercontent.com/EfjccgglH3n-4liAFf3l-PM8BuOH5DdxEudpKYZ2lX0HBwm7y44hkiQkqCXvFjbyJo1qpXWdMw=s900-c-k-c0x00ffffff-no-rj"
+                        alt="Village Elder" class="w-full h-full object-cover">
                 </div>
-                <div class="gallery-item rounded-lg overflow-hidden shadow-md h-64 scroll-animation slideInLeft delay-4">
-                    <img src="https://schoolwiki.in/images/thumb/4/42/19879_school.jpeg/1200px-19879_school.jpeg" alt="Temple Architecture" class="w-full h-full object-cover">
+                <div
+                    class="gallery-item rounded-lg overflow-hidden shadow-md h-64 scroll-animation slideInLeft delay-4">
+                    <img src="https://schoolwiki.in/images/thumb/4/42/19879_school.jpeg/1200px-19879_school.jpeg"
+                        alt="Temple Architecture" class="w-full h-full object-cover">
                 </div>
-                <div class="gallery-item rounded-lg overflow-hidden shadow-md h-64 scroll-animation slideInLeft delay-5">
-                    <img src="https://content3.jdmagicbox.com/comp/malappuram/w6/9999px483.x483.181011110345.q4w6/catalogue/al-ihsan-dawa-college-vengara-malappuram-colleges-onnbmanexf.jpg" alt="Theyyam Performance" class="w-full h-full object-cover">
+                <div
+                    class="gallery-item rounded-lg overflow-hidden shadow-md h-64 scroll-animation slideInLeft delay-5">
+                    <img src="https://content3.jdmagicbox.com/comp/malappuram/w6/9999px483.x483.181011110345.q4w6/catalogue/al-ihsan-dawa-college-vengara-malappuram-colleges-onnbmanexf.jpg"
+                        alt="Theyyam Performance" class="w-full h-full object-cover">
                 </div>
-                <div class="gallery-item rounded-lg overflow-hidden shadow-md h-64 scroll-animation slideInLeft delay-6">
-                    <img src="https://content.jdmagicbox.com/comp/malappuram/e5/9999px483.x483.231201191857.i4e5/catalogue/al-ihsan-language-academy-vengara-malappuram-language-classes-for-english-ry4xsrxwge-250.jpg" alt="Rice Harvest" class="w-full h-full object-cover">
+                <div
+                    class="gallery-item rounded-lg overflow-hidden shadow-md h-64 scroll-animation slideInLeft delay-6">
+                    <img src="https://content.jdmagicbox.com/comp/malappuram/e5/9999px483.x483.231201191857.i4e5/catalogue/al-ihsan-language-academy-vengara-malappuram-language-classes-for-english-ry4xsrxwge-250.jpg"
+                        alt="Rice Harvest" class="w-full h-full object-cover">
                 </div>
-                <div class="gallery-item rounded-lg overflow-hidden shadow-md h-64 scroll-animation slideInLeft delay-7">
-                    <img src="https://lh3.googleusercontent.com/p/AF1QipOVwwNrU7DbrOsBpIR8j-lVWGgIU72yDzoUj5cZ=w1280-h1280-no" alt="Boat Race" class="w-full h-full object-cover">
+                <div
+                    class="gallery-item rounded-lg overflow-hidden shadow-md h-64 scroll-animation slideInLeft delay-7">
+                    <img src="https://lh3.googleusercontent.com/p/AF1QipOVwwNrU7DbrOsBpIR8j-lVWGgIU72yDzoUj5cZ=w1280-h1280-no"
+                        alt="Boat Race" class="w-full h-full object-cover">
                 </div>
-                <div class="gallery-item rounded-lg overflow-hidden shadow-md h-64 scroll-animation slideInLeft delay-8">
-                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjzUOfSQTFIeJxKOAF_0MEZyHTHJIusjREORbbbFWI0UHmrvzLjNIKMkUFKTmmQNoRUQY1YzfST50NHtwq_B6qkj-iV7ZPdBtJpfB3ZWWdx7-zk3HoZQfFz0x_xqwF-asr1GjTmZlEMr5nstKHQ0Zrp3Q808gCtMfa1BjA-svM-Ikx6Ohs1o2p_yE-6/w1200-h675-p-k-no-nu/IMG_20221015_112321.jpg" alt="Traditional Home" class="w-full h-full object-cover">
+                <div
+                    class="gallery-item rounded-lg overflow-hidden shadow-md h-64 scroll-animation slideInLeft delay-8">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjzUOfSQTFIeJxKOAF_0MEZyHTHJIusjREORbbbFWI0UHmrvzLjNIKMkUFKTmmQNoRUQY1YzfST50NHtwq_B6qkj-iV7ZPdBtJpfB3ZWWdx7-zk3HoZQfFz0x_xqwF-asr1GjTmZlEMr5nstKHQ0Zrp3Q808gCtMfa1BjA-svM-Ikx6Ohs1o2p_yE-6/w1200-h675-p-k-no-nu/IMG_20221015_112321.jpg"
+                        alt="Traditional Home" class="w-full h-full object-cover">
                 </div>
             </div>
 
             <div class="text-center mt-12 scroll-animation fadeInUp">
                 <button class="animated-button">
                     <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+                        <path
+                            d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z">
+                        </path>
                     </svg>
                     <span class="text">More Images</span>
                     <span class="circle"></span>
                     <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+                        <path
+                            d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z">
+                        </path>
                     </svg>
                 </button>
             </div>
@@ -399,7 +506,8 @@
         <div class="container mx-auto px-6 relative z-10">
             <div class="text-center mb-16">
                 <h2 class="text-4xl font-bold playfair mb-4 custom-border inline-block">News & Events</h2>
-                <p class="text-gray-600 max-w-3xl mx-auto">Stay updated with the latest happenings in our vibrant community</p>
+                <p class="text-gray-600 max-w-3xl mx-auto">Stay updated with the latest happenings in our vibrant
+                    community</p>
             </div>
 
             <div class="flex flex-col lg:flex-row gap-12">
@@ -411,15 +519,19 @@
                         <div class="event-card mb-10 scroll-animation fadeInUp delay-1">
                             <div class="bg-white p-6 rounded-lg shadow-md">
                                 <div class="flex items-center mb-4">
-                                    <div class="bg-primary bg-opacity-10 text-primary px-3 py-1 rounded text-sm font-medium">February</div>
+                                    <div
+                                        class="bg-primary bg-opacity-10 text-primary px-3 py-1 rounded text-sm font-medium">
+                                        February</div>
                                 </div>
                                 <h4 class="text-xl font-semibold mb-2 playfair">Annual Temple Festival</h4>
-                                <p class="text-gray-600 mb-4">The grand celebration at Sri Mahadeva Temple featuring traditional rituals, cultural performances, and a community feast.</p>
-                                <div class="flex items-center text-primary font-medium"><a href="https://en.wikipedia.org/wiki/Temple_festivals_of_Kerala">
-                                    <span>Learn more</span>
-                                    <span class="w-5 h-5 flex items-center justify-center ml-1">
-                                        <i class="ri-arrow-right-line"></i>
-                                    </span>
+                                <p class="text-gray-600 mb-4">The grand celebration at Sri Mahadeva Temple featuring
+                                    traditional rituals, cultural performances, and a community feast.</p>
+                                <div class="flex items-center text-primary font-medium"><a
+                                        href="https://en.wikipedia.org/wiki/Temple_festivals_of_Kerala">
+                                        <span>Learn more</span>
+                                        <span class="w-5 h-5 flex items-center justify-center ml-1">
+                                            <i class="ri-arrow-right-line"></i>
+                                        </span>
                                     </a>
                                 </div>
                             </div>
@@ -428,15 +540,19 @@
                         <div class="event-card mb-10 scroll-animation fadeInUp delay-2">
                             <div class="bg-white p-6 rounded-lg shadow-md">
                                 <div class="flex items-center mb-4">
-                                    <div class="bg-primary bg-opacity-10 text-primary px-3 py-1 rounded text-sm font-medium">June 5, 2025</div>
+                                    <div
+                                        class="bg-primary bg-opacity-10 text-primary px-3 py-1 rounded text-sm font-medium">
+                                        June 5, 2025</div>
                                 </div>
                                 <h4 class="text-xl font-semibold mb-2 playfair">World Environment Day</h4>
-                                <p class="text-gray-600 mb-4">World Environment Day, observed annually on June 5th, is a global initiative to raise awareness and promote action on environmental issues.</p>
-                                <div class="flex items-center text-primary font-medium"><a href="https://www.worldenvironmentday.global/">
-                                    <span>Learn more</span>
-                                    <span class="w-5 h-5 flex items-center justify-center ml-1">
-                                        <i class="ri-arrow-right-line"></i>
-                                    </span>
+                                <p class="text-gray-600 mb-4">World Environment Day, observed annually on June 5th, is a
+                                    global initiative to raise awareness and promote action on environmental issues.</p>
+                                <div class="flex items-center text-primary font-medium"><a
+                                        href="https://www.worldenvironmentday.global/">
+                                        <span>Learn more</span>
+                                        <span class="w-5 h-5 flex items-center justify-center ml-1">
+                                            <i class="ri-arrow-right-line"></i>
+                                        </span>
                                     </a>
                                 </div>
                             </div>
@@ -445,15 +561,19 @@
                         <div class="event-card mb-10 scroll-animation fadeInUp delay-3">
                             <div class="bg-white p-6 rounded-lg shadow-md">
                                 <div class="flex items-center mb-4">
-                                    <div class="bg-primary bg-opacity-10 text-primary px-3 py-1 rounded text-sm font-medium">Sept, 4</div>
+                                    <div
+                                        class="bg-primary bg-opacity-10 text-primary px-3 py-1 rounded text-sm font-medium">
+                                        Sept, 4</div>
                                 </div>
                                 <h4 class="text-xl font-semibold mb-2 playfair">Onam Celebrations</h4>
-                                <p class="text-gray-600 mb-4">Village-wide celebration of Kerala's harvest festival with floral carpets (pookalam), traditional games, Onasadya feast, and cultural performances.</p>
+                                <p class="text-gray-600 mb-4">Village-wide celebration of Kerala's harvest festival with
+                                    floral carpets (pookalam), traditional games, Onasadya feast, and cultural
+                                    performances.</p>
                                 <div class="flex items-center text-primary font-medium">
                                     <span>Learn more</span><a href="https://en.wikipedia.org/wiki/Onam">
-                                    <span class="w-5 h-5 flex items-center justify-center ml-1">
-                                        <i class="ri-arrow-right-line"></i>
-                                    </span>
+                                        <span class="w-5 h-5 flex items-center justify-center ml-1">
+                                            <i class="ri-arrow-right-line"></i>
+                                        </span>
                                     </a>
                                 </div>
                             </div>
@@ -462,15 +582,19 @@
                         <div class="event-card scroll-animation fadeInUp delay-4">
                             <div class="bg-white p-6 rounded-lg shadow-md">
                                 <div class="flex items-center mb-4">
-                                    <div class="bg-primary bg-opacity-10 text-primary px-3 py-1 rounded text-sm font-medium">Jan, 1</div>
+                                    <div
+                                        class="bg-primary bg-opacity-10 text-primary px-3 py-1 rounded text-sm font-medium">
+                                        Jan, 1</div>
                                 </div>
                                 <h4 class="text-xl font-semibold mb-2 playfair">New Year Celebration</h4>
-                                <p class="text-gray-600 mb-4">Here are some New Year quotes that could resonate with people in a village setting, incorporating themes of nature, community, and simple living.</p>
+                                <p class="text-gray-600 mb-4">Here are some New Year quotes that could resonate with
+                                    people in a village setting, incorporating themes of nature, community, and simple
+                                    living.</p>
                                 <div class="flex items-center text-primary font-medium">
-                                  <a href="https://en.wikipedia.org/wiki/New_Year%27s_Eve">  <span>Learn more</span>
-                                    <span class="w-5 h-5 flex items-center justify-center ml-1">
-                                        <i class="ri-arrow-right-line"></i>
-                                    </span>
+                                    <a href="https://en.wikipedia.org/wiki/New_Year%27s_Eve"> <span>Learn more</span>
+                                        <span class="w-5 h-5 flex items-center justify-center ml-1">
+                                            <i class="ri-arrow-right-line"></i>
+                                        </span>
                                     </a>
                                 </div>
                             </div>
@@ -482,37 +606,53 @@
                 <div class="w-full lg:w-1/3 scroll-animation fadeInUp">
                     <div class="bg-white p-8 rounded-lg shadow-md">
                         <h3 class="text-2xl font-semibold mb-6 playfair">Stay Connected</h3>
-                        <p class="text-gray-600 mb-6">Subscribe to our newsletter to receive updates about village events, cultural programs, and community initiatives.</p>
+                        <p class="text-gray-600 mb-6">Subscribe to our newsletter to receive updates about village
+                            events, cultural programs, and community initiatives.</p>
 
                         <form>
                             <div class="mb-4">
                                 <label for="name" class="block text-gray-700 mb-2">Full Name</label>
-                                <input type="text" id="name" class="w-full px-4 py-3 border border-gray-300 rounded focus:border-primary" placeholder="Your name">
+                                <input type="text" id="name"
+                                    class="w-full px-4 py-3 border border-gray-300 rounded focus:border-primary"
+                                    placeholder="Your name">
                             </div>
 
                             <div class="mb-4">
                                 <label for="email" class="block text-gray-700 mb-2">Email Address</label>
-                                <input type="email" id="email" class="w-full px-4 py-3 border border-gray-300 rounded focus:border-primary" placeholder="Your email">
+                                <input type="email" id="email"
+                                    class="w-full px-4 py-3 border border-gray-300 rounded focus:border-primary"
+                                    placeholder="Your email">
                             </div>
 
-                            <!-- From Uiverse.io by PriyanshuGupta28 --> 
-<div class="checkbox-wrapper">
-  <input id="terms-checkbox-37" name="checkbox" type="checkbox">
-  <label class="terms-label" for="terms-checkbox-37">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 200 200" class="checkbox-svg">
-      <mask fill="white" id="path-1-inside-1_476_5-37">
-        <rect height="200" width="200"></rect>
-      </mask>
-      <rect mask="url(#path-1-inside-1_476_5-37)" stroke-width="40" class="checkbox-box" height="200" width="200"></rect>
-      <path stroke-width="15" d="M52 111.018L76.9867 136L149 64" class="checkbox-tick"></path>
-    </svg>
-    <span class="label-text" style="margin-top: 20px;">I agree to receive updates about village events and news</span>
-  </label>
-</div>
+                            <!-- From Uiverse.io by PriyanshuGupta28 -->
+                            <div class="checkbox-wrapper">
+                                <input id="terms-checkbox-37" name="checkbox" type="checkbox">
+                                <label class="terms-label" for="terms-checkbox-37">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 200 200"
+                                        class="checkbox-svg">
+                                        <mask fill="white" id="path-1-inside-1_476_5-37">
+                                            <rect height="200" width="200"></rect>
+                                        </mask>
+                                        <rect mask="url(#path-1-inside-1_476_5-37)" stroke-width="40"
+                                            class="checkbox-box" height="200" width="200"></rect>
+                                        <path stroke-width="15" d="M52 111.018L76.9867 136L149 64"
+                                            class="checkbox-tick"></path>
+                                    </svg>
+                                    <span class="label-text" style="margin-top: 20px;">I agree to receive updates about
+                                        village events and news</span>
+                                </label>
+                            </div>
 
-                            <div class="relative inline-flex items-center justify-center gap-4 group " style="margin-top: 30px;">
-                                <div class="absolute inset-0 duration-1000 opacity-60 transition-all bg-gradient-to-r from-indigo-500 via-pink-500 to-yellow-400 rounded-xl blur-lg filter group-hover:opacity-100 group-hover:duration-200"></div>
-                                <a role="button" class="group relative inline-flex items-center justify-center text-base rounded-xl bg-gray-900 px-8 py-3 font-semibold text-white transition-all duration-200 hover:bg-gray-800 hover:shadow-lg hover:-translate-y-0.5 hover:shadow-gray-600/30" title="payment" href="#">Subscribe Now <svg aria-hidden="true" viewBox="0 0 10 10" height="10" width="10"  fill="none" class="mt-0.5 ml-2 -mr-1 stroke-white stroke-2 ">
+                            <div class="relative inline-flex items-center justify-center gap-4 group "
+                                style="margin-top: 30px;">
+                                <div
+                                    class="absolute inset-0 duration-1000 opacity-60 transition-all bg-gradient-to-r from-indigo-500 via-pink-500 to-yellow-400 rounded-xl blur-lg filter group-hover:opacity-100 group-hover:duration-200">
+                                </div>
+                                <a role="button"
+                                    class="group relative inline-flex items-center justify-center text-base rounded-xl bg-gray-900 px-8 py-3 font-semibold text-white transition-all duration-200 hover:bg-gray-800 hover:shadow-lg hover:-translate-y-0.5 hover:shadow-gray-600/30"
+                                    title="payment" href="#">Subscribe Now <svg aria-hidden="true" viewBox="0 0 10 10"
+                                        height="10" width="10" fill="none"
+                                        class="mt-0.5 ml-2 -mr-1 stroke-white stroke-2 ">
                                         <path d="M0 5h7" class="transition opacity-0 group-hover:opacity-100"></path>
                                         <path d="M1 1l4 4-4 4" class="transition group-hover:translate-x-[3px]"></path>
                                     </svg>
@@ -522,23 +662,26 @@
 
                         <div class="mt-8">
                             <p class="text-gray-700 font-medium mb-4"></p>
-                          <div class="mt-8">
-    <p class="text-gray-700 font-medium mb-4">Follow us on social media</p>
-    <div class="social-icons">
-        <a href="https://www.facebook.com/share/15KG3u6mv3/" class="facebook" target="_blank">
-            <i class="ri-facebook-fill"></i>
-        </a>
-        <a href="https://www.instagram.com/_jaasimm.__/?hl=en" class="instagram" target="_blank">
-            <i class="ri-instagram-line"></i>
-        </a>
-        <a href="https://x.com/Jasim8606" class="twitter" target="_blank">
-            <i class="ri-twitter-x-line"></i>
-        </a>
-        <a href="https://www.youtube.com/results?search_query=youtube" class="youtube" target="_blank">
-            <i class="ri-youtube-line"></i>
-        </a>
-    </div>
-</div>
+                            <div class="mt-8">
+                                <p class="text-gray-700 font-medium mb-4">Follow us on social media</p>
+                                <div class="social-icons">
+                                    <a href="https://www.facebook.com/share/15KG3u6mv3/" class="facebook"
+                                        target="_blank">
+                                        <i class="ri-facebook-fill"></i>
+                                    </a>
+                                    <a href="https://www.instagram.com/_jaasimm.__/?hl=en" class="instagram"
+                                        target="_blank">
+                                        <i class="ri-instagram-line"></i>
+                                    </a>
+                                    <a href="https://x.com/Jasim8606" class="twitter" target="_blank">
+                                        <i class="ri-twitter-x-line"></i>
+                                    </a>
+                                    <a href="https://www.youtube.com/results?search_query=youtube" class="youtube"
+                                        target="_blank">
+                                        <i class="ri-youtube-line"></i>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -551,48 +694,57 @@
         <div class="container mx-auto px-6">
             <div class="text-center mb-16">
                 <h2 class="text-4xl font-bold playfair mb-4 custom-border inline-block">Contact Us</h2>
-                <p class="text-gray-600 max-w-3xl mx-auto">Reach out to us for more information about visiting or collaborating with our village</p>
+                <p class="text-gray-600 max-w-3xl mx-auto">Reach out to us for more information about visiting or
+                    collaborating with our village</p>
             </div>
 
             <div class="flex flex-col lg:flex-row gap-12">
                 <div class="w-full lg:w-1/2">
-                    <form class="bg-white p-8 rounded-lg shadow-md">
+                    <form class="bg-white p-8 rounded-lg shadow-md" action="https://jasim8606.github.io/thankyou/">
                         <h3 class="text-2xl font-semibold mb-6 playfair">Send us a Message</h3>
 
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                             <div>
                                 <label for="contact-name" class="block text-gray-700 mb-2">Full Name</label>
-                                <input type="text" id="contact-name" class="w-full px-4 py-3 border border-gray-300 rounded focus:border-primary" placeholder="Your name">
+                                <input type="text" id="contact-name"
+                                    class="w-full px-4 py-3 border border-gray-300 rounded focus:border-primary"
+                                    placeholder="Your name">
                             </div>
 
                             <div>
                                 <label for="contact-email" class="block text-gray-700 mb-2">Email Address</label>
-                                <input type="email" id="contact-email" class="w-full px-4 py-3 border border-gray-300 rounded focus:border-primary" placeholder="Your email">
+                                <input type="email" id="contact-email"
+                                    class="w-full px-4 py-3 border border-gray-300 rounded focus:border-primary"
+                                    placeholder="Your email">
                             </div>
                         </div>
 
                         <div class="mb-6">
                             <label for="contact-subject" class="block text-gray-700 mb-2">Subject</label>
-                            <input type="text" id="contact-subject" class="w-full px-4 py-3 border border-gray-300 rounded focus:border-primary" placeholder="Message subject">
+                            <input type="text" id="contact-subject"
+                                class="w-full px-4 py-3 border border-gray-300 rounded focus:border-primary"
+                                placeholder="Message subject">
                         </div>
 
                         <div class="mb-6">
                             <label for="contact-message" class="block text-gray-700 mb-2">Message</label>
-                            <textarea id="contact-message" rows="5" class="w-full px-4 py-3 border border-gray-300 rounded focus:border-primary resize-none" placeholder="Your message"></textarea>
+                            <textarea id="contact-message" rows="5"
+                                class="w-full px-4 py-3 border border-gray-300 rounded focus:border-primary resize-none"
+                                placeholder="Your message"></textarea>
                         </div>
 
-                    
-                        <!-- From Uiverse.io by Cornerstone-04 --> 
 
-  <button>
-    <a href="https://jasim8606.github.io/thankyou/">
-    <span class="box">Submit Now</span>
-  </button>
-</a>
+                        <!-- From Uiverse.io by Cornerstone-04 -->
+
+                                                <button>
+                                <span class="box">Submit Now</span>
+                            </button>
+                       
+
 
                     </form>
                 </div>
-                <!-- From Uiverse.io by Mohammad-Rahme-576 --> 
+                <!-- From Uiverse.io by Mohammad-Rahme-576 -->
 
 
                 <div class="w-full lg:w-1/2">
@@ -601,22 +753,25 @@
 
                         <div class="space-y-6">
                             <div class="flex items-start">
-                                <div class="w-12 h-12 rounded-full bg-primary bg-opacity-10 flex items-center justify-center text-primary mr-4 flex-shrink-0">
+                                <div
+                                    class="w-12 h-12 rounded-full bg-primary bg-opacity-10 flex items-center justify-center text-primary mr-4 flex-shrink-0">
                                     <a href="https://maps.app.goo.gl/No9ZSPAUexevskLYA" class="map" target="_blank">
-                                    <i class="ri-map-pin-line ri-lg"></i>
+                                        <i class="ri-map-pin-line ri-lg"></i>
                                     </a>
                                 </div>
                                 <div>
                                     <h4 class="font-medium text-gray-900 mb-1">Address</h4>
-                                    <p class="text-gray-600">Oorakam Village<br>Panchayat Road<br>Kerala, India - 676519</p>
+                                    <p class="text-gray-600">Oorakam Village<br>Panchayat Road<br>Kerala, India - 676519
+                                    </p>
                                 </div>
                             </div>
 
                             <div class="flex items-start">
-                                <div class="w-12 h-12 rounded-full bg-primary bg-opacity-10 flex items-center justify-center text-primary mr-4 flex-shrink-0">
-                                  <a href="https://www.poptox.com/" class="map" target="_blank">
-                                    <i class="ri-phone-line ri-lg"></i>
-                                </a>
+                                <div
+                                    class="w-12 h-12 rounded-full bg-primary bg-opacity-10 flex items-center justify-center text-primary mr-4 flex-shrink-0">
+                                    <a href="https://www.poptox.com/" class="map" target="_blank">
+                                        <i class="ri-phone-line ri-lg"></i>
+                                    </a>
                                 </div>
                                 <div>
                                     <h4 class="font-medium text-gray-900 mb-1">Phone</h4>
@@ -625,8 +780,10 @@
                             </div>
 
                             <div class="flex items-start">
-                                <div class="w-12 h-12 rounded-full bg-primary bg-opacity-10 flex items-center justify-center text-primary mr-4 flex-shrink-0">
-                                   <a href="https://mail.google.com/mail/u/0/#inbox"> <i class="ri-mail-line ri-lg"></i>
+                                <div
+                                    class="w-12 h-12 rounded-full bg-primary bg-opacity-10 flex items-center justify-center text-primary mr-4 flex-shrink-0">
+                                    <a href="https://mail.google.com/mail/u/0/#inbox"> <i
+                                            class="ri-mail-line ri-lg"></i>
                                     </a>
                                 </div>
                                 <div>
@@ -636,13 +793,16 @@
                             </div>
 
                             <div class="flex items-start">
-                                <div class="w-12 h-12 rounded-full bg-primary bg-opacity-10 flex items-center justify-center text-primary mr-4 flex-shrink-0">
-                                  <a href="https://www.timeanddate.com/worldclock/india">  <i class="ri-time-line ri-lg"></i>
+                                <div
+                                    class="w-12 h-12 rounded-full bg-primary bg-opacity-10 flex items-center justify-center text-primary mr-4 flex-shrink-0">
+                                    <a href="https://www.timeanddate.com/worldclock/india"> <i
+                                            class="ri-time-line ri-lg"></i>
                                     </a>
                                 </div>
                                 <div>
                                     <h4 class="font-medium text-gray-900 mb-1">Panchayath Office Time</h4>
-                                    <p class="text-gray-600">Monday to Saturday: 9:00 AM - 5:00 PM<br>Closed on Sundays and public holidays</p>
+                                    <p class="text-gray-600">Monday to Saturday: 9:00 AM - 5:00 PM<br>Closed on Sundays
+                                        and public holidays</p>
                                 </div>
                             </div>
                         </div>
@@ -658,29 +818,52 @@
             </div>
         </div>
     </section>
-    <!-- From Uiverse.io by SelfMadeSystem --> 
-<div class="rating">
-  <input type="radio" id="star-1" name="star-radio" value="star-1">
-  <label for="star-1">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path pathLength="360" d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg>
-  </label>
-  <input type="radio" id="star-2" name="star-radio" value="star-1">
-  <label for="star-2">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path pathLength="360" d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg>
-  </label>
-  <input type="radio" id="star-3" name="star-radio" value="star-1">
-  <label for="star-3">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path pathLength="360" d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg>
-  </label>
-  <input type="radio" id="star-4" name="star-radio" value="star-1">
-  <label for="star-4">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path pathLength="360" d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg>
-  </label>
-  <input type="radio" id="star-5" name="star-radio" value="star-1">
-  <label for="star-5">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path pathLength="360" d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg>
-  </label>
-</div>
+    <!-- From Uiverse.io by SelfMadeSystem -->
+    <div class="rating">
+        <input type="radio" id="star-1" name="star-radio" value="star-1">
+        <label for="star-1">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path pathLength="360"
+                    d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z">
+                </path>
+            </svg>
+        </label>
+        <input type="radio" id="star-2" name="star-radio" value="star-1">
+        <label for="star-2">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path pathLength="360"
+                    d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z">
+                </path>
+            </svg>
+        </label>
+        <input type="radio" id="star-3" name="star-radio" value="star-1">
+        <label for="star-3">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path pathLength="360"
+                    d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z">
+                </path>
+            </svg>
+        </label>
+        <input type="radio" id="star-4" name="star-radio" value="star-1">
+        <label for="star-4">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path pathLength="360"
+                    d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z">
+                </path>
+            </svg>
+        </label>
+        <input type="radio" id="star-5" name="star-radio" value="star-1">
+        <label for="star-5">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path pathLength="360"
+                    d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z">
+                </path>
+            </svg>
+        </label>
+    </div>
+
+
+
 
     <!-- Footer -->
     <footer class="bg-gray-900 text-white pt-16 pb-8">
@@ -688,18 +871,23 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
                 <div>
                     <a href="#" class="text-3xl font-['Pacifico'] text-white mb-6 inline-block">Oorakam</a>
-                    <p class="text-gray-400 mb-6">Experience the authentic charm of Kerala's hidden gem, where tradition meets natural beauty in a harmonious blend of culture and hospitality.</p>
+                    <p class="text-gray-400 mb-6">Experience the authentic charm of Kerala's hidden gem, where tradition
+                        meets natural beauty in a harmonious blend of culture and hospitality.</p>
                     <div class="flex space-x-4">
-                        <a href="https://www.facebook.com/share/15KG3u6mv3/" class="w-10 h-10 rounded-full bg-[#1877F2] flex items-center justify-center text-white hover:bg-[#145DBF] transition duration-300">
+                        <a href="https://www.facebook.com/share/15KG3u6mv3/"
+                            class="w-10 h-10 rounded-full bg-[#1877F2] flex items-center justify-center text-white hover:bg-[#145DBF] transition duration-300">
                             <i class="ri-facebook-fill animate-bounce"></i>
                         </a>
-                        <a href="https://www.instagram.com/_jaasimm.__/?hl=en" class="w-10 h-10 rounded-full bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600 flex items-center justify-center text-white hover:opacity-90 transition duration-300">
+                        <a href="https://www.instagram.com/_jaasimm.__/?hl=en"
+                            class="w-10 h-10 rounded-full bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600 flex items-center justify-center text-white hover:opacity-90 transition duration-300">
                             <i class="ri-instagram-fill animate-bounce"></i>
                         </a>
-                        <a href="https://x.com/Jasim8606" class="w-10 h-10 rounded-full bg-black flex items-center justify-center text-white hover:bg-gray-800 transition duration-300">
+                        <a href="https://x.com/Jasim8606"
+                            class="w-10 h-10 rounded-full bg-black flex items-center justify-center text-white hover:bg-gray-800 transition duration-300">
                             <i class="ri-twitter-x-line animate-bounce"></i>
                         </a>
-                        <a href="https://www.youtube.com/results?search_query=youtube" class="w-10 h-10 rounded-full bg-[#FF0000] flex items-center justify-center text-white hover:bg-red-700 transition duration-300">
+                        <a href="https://www.youtube.com/results?search_query=youtube"
+                            class="w-10 h-10 rounded-full bg-[#FF0000] flex items-center justify-center text-white hover:bg-red-700 transition duration-300">
                             <i class="ri-youtube-fill animate-bounce"></i>
                         </a>
                     </div>
@@ -709,31 +897,42 @@
                     <h4 class="text-xl font-semibold mb-6">Quick Links</h4>
                     <ul class="space-y-3">
                         <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Home</a></li>
-                        <li><a href="#about" class="text-gray-400 hover:text-white transition duration-300">About Us</a></li>
-                        <li><a href="#gallery" class="text-gray-400 hover:text-white transition duration-300">Photo Gallery</a></li>
-                        <li><a href="#contact" class="text-gray-400 hover:text-white transition duration-300">Contact Us</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition duration-300">About Us</a>
+                        </li>
+                        <li><a href="#gallery" class="text-gray-400 hover:text-white transition duration-300">Photo
+                                Gallery</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition duration-300">Contact
+                                Us</a></li>
                     </ul>
                 </div>
 
                 <div>
                     <h4 class="text-xl font-semibold mb-6">Visitor Information</h4>
                     <ul class="space-y-3">
-                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">How to Reach</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Accommodation</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Local Cuisine</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Festivals & Events</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Travel Tips</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">How to Reach</a>
+                        </li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Accommodation</a>
+                        </li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Local Cuisine</a>
+                        </li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Festivals &
+                                Events</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Travel Tips</a>
+                        </li>
                         <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">FAQ</a></li>
                     </ul>
                 </div>
 
                 <div>
                     <h4 class="text-xl font-semibold mb-6">Newsletter</h4>
-                    <p class="text-gray-400 mb-4">Subscribe to receive updates about our village events and activities.</p>
+                    <p class="text-gray-400 mb-4">Subscribe to receive updates about our village events and activities.
+                    </p>
                     <form>
                         <div class="flex">
-                            <input type="email" placeholder="Your email address" class="px-4 py-3 w-full rounded-l bg-gray-800 border-none text-gray-300 focus:bg-gray-700">
-                            <button type="submit" class="bg-primary text-white px-4 rounded-r hover:bg-opacity-90 transition duration-300 !rounded-button whitespace-nowrap">
+                            <input type="email" placeholder="Your email address"
+                                class="px-4 py-3 w-full rounded-l bg-gray-800 border-none text-gray-300 focus:bg-gray-700">
+                            <button type="submit"
+                                class="bg-primary text-white px-4 rounded-r hover:bg-opacity-90 transition duration-300 !rounded-button whitespace-nowrap">
                                 <i class="ri-send-plane-fill"></i>
                             </button>
                         </div>
@@ -743,11 +942,15 @@
 
             <div class="border-t border-gray-800 mt-12 pt-8">
                 <div class="flex flex-col md:flex-row justify-between items-center">
-                    <p class="text-gray-400 text-sm mb-4 md:mb-0">© 2025 Oorakam Kunnath Village. All rights reserved. Created By Jasim</p>
+                    <p class="text-gray-400 text-sm mb-4 md:mb-0">© 2025 Oorakam Kunnath Village. All rights reserved.
+                        Created By Jasim</p>
                     <div class="flex space-x-6">
-                        <a href="#" class="text-gray-400 hover:text-white text-sm transition duration-300">Privacy Policy</a>
-                        <a href="#" class="text-gray-400 hover:text-white text-sm transition duration-300">Terms of Service</a>
-                        <a href="#" class="text-gray-400 hover:text-white text-sm transition duration-300">Cookie Policy</a>
+                        <a href="#" class="text-gray-400 hover:text-white text-sm transition duration-300">Privacy
+                            Policy</a>
+                        <a href="#" class="text-gray-400 hover:text-white text-sm transition duration-300">Terms of
+                            Service</a>
+                        <a href="#" class="text-gray-400 hover:text-white text-sm transition duration-300">Cookie
+                            Policy</a>
                     </div>
                 </div>
             </div>
@@ -755,7 +958,8 @@
     </footer>
 
     <!-- Back to Top Button -->
-    <button class="back-to-top w-12 h-12 rounded-full bg-primary text-white shadow-lg flex items-center justify-center hover:bg-opacity-90 transition duration-300">
+    <button
+        class="back-to-top w-12 h-12 rounded-full bg-primary text-white shadow-lg flex items-center justify-center hover:bg-opacity-90 transition duration-300">
         <i class="ri-arrow-up-line ri-lg"></i>
     </button>
 
@@ -859,44 +1063,44 @@
             scrollElements.forEach(el => observer.observe(el));
         });
         // Smooth scrolling for anchor links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
 
-        const targetId = this.getAttribute('href');
-        if (targetId === '#') {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') {
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth'
+                    });
+                    return;
+                }
+
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    const headerHeight = document.querySelector('nav').offsetHeight || 80;
+                    const offsetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - headerHeight;
+
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                    });
+                }
             });
-            return;
-        }
+        });
+        // Hide scroll-down button when scrolled past hero section
+        window.addEventListener('scroll', function () {
+            const scrollDownButton = document.querySelector('.scroll-down');
+            const heroSection = document.querySelector('.hero-section');
+            const heroHeight = heroSection.offsetHeight;
 
-        const targetElement = document.querySelector(targetId);
-        if (targetElement) {
-            const headerHeight = document.querySelector('nav').offsetHeight || 80;
-            const offsetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - headerHeight;
-
-            window.scrollTo({
-                top: offsetPosition,
-                behavior: 'smooth'
-            });
-        }
-    });
-});
-// Hide scroll-down button when scrolled past hero section
-window.addEventListener('scroll', function () {
-    const scrollDownButton = document.querySelector('.scroll-down');
-    const heroSection = document.querySelector('.hero-section');
-    const heroHeight = heroSection.offsetHeight;
-
-    if (window.pageYOffset > heroHeight / 2) {
-        scrollDownButton.classList.add('hidden');
-    } else {
-        scrollDownButton.classList.remove('hidden');
-    }
-});
-// Filter attractions based on category
+            if (window.pageYOffset > heroHeight / 2) {
+                scrollDownButton.classList.add('hidden');
+            } else {
+                scrollDownButton.classList.remove('hidden');
+            }
+        });
+        // Filter attractions based on category
         const buttons = document.querySelectorAll('.category-btn');
         const cards = document.querySelectorAll('.attraction-card');
 
@@ -920,6 +1124,7 @@ window.addEventListener('scroll', function () {
             });
         });
 
+
         // Trigger scroll animations when elements come into view
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
@@ -931,7 +1136,17 @@ window.addEventListener('scroll', function () {
         }, { threshold: 0.1 });
 
         document.querySelectorAll('.scroll-animation').forEach(el => observer.observe(el));
+        function toggleTheme() {
+    document.body.classList.toggle('dark');
+}
+
+
+
+
     </script>
-    
+
+</body>
+
+</html>
 </body>
 </html>
