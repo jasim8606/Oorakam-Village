@@ -1,1065 +1,1174 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <!DOCTYPE html>
-<html lang="en">
+    <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oorakam Kunnath Village</title>
-    <link rel="stylesheet" href="index.css">
-    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        primary: '#2E7D32',
-                        secondary: '#F9A825'
-                    },
-                    borderRadius: {
-                        'none': '0px',
-                        'sm': '4px',
-                        DEFAULT: '8px',
-                        'md': '12px',
-                        'lg': '16px',
-                        'xl': '20px',
-                        '2xl': '24px',
-                        '3xl': '32px',
-                        'full': '9999px',
-                        'button': '8px'
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Oorakam Kunnath Village</title>
+        <link rel="stylesheet" href="index.css">
+        <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap"
+            rel="stylesheet">
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        colors: {
+                            primary: '#2E7D32',
+                            secondary: '#F9A825'
+                        },
+                        borderRadius: {
+                            'none': '0px',
+                            'sm': '4px',
+                            DEFAULT: '8px',
+                            'md': '12px',
+                            'lg': '16px',
+                            'xl': '20px',
+                            '2xl': '24px',
+                            '3xl': '32px',
+                            'full': '9999px',
+                            'button': '8px'
+                        }
                     }
                 }
             }
-        }
-    </script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.5.0/echarts.min.js"></script>
-    <style>
+        </script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.5.0/echarts.min.js"></script>
+        <style>
 
 
-    </style>
+        </style>
 
-</head>
+    </head>
 
-<body>
+    <body>
 
 
-    <!-- Scroll Down Button -->
-    <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
-        <a href="#about"
-            class="scroll-down flex flex-col items-center text-white hover:text-secondary transition duration-300">
-            <span class="text-sm font-medium mb-2">Scroll Down</span>
-            <i class="ri-arrow-down-s-line ri-2x animate-bounce"></i>
-        </a>
-    </div>
-    <!-- Header Section -->
-    <header class="hero-section relative">
-        <div class="hero-overlay absolute inset-0"></div>
-
-      <!-- Navigation -->
-<nav class="fixed top-0 left-0 w-full z-50 px-6 py-4 flex justify-between items-center bg-transparent">
-    <a href="#" class="text-white text-3xl font-['Pacifico']">Oorakam</a>
-    
-    <div class="hidden md:flex items-center space-x-8">
-        <a href="#" class="nav-link text-white hover:text-secondary">Home</a>
-        <a href="#about" class="nav-link text-white hover:text-secondary">About</a>
-        <a href="#gallery" class="nav-link text-white hover:text-secondary">Gallery</a>
-        <a href="#contact" class="nav-link text-white hover:text-secondary">Contact</a>
-    </div>
-
-    <div class="flex items-center space-x-4">
-        <button class="md:hidden w-10 h-10 flex items-center justify-center text-white">
-            <i class="ri-menu-line ri-lg"></i>
-        </button>
-        <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
-            <!-- Sun Icon -->
-            <svg class="sun-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <circle cx="12" cy="12" r="5"></circle>
-                <line x1="12" y1="1" x2="12" y2="3"></line>
-                <line x1="12" y1="21" x2="12" y2="23"></line>
-                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                <line x1="1" y1="12" x2="3" y2="12"></line>
-                <line x1="21" y1="12" x2="23" y2="12"></line>
-                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-            </svg>
-            <!-- Moon Icon -->
-            <svg class="moon-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-            </svg>
-        </button>
-    </div>
-</nav>
-
-        <!-- Hero Content -->
-        <div class="container mx-auto px-6 relative z-10 h-4/5 flex items-center">
-            <div class="max-w-2xl">
-                <h1 class="text-5xl md:text-6xl lg:text-7xl text-white font-bold playfair mb-4">Oorakam Kunnath Village
-                </h1>
-                <p class="text-xl text-white opacity-90 mb-8">Experience the authentic charm of Kerala's hidden gem,
-                    where tradition meets natural beauty.</p>
-            </div>
+        <!-- Scroll Down Button -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
+            <a href="#about"
+                class="scroll-down flex flex-col items-center text-white hover:text-secondary transition duration-300">
+                <span class="text-sm font-medium mb-2">Scroll Down</span>
+                <i class="ri-arrow-down-s-line ri-2x animate-bounce"></i>
+            </a>
         </div>
-    </header>
+        <!-- Header Section -->
+        <header class="hero-section relative">
+            <div class="hero-overlay absolute inset-0"></div>
 
-    <!-- About Section -->
-    <section id="about" class="py-20 relative overflow-hidden scroll-animation fadeInUp">
-        <div class="kerala-pattern absolute inset-0"></div>
-        <div class="container mx-auto px-6 relative z-10">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold playfair mb-4 custom-border inline-block">About Our Village</h2>
-                <p class="text-gray-600 max-w-3xl mx-auto">Discover the rich heritage and natural splendor of Oorakam
-                    Kunnath</p>
+            <!-- Navigation -->
+            <nav class="fixed top-0 left-0 w-full z-50 px-6 py-4 flex justify-between items-center bg-transparent">
+                <a href="#" class="text-white text-3xl font-['Pacifico']">Oorakam</a>
+
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#" class="nav-link text-white hover:text-secondary">Home</a>
+                    <a href="#about" class="nav-link text-white hover:text-secondary">About</a>
+                    <a href="#gallery" class="nav-link text-white hover:text-secondary">Gallery</a>
+                    <a href="#contact" class="nav-link text-white hover:text-secondary">Contact</a>
+                </div>
+
+                <div class="flex items-center space-x-4">
+                    <button class="md:hidden w-10 h-10 flex items-center justify-center text-white">
+                        <i class="ri-menu-line ri-lg"></i>
+                    </button>
+                    <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
+                        <!-- Sun Icon -->
+                        <svg class="sun-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="5"></circle>
+                            <line x1="12" y1="1" x2="12" y2="3"></line>
+                            <line x1="12" y1="21" x2="12" y2="23"></line>
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                            <line x1="1" y1="12" x2="3" y2="12"></line>
+                            <line x1="21" y1="12" x2="23" y2="12"></line>
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                        </svg>
+                        <!-- Moon Icon -->
+                        <svg class="moon-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                        </svg>
+                    </button>
+                </div>
+            </nav>
+
+            <!-- Hero Content -->
+            <div class="container mx-auto px-6 relative z-10 h-4/5 flex items-center">
+                <div class="max-w-2xl">
+                    <h1 class="text-5xl md:text-6xl lg:text-7xl text-white font-bold playfair mb-4">Oorakam Kunnath
+                        Village
+                    </h1>
+                    <p class="text-xl text-white opacity-90 mb-8">Experience the authentic charm of Kerala's hidden gem,
+                        where tradition meets natural beauty.</p>
+                </div>
             </div>
+        </header>
 
-            <div class="flex flex-col md:flex-row items-center gap-12">
-                <div class="w-full md:w-1/2">
-                    <div class="rounded-lg overflow-hidden shadow-xl">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Oorakam_or_Arimbramala.jpg"
-                            alt="Oorakam Kunnath Village" class="w-full h-auto object-cover">
-                    </div>
+        <!-- About Section -->
+        <section id="about" class="py-20 relative overflow-hidden scroll-animation fadeInUp">
+            <div class="kerala-pattern absolute inset-0"></div>
+            <div class="container mx-auto px-6 relative z-10">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold playfair mb-4 custom-border inline-block">About Our Village</h2>
+                    <p class="text-gray-600 max-w-3xl mx-auto">Discover the rich heritage and natural splendor of
+                        Oorakam
+                        Kunnath</p>
                 </div>
 
-                <div class="w-full md:w-1/2">
-                    <h3 class="text-2xl font-semibold mb-4 playfair">A Timeless Heritage</h3>
-                    <p class="text-gray-700 mb-6">Nestled in the heart of Kerala, Oorakam Kunnath Village has stood as a
-                        testament to the rich cultural heritage of God's Own Country for centuries. Founded in the early
-                        1800s, our village has preserved its traditional charm while embracing sustainable progress.</p>
-
-                    <p class="text-gray-700 mb-8">The village derives its name from "Oorakam" meaning "heart of the
-                        settlement" and "Kunnath" referring to the hillside location, perfectly capturing our
-                        geographical and cultural significance in the region.</p>
-
-                    <div class="grid grid-cols-2 gap-6">
-                        <div class="bg-white p-5 rounded shadow-md border-l-4 border-primary">
-                            <h4 class="font-semibold text-lg mb-2">Population</h4>
-                            <p class="text-gray-600">2240 residents with 118 families</p>
-                        </div>
-                        <div class="bg-white p-5 rounded shadow-md border-l-4 border-primary">
-                            <h4 class="font-semibold text-lg mb-2">Established</h4>
-                            <p class="text-gray-600">Early 19th century</p>
-                        </div>
-                        <div class="bg-white p-5 rounded shadow-md border-l-4 border-primary">
-                            <h4 class="font-semibold text-lg mb-2">Main Occupation</h4>
-                            <p class="text-gray-600">Agriculture, tourism</p>
-                        </div>
-                        <div class="bg-white p-5 rounded shadow-md border-l-4 border-primary">
-                            <h4 class="font-semibold text-lg mb-2">Known For</h4>
-                            <p class="text-gray-600">Temple festivals</p>
+                <div class="flex flex-col md:flex-row items-center gap-12">
+                    <div class="w-full md:w-1/2">
+                        <div class="rounded-lg overflow-hidden shadow-xl">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Oorakam_or_Arimbramala.jpg"
+                                alt="Oorakam Kunnath Village" class="w-full h-auto object-cover">
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Village Highlights -->
-    <section class="py-20 bg-gray-50">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-16 scroll-animation fadeInUp">
-                <h2 class="text-4xl font-bold playfair mb-4 custom-border inline-block">Village Highlights</h2>
-                <p class="text-gray-600 max-w-3xl mx-auto">I love those connections that make this big old world feel
-                    like a little village...</p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <div
-                    class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 scroll-animation slideInLeft delay-1">
-                    <div class="h-56 overflow-hidden">
-
-                        <a href="https://maps.app.goo.gl/fb96gf1TjE38bpBy7"><img src="https://files.yappe.in/place/small/pulikkaparambu-juma-masjid-9292728.webp" 
-                            alt="Traditional Dance" class="w-full h-full object-cover"></a>
-
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-3 playfair">Oorakam JumaMasjid</h3>
-                        <p class="text-gray-600">I love you when you bow in your mosque, kneel in your temple, pray in
-                            your church. For you and I are sons of one religion, and it is the spirit.</p>
-                    </div>
-                </div>
-
-                <div
-                    class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 scroll-animation slideInLeft delay-2">
-                    <div class="h-56 overflow-hidden">
-                      <a href="https://maps.app.goo.gl/MZQJKtNHC4ojQHP16"> <img src="https://www.infobharath.com/temples/uploads/61f23221f34f3.jpg" alt="Temple Festivals"
-                            class="w-full h-full object-cover"></a> 
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-3 playfair">Temple</h3>
-                        <p class="text-gray-600">The annual Pooram festival at Sri Ammancherikkavu Temple attracts
-                            visitors from across Kerala with its procession of decorated elephants and traditional
-                            percussion ensembles.</p>
-                    </div>
-                </div>
-
-                <div
-                    class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 scroll-animation slideInLeft delay-3">
-                    <div class="h-56 overflow-hidden">
-                        <a href="https://maps.app.goo.gl/BaENhMHTN3VqtJBi8"><img src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4nrB32qzjJQROV_kts_Ze-TmDjW6CbQOZcIZHXKXy9EEsOujIkp2my21YeCivlZnp0-ClqYvDOKDWkbIAhJUaWLjhH4uYoOSk_Q-zvcXXKQ-YkLnzgLiddvWHPTM3VdSAvPkVeHP=s680-w680-h510-rw"
-                            alt="Handloom Weaving" class="w-full h-full object-cover"></a>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-3 playfair">Ajmal Bismi</h3>
-                        <p class="text-gray-600">You can tell a lot about a country by what’s in its supermarket.</p>
-                    </div>
-                </div>
-
-                <div
-                    class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 scroll-animation slideInLeft delay-4">
-                    <div class="h-56 overflow-hidden">
-                       <a href="https://maps.app.goo.gl/QtvGbiM7zHdpzg4m6"> <img src="https://content.jdmagicbox.com/comp/malappuram/p6/9999px483.x483.180827104126.z1p6/catalogue/paloor-kotta-waterfall-palachode-malappuram-k80h8eitwq.jpg"
-                            alt="Traditional Cuisine" class="w-full h-full object-cover"></a>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-3 playfair">Waterfall</h3>
-                        <p class="text-gray-600">Surrender to the flow. Go with the flow. Run wild and free like a
-                            waterfall. Every teardrop is a waterfall. Just let go – and fall like a little waterfall.
+                    <div class="w-full md:w-1/2">
+                        <h3 class="text-2xl font-semibold mb-4 playfair">A Timeless Heritage</h3>
+                        <p class="text-gray-700 mb-6">Nestled in the heart of Kerala, Oorakam Kunnath Village has stood
+                            as a
+                            testament to the rich cultural heritage of God's Own Country for centuries. Founded in the
+                            early
+                            1800s, our village has preserved its traditional charm while embracing sustainable progress.
                         </p>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Village Attractions -->
-    <section class="py-20 relative overflow-hidden">
-        <div class="kerala-pattern absolute inset-0"></div>
-        <div class="container mx-auto px-6 relative z-10">
-            <div class="text-center mb-16 scroll-animation fadeInUp">
-                <h2 class="text-4xl font-bold playfair mb-4 custom-border inline-block">Village Attractions</h2>
-                <p class="text-gray-600 max-w-3xl mx-auto">Explore the natural and cultural wonders of Oorakam</p>
-            </div>
+                        <p class="text-gray-700 mb-8">The village derives its name from "Oorakam" meaning "heart of the
+                            settlement" and "Kunnath" referring to the hillside location, perfectly capturing our
+                            geographical and cultural significance in the region.</p>
 
-            <!-- Attraction Categories -->
-            <div class="flex justify-center mb-12 scroll-animation fadeInUp delay-1">
-                <div class="inline-flex bg-gray-100 p-1 rounded-full">
-                    <button
-                        class="category-btn px-6 py-2 rounded-full bg-primary text-white !rounded-button whitespace-nowrap active-category"
-                        data-category="all">All Attractions</button>
-                    <button
-                        class="category-btn px-6 py-2 rounded-full text-gray-700 hover:bg-gray-200 !rounded-button whitespace-nowrap"
-                        data-category="natural">Natural Sites</button>
-                    <button
-                        class="category-btn px-6 py-2 rounded-full text-gray-700 hover:bg-gray-200 !rounded-button whitespace-nowrap"
-                        data-category="heritage">Heritage</button>
-                    <button
-                        class="category-btn px-6 py-2 rounded-full text-gray-700 hover:bg-gray-200 !rounded-button whitespace-nowrap"
-                        data-category="activities">Activities</button>
-                </div>
-            </div>
-
-            <!-- Attractions Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="attractions-grid">
-                <div class="attraction-card bg-white rounded-lg overflow-hidden shadow-md scroll-animation slideInLeft delay-1"
-                    data-category="natural">
-                    <div class="h-64 overflow-hidden"> <a href="https://maps.app.goo.gl/4TKJsigAEQDY82tLA">
-                            <img src="https://www.touristplaces.net.in/images/pp/5/p104578.jpg" alt="Oorakam River"
-                                class="w-full h-full object-cover">
-                        </a>
+                        <div class="grid grid-cols-2 gap-6">
+                            <div class="bg-white p-5 rounded shadow-md border-l-4 border-primary">
+                                <h4 class="font-semibold text-lg mb-2">Population</h4>
+                                <p class="text-gray-600">2240 residents with 118 families</p>
+                            </div>
+                            <div class="bg-white p-5 rounded shadow-md border-l-4 border-primary">
+                                <h4 class="font-semibold text-lg mb-2">Established</h4>
+                                <p class="text-gray-600">Early 19th century</p>
+                            </div>
+                            <div class="bg-white p-5 rounded shadow-md border-l-4 border-primary">
+                                <h4 class="font-semibold text-lg mb-2">Main Occupation</h4>
+                                <p class="text-gray-600">Agriculture, tourism</p>
+                            </div>
+                            <div class="bg-white p-5 rounded shadow-md border-l-4 border-primary">
+                                <h4 class="font-semibold text-lg mb-2">Known For</h4>
+                                <p class="text-gray-600">Temple festivals</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-2 playfair">Oorakam River</h3>
-                        <p class="text-gray-600 mb-4">Life is like the river, sometimes it sweeps you gently along and
-                            sometimes the rapids come out of nowhere.</p>
-                        <div class="flex items-center text-sm text-gray-500">
-                            <span class="w-5 h-5 flex items-center justify-center mr-2">
-                                <i class="ri-map-pin-line"></i>
-                            </span>
-                            <span>4km from Vengara bus stand</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Village Highlights -->
+        <section class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16 scroll-animation fadeInUp">
+                    <h2 class="text-4xl font-bold playfair mb-4 custom-border inline-block">Village Highlights</h2>
+                    <p class="text-gray-600 max-w-3xl mx-auto">I love those connections that make this big old world
+                        feel
+                        like a little village...</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div
+                        class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 scroll-animation slideInLeft delay-1">
+                        <div class="h-56 overflow-hidden">
+
+                            <a href="https://maps.app.goo.gl/fb96gf1TjE38bpBy7"><img
+                                    src="https://files.yappe.in/place/small/pulikkaparambu-juma-masjid-9292728.webp"
+                                    alt="Traditional Dance" class="w-full h-full object-cover"></a>
+
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-3 playfair">Oorakam JumaMasjid</h3>
+                            <p class="text-gray-600">I love you when you bow in your mosque, kneel in your temple, pray
+                                in
+                                your church. For you and I are sons of one religion, and it is the spirit.</p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 scroll-animation slideInLeft delay-2">
+                        <div class="h-56 overflow-hidden">
+                            <a href="https://maps.app.goo.gl/MZQJKtNHC4ojQHP16"> <img
+                                    src="https://www.infobharath.com/temples/uploads/61f23221f34f3.jpg"
+                                    alt="Temple Festivals" class="w-full h-full object-cover"></a>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-3 playfair">Temple</h3>
+                            <p class="text-gray-600">The annual Pooram festival at Sri Ammancherikkavu Temple attracts
+                                visitors from across Kerala with its procession of decorated elephants and traditional
+                                percussion ensembles.</p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 scroll-animation slideInLeft delay-3">
+                        <div class="h-56 overflow-hidden">
+                            <a href="https://maps.app.goo.gl/BaENhMHTN3VqtJBi8"><img
+                                    src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4nrB32qzjJQROV_kts_Ze-TmDjW6CbQOZcIZHXKXy9EEsOujIkp2my21YeCivlZnp0-ClqYvDOKDWkbIAhJUaWLjhH4uYoOSk_Q-zvcXXKQ-YkLnzgLiddvWHPTM3VdSAvPkVeHP=s680-w680-h510-rw"
+                                    alt="Handloom Weaving" class="w-full h-full object-cover"></a>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-3 playfair">Ajmal Bismi</h3>
+                            <p class="text-gray-600">You can tell a lot about a country by what’s in its supermarket.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 scroll-animation slideInLeft delay-4">
+                        <div class="h-56 overflow-hidden">
+                            <a href="https://maps.app.goo.gl/QtvGbiM7zHdpzg4m6"> <img
+                                    src="https://content.jdmagicbox.com/comp/malappuram/p6/9999px483.x483.180827104126.z1p6/catalogue/paloor-kotta-waterfall-palachode-malappuram-k80h8eitwq.jpg"
+                                    alt="Traditional Cuisine" class="w-full h-full object-cover"></a>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-3 playfair">Waterfall</h3>
+                            <p class="text-gray-600">Surrender to the flow. Go with the flow. Run wild and free like a
+                                waterfall. Every teardrop is a waterfall. Just let go – and fall like a little
+                                waterfall.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <!-- Village Attractions -->
+        <section class="py-20 relative overflow-hidden">
+            <div class="kerala-pattern absolute inset-0"></div>
+            <div class="container mx-auto px-6 relative z-10">
+                <div class="text-center mb-16 scroll-animation fadeInUp">
+                    <h2 class="text-4xl font-bold playfair mb-4 custom-border inline-block">Village Attractions</h2>
+                    <p class="text-gray-600 max-w-3xl mx-auto">Explore the natural and cultural wonders of Oorakam</p>
+                </div>
+
+                <!-- Attraction Categories -->
+                <div class="flex justify-center mb-12 scroll-animation fadeInUp delay-1">
+                    <div class="inline-flex bg-gray-100 p-1 rounded-full">
+                        <button
+                            class="category-btn px-6 py-2 rounded-full bg-primary text-white !rounded-button whitespace-nowrap active-category"
+                            data-category="all">All Attractions</button>
+                        <button
+                            class="category-btn px-6 py-2 rounded-full text-gray-700 hover:bg-gray-200 !rounded-button whitespace-nowrap"
+                            data-category="natural">Natural Sites</button>
+                        <button
+                            class="category-btn px-6 py-2 rounded-full text-gray-700 hover:bg-gray-200 !rounded-button whitespace-nowrap"
+                            data-category="heritage">Heritage</button>
+                        <button
+                            class="category-btn px-6 py-2 rounded-full text-gray-700 hover:bg-gray-200 !rounded-button whitespace-nowrap"
+                            data-category="activities">Activities</button>
+                    </div>
+                </div>
+
+                <!-- Attractions Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="attractions-grid">
+                    <div class="attraction-card bg-white rounded-lg overflow-hidden shadow-md scroll-animation slideInLeft delay-1"
+                        data-category="natural">
+                        <div class="h-64 overflow-hidden"> <a href="https://maps.app.goo.gl/4TKJsigAEQDY82tLA">
+                                <img src="https://www.touristplaces.net.in/images/pp/5/p104578.jpg" alt="Oorakam River"
+                                    class="w-full h-full object-cover">
+                            </a>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2 playfair">Oorakam River</h3>
+                            <p class="text-gray-600 mb-4">Life is like the river, sometimes it sweeps you gently along
+                                and
+                                sometimes the rapids come out of nowhere.</p>
+                            <div class="flex items-center text-sm text-gray-500">
+                                <span class="w-5 h-5 flex items-center justify-center mr-2">
+                                    <i class="ri-map-pin-line"></i>
+                                </span>
+                                <span>4km from Vengara bus stand</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="attraction-card bg-white rounded-lg overflow-hidden shadow-md scroll-animation slideInLeft delay-2"
+                        data-category="natural">
+                        <div class="h-64 overflow-hidden">
+                            <img src="https://files.yappe.in/place/full/oorakam-mala-travel-1803070.webp"
+                                alt="Oorakam Mountain" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-6"><a href="https://maps.app.goo.gl/4pPa4c6zN8egnzxt8">
+                                <h3 class="text-xl font-semibold mb-2 playfair">Oorakam Mountain</h3>
+                                <p class="text-gray-600 mb-4">No matter how tall the mountain is, it cannot block the
+                                    sun.
+                                    —Chinese Proverb.</p>
+                                <div class="flex items-center text-sm text-gray-500">
+                                    <span class="w-5 h-5 flex items-center justify-center mr-2">
+                                        <i class="ri-map-pin-line"></i>
+                                    </span>
+                                    <span>5.5km from Vengara BusStand</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="attraction-card bg-white rounded-lg overflow-hidden shadow-md scroll-animation slideInLeft delay-3"
+                        data-category="activities">
+                        <div class="h-64 overflow-hidden">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Mini_Ooty_Glass_Bridge.jpg/640px-Mini_Ooty_Glass_Bridge.jpg"
+                                alt="Mini Ooty Glass Bridge" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-6"><a href="https://maps.app.goo.gl/Yq5WgjZ6ou6tuAs2A">
+                                <h3 class="text-xl font-semibold mb-2 playfair">Mini Ooty Glass Bridge</h3>
+                                <p class="text-gray-600 mb-4">You cannot have the right to cross a bridge without
+                                    respecting
+                                    it! You cannot have the right to use the things without respecting them!</p>
+                                <div class="flex items-center text-sm text-gray-500">
+                                    <span class="w-5 h-5 flex items-center justify-center mr-2">
+                                        <i class="ri-map-pin-line"></i>
+                                    </span>
+                                    <span>4km from Malappuram</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="attraction-card bg-white rounded-lg overflow-hidden shadow-md scroll-animation slideInLeft delay-4"
+                        data-category="activities">
+                        <div class="h-64 overflow-hidden">
+                            <img src="https://content.jdmagicbox.com/v2/comp/malappuram/c2/9999px483.x483.191216165114.d4c2/catalogue/mahar-ayurvedic-hospital-and-research-center-pulikkal-malappuram-ayurvedic-doctors-gmcvhpr77u.jpg"
+                                alt="Ayurveda Wellness Center" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-6"><a href="https://maps.app.goo.gl/v9bK9P1nVYK3EN2s9">
+                                <h3 class="text-xl font-semibold mb-2 playfair">Ayurveda Wellness Center</h3>
+                                <p class="text-gray-600 mb-4">Experience traditional Ayurvedic treatments and therapies
+                                    at
+                                    our authentic wellness center using local herbs and oils.</p>
+                                <div class="flex items-center text-sm text-gray-500">
+                                    <span class="w-5 h-5 flex items-center justify-center mr-2">
+                                        <i class="ri-map-pin-line"></i>
+                                    </span>
+                                    <span>Village Center, near bus stand</span>
+                            </a>
                         </div>
                     </div>
                 </div>
 
-                <div class="attraction-card bg-white rounded-lg overflow-hidden shadow-md scroll-animation slideInLeft delay-2"
-                    data-category="natural">
-                    <div class="h-64 overflow-hidden">
-                        <img src="https://files.yappe.in/place/full/oorakam-mala-travel-1803070.webp"
-                            alt="Oorakam Mountain" class="w-full h-full object-cover">
-                    </div>
-                    <div class="p-6"><a href="https://maps.app.goo.gl/4pPa4c6zN8egnzxt8">
-                            <h3 class="text-xl font-semibold mb-2 playfair">Oorakam Mountain</h3>
-                            <p class="text-gray-600 mb-4">No matter how tall the mountain is, it cannot block the sun.
-                                —Chinese Proverb.</p>
-                            <div class="flex items-center text-sm text-gray-500">
-                                <span class="w-5 h-5 flex items-center justify-center mr-2">
-                                    <i class="ri-map-pin-line"></i>
-                                </span>
-                                <span>5.5km from Vengara BusStand</span>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="attraction-card bg-white rounded-lg overflow-hidden shadow-md scroll-animation slideInLeft delay-3"
+                <div class="attraction-card bg-white rounded-lg overflow-hidden shadow-md scroll-animation slideInLeft delay-5"
                     data-category="activities">
                     <div class="h-64 overflow-hidden">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Mini_Ooty_Glass_Bridge.jpg/640px-Mini_Ooty_Glass_Bridge.jpg"
-                            alt="Mini Ooty Glass Bridge" class="w-full h-full object-cover">
+                        <img src="https://thumb.photo-ac.com/17/1784e9df4b5275dcbc2d2cc0da218f8a_t.jpeg"
+                            alt="Emerald Paddy Fields" class="w-full h-full object-cover">
                     </div>
-                    <div class="p-6"><a href="https://maps.app.goo.gl/Yq5WgjZ6ou6tuAs2A">
-                            <h3 class="text-xl font-semibold mb-2 playfair">Mini Ooty Glass Bridge</h3>
-                            <p class="text-gray-600 mb-4">You cannot have the right to cross a bridge without respecting
-                                it! You cannot have the right to use the things without respecting them!</p>
+                    <div class="p-6"><a href="https://maps.app.goo.gl/BUbEpNX9fmiP9WJr5">
+                            <h3 class="text-xl font-semibold mb-2 playfair">Emerald Paddy Fields</h3>
+                            <p class="text-gray-600 mb-4">Witness traditional farming methods and participate in
+                                seasonal
+                                activities like planting and harvesting rice in our lush fields.</p>
                             <div class="flex items-center text-sm text-gray-500">
                                 <span class="w-5 h-5 flex items-center justify-center mr-2">
                                     <i class="ri-map-pin-line"></i>
                                 </span>
-                                <span>4km from Malappuram</span>
-                            </div>
-                        </a>
-                    </div>
-                </div>
+                                <span>2.5km from Vengara</span>
 
-                <div class="attraction-card bg-white rounded-lg overflow-hidden shadow-md scroll-animation slideInLeft delay-4"
-                    data-category="activities">
-                    <div class="h-64 overflow-hidden">
-                        <img src="https://content.jdmagicbox.com/v2/comp/malappuram/c2/9999px483.x483.191216165114.d4c2/catalogue/mahar-ayurvedic-hospital-and-research-center-pulikkal-malappuram-ayurvedic-doctors-gmcvhpr77u.jpg"
-                            alt="Ayurveda Wellness Center" class="w-full h-full object-cover">
-                    </div>
-                    <div class="p-6"><a href="https://maps.app.goo.gl/v9bK9P1nVYK3EN2s9">
-                            <h3 class="text-xl font-semibold mb-2 playfair">Ayurveda Wellness Center</h3>
-                            <p class="text-gray-600 mb-4">Experience traditional Ayurvedic treatments and therapies at
-                                our authentic wellness center using local herbs and oils.</p>
-                            <div class="flex items-center text-sm text-gray-500">
-                                <span class="w-5 h-5 flex items-center justify-center mr-2">
-                                    <i class="ri-map-pin-line"></i>
-                                </span>
-                                <span>Village Center, near bus stand</span>
                         </a>
                     </div>
                 </div>
             </div>
 
-            <div class="attraction-card bg-white rounded-lg overflow-hidden shadow-md scroll-animation slideInLeft delay-5"
-                data-category="activities">
+            <div class="attraction-card bg-white rounded-lg overflow-hidden shadow-md scroll-animation slideInLeft delay-6"
+                data-category="heritage">
                 <div class="h-64 overflow-hidden">
-                    <img src="https://thumb.photo-ac.com/17/1784e9df4b5275dcbc2d2cc0da218f8a_t.jpeg"
-                        alt="Emerald Paddy Fields" class="w-full h-full object-cover">
+                    <img src="https://irinjalakudadiocese.com/wp-content/uploads/2020/07/oorakam-cr.jpg"
+                        alt="St. Joseph’s Church" class="w-full h-full object-cover">
                 </div>
-                <div class="p-6"><a href="https://maps.app.goo.gl/BUbEpNX9fmiP9WJr5">
-                        <h3 class="text-xl font-semibold mb-2 playfair">Emerald Paddy Fields</h3>
-                        <p class="text-gray-600 mb-4">Witness traditional farming methods and participate in seasonal
-                            activities like planting and harvesting rice in our lush fields.</p>
+                <div class="p-6"><a href="https://maps.app.goo.gl/RyZnxceB4JmWH3Cj8">
+                        <h3 class="text-xl font-semibold mb-2 playfair">Oorakam, St. Joseph’s Church</h3>
+                        <p class="text-gray-600 mb-4">St. Joseph’s Church, Oorakam Pullur – 680 683</p>
                         <div class="flex items-center text-sm text-gray-500">
                             <span class="w-5 h-5 flex items-center justify-center mr-2">
                                 <i class="ri-map-pin-line"></i>
                             </span>
-                            <span>2.5km from Vengara</span>
-
+                            <span>2.5km from Oorakam</span>
+                        </div>
                     </a>
                 </div>
             </div>
-        </div>
-
-        <div class="attraction-card bg-white rounded-lg overflow-hidden shadow-md scroll-animation slideInLeft delay-6"
-            data-category="heritage">
-            <div class="h-64 overflow-hidden">
-                <img src="https://irinjalakudadiocese.com/wp-content/uploads/2020/07/oorakam-cr.jpg"
-                    alt="St. Joseph’s Church" class="w-full h-full object-cover">
             </div>
-            <div class="p-6"><a href="https://maps.app.goo.gl/RyZnxceB4JmWH3Cj8">
-                    <h3 class="text-xl font-semibold mb-2 playfair">Oorakam, St. Joseph’s Church</h3>
-                    <p class="text-gray-600 mb-4">St. Joseph’s Church, Oorakam Pullur – 680 683</p>
-                    <div class="flex items-center text-sm text-gray-500">
-                        <span class="w-5 h-5 flex items-center justify-center mr-2">
-                            <i class="ri-map-pin-line"></i>
-                        </span>
-                        <span>2.5km from Oorakam</span>
+            </div>
+        </section>
+        <!-- Village Map -->
+        <div class="mt-20 scroll-animation fadeInUp">
+            <h3 class="text-2xl font-semibold mb-8 text-center playfair">Explore Our Village</h3>
+            <div class="w-full h-96 rounded-lg overflow-hidden shadow-lg relative">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1955.1951704801359!2d76.00532957893776!3d11.056092847078467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba64b0037d665c5%3A0x837848e4ccf7e385!2sOorakam%20kunnath!5e0!3m2!1sen!2sin!4v1747201164298!5m2!1sen!2sin"
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <button
+                    class="bg-white text-primary px-6 py-3 rounded-button shadow-md hover:bg-gray-100 transition duration-300 flex items-center !rounded-button whitespace-nowrap absolute bottom-4 left-4">
+                    <span class="w-5 h-5 flex items-center justify-center mr-2">
+                        <i class="ri-map-2-line"></i>
+                    </span>
+                    View Interactive Map
+                </button>
+            </div>
+        </div>
+        </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="py-20 bg-gray-50 scroll-animation fadeInUp">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold playfair mb-4 custom-border inline-block">Village Gallery</h2>
+                    <p class="text-gray-600 max-w-3xl mx-auto">Glimpses of life, culture, and natural beauty in Oorakam
+                        Kunnath</p>
+                </div>
+
+                <!-- Gallery Filter -->
+                <!-- Gallery Filter -->
+                <div class="flex justify-center mb-12 scroll-animation fadeInUp delay-1">
+                    <div class="inline-flex bg-gray-100 p-1 rounded-full">
+                        <button
+                            class="filter-btn px-6 py-2 rounded-full text-gray-700 hover:bg-green-500 hover:text-white !rounded-button whitespace-nowrap"
+                            data-filter="all">All Photos</button>
+                        <button
+                            class="filter-btn px-6 py-2 rounded-full text-gray-700 hover:bg-green-500 hover:text-white !rounded-button whitespace-nowrap"
+                            data-filter="festivals">Festivals</button>
+                        <button
+                            class="filter-btn px-6 py-2 rounded-full text-gray-700 hover:bg-green-500 hover:text-white !rounded-button whitespace-nowrap"
+                            data-filter="nature">Nature</button>
+                        <button
+                            class="filter-btn px-6 py-2 rounded-full text-gray-700 hover:bg-green-500 hover:text-white !rounded-button whitespace-nowrap"
+                            data-filter="people">People</button>
+                        <button
+                            class="filter-btn px-6 py-2 rounded-full text-gray-700 hover:bg-green-500 hover:text-white !rounded-button whitespace-nowrap"
+                            data-filter="heritage">Heritage</button>
                     </div>
+                </div>
+
+                <!-- Gallery Grid -->
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                    <div class="gallery-item rounded-lg overflow-hidden shadow-md h-64 scroll-animation slideInLeft delay-1"
+                        data-category="festivals">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj5AJERFDtKzOYJaXmbxxbRm-i1zaZJbijjGecpvo91jpJAvYDczRD4p1dcS-STF1MG8WHdkfcvEYsy4NU_rO2KZeotgsEfhJqM7xTI5hpTZ5_ekQ-NVdzOWbMwB7qmlBbFkd2szsMncKI/s1600/MUHSSS.jpg"
+                            alt="Temple Festival" class="w-full h-full object-cover">
+                    </div>
+                    <div class="gallery-item rounded-lg overflow-hidden shadow-md h-64 scroll-animation slideInLeft delay-2"
+                        data-category="nature">
+                        <img src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4nrZtuyroLxp_l0XlM3kw1T6mJyn6HSHNirXe2AL9FsNPypHNCGLthNOKFRB9oWDFlJqHqh62VOUXrhUR8mtuakEHmkye2ZPze_ikjg9spwoPdK5yQx3ddGoc3X8BPtdF_emhMe1=w540-h312-n-k-no"
+                            alt="Backwaters" class="w-full h-full object-cover">
+                    </div>
+                    <div class="gallery-item rounded-lg overflow-hidden shadow-md h-64 scroll-animation slideInLeft delay-3"
+                        data-category="people">
+                        <img src="https://yt3.googleusercontent.com/EfjccgglH3n-4liAFf3l-PM8BuOH5DdxEudpKYZ2lX0HBwm7y44hkiQkqCXvFjbyJo1qpXWdMw=s900-c-k-c0x00ffffff-no-rj"
+                            alt="Village Elder" class="w-full h-full object-cover">
+                    </div>
+                    <div class="gallery-item rounded-lg overflow-hidden shadow-md h-64 scroll-animation slideInLeft delay-4"
+                        data-category="heritage">
+                        <img src="https://schoolwiki.in/images/thumb/4/42/19879_school.jpeg/1200px-19879_school.jpeg"
+                            alt="Temple Architecture" class="w-full h-full object-cover">
+                    </div>
+                    <div class="gallery-item rounded-lg overflow-hidden shadow-md h-64 scroll-animation slideInLeft delay-5"
+                        data-category="festivals">
+                        <img src="https://content3.jdmagicbox.com/comp/malappuram/w6/9999px483.x483.181011110345.q4w6/catalogue/al-ihsan-dawa-college-vengara-malappuram-colleges-onnbmanexf.jpg"
+                            alt="Theyyam Performance" class="w-full h-full object-cover">
+                    </div>
+                    <div class="gallery-item rounded-lg overflow-hidden shadow-md h-64 scroll-animation slideInLeft delay-6"
+                        data-category="nature">
+                        <img src="https://scontent.fcok6-1.fna.fbcdn.net/v/t39.30808-6/473745198_534390289636660_7154424724987655293_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=833d8c&_nc_ohc=UOgGWxh_tlIQ7kNvwHPxih9&_nc_oc=Adl400uYsXeI9wXY_ZBCqZuG9zbDhy8oD1awpYdecPpRg3FBqCJeYgOn0dAdwMnEQDE&_nc_zt=23&_nc_ht=scontent.fcok6-1.fna&_nc_gid=RPXlyIpalOFgQlMG3JE1QA&oh=00_AfIdTcZbAHF9srzSf01i82FY_NEBz89T5GBdyt3H-YA4WQ&oe=683C9F20"
+                            alt="Rice Harvest" class="w-full h-full object-cover">
+                    </div>
+                    <div class="gallery-item rounded-lg overflow-hidden shadow-md h-64 scroll-animation slideInLeft delay-7"
+                        data-category="festivals">
+                        <img src="https://scontent.fcok6-1.fna.fbcdn.net/v/t39.30808-6/491467786_2794898700696936_2102955950658071177_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=833d8c&_nc_ohc=4cL66qBtyfwQ7kNvwGjF-Hv&_nc_oc=AdnADT8-OeTZLtBuXGDJX4dDZcUXzZ5SaNKlyMjmHalzm28EPANEbiWmExPEqZp4CGM&_nc_zt=23&_nc_ht=scontent.fcok6-1.fna&_nc_gid=znsBTCZRDizW-s_GlEjZmw&oh=00_AfJ9uezsf27NVyjBkMpaZOuFRHLwaerW_ioNaOc-HE1UEA&oe=683B433E"
+                            alt="Village President" class="w-full h-full object-cover">
+                    </div>
+                    <div class="gallery-item rounded-lg overflow-hidden shadow-md h-64 scroll-animation slideInLeft delay-8"
+                        data-category="heritage">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjzUOfSQTFIeJxKOAF_0MEZyHTHJIusjREORbbbFWI0UHmrvzLjNIKMkUFKTmmQNoRUQY1YzfST50NHtwq_B6qkj-iV7ZPdBtJpfB3ZWWdx7-zk3HoZQfFz0x_xqwF-asr1GjTmZlEMr5nstKHQ0Zrp3Q808gCtMfa1BjA-svM-Ikx6Ohs1o2p_yE-6/w1200-h675-p-k-no-nu/IMG_20221015_112321.jpg"
+                            alt="Traditional Home" class="w-full h-full object-cover">
+                    </div>
+                </div>
+
+                <!-- From Uiverse.io by adamgiebl -->
+
+                <!-- From Uiverse.io by doniaskima -->
+                <a href="https://www.pexels.com/search/beautiful/"><button class="btn-53" style="margin-top: 30px;">
+                        <div class="original">More</div>
+                        <div class="letters">
+
+                            <span>I</span>
+                            <span>M</span>
+                            <span>A</span>
+                            <span>G</span>
+                            <span>E</span>
+                            <span>S</span>
+                        </div>
                 </a>
-            </div>
-        </div>
-        </div>
-        </div>
-    </section>
-    <!-- Village Map -->
-    <div class="mt-20 scroll-animation fadeInUp">
-        <h3 class="text-2xl font-semibold mb-8 text-center playfair">Explore Our Village</h3>
-        <div class="w-full h-96 rounded-lg overflow-hidden shadow-lg relative">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1955.1951704801359!2d76.00532957893776!3d11.056092847078467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba64b0037d665c5%3A0x837848e4ccf7e385!2sOorakam%20kunnath!5e0!3m2!1sen!2sin!4v1747201164298!5m2!1sen!2sin"
-                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <button
-                class="bg-white text-primary px-6 py-3 rounded-button shadow-md hover:bg-gray-100 transition duration-300 flex items-center !rounded-button whitespace-nowrap absolute bottom-4 left-4">
-                <span class="w-5 h-5 flex items-center justify-center mr-2">
-                    <i class="ri-map-2-line"></i>
-                </span>
-                View Interactive Map
-            </button>
-        </div>
-    </div>
-    </div>
-    </section>
-
-    <!-- Gallery Section -->
-<section id="gallery" class="py-20 bg-gray-50 scroll-animation fadeInUp">
-    <div class="container mx-auto px-6">
-        <div class="text-center mb-16">
-            <h2 class="text-4xl font-bold playfair mb-4 custom-border inline-block">Village Gallery</h2>
-            <p class="text-gray-600 max-w-3xl mx-auto">Glimpses of life, culture, and natural beauty in Oorakam Kunnath</p>
-        </div>
-
-        <!-- Gallery Filter -->
-        <div class="flex justify-center mb-12 scroll-animation fadeInUp delay-1">
-            <div class="inline-flex bg-gray-100 p-1 rounded-full">
-                <button class="filter-btn px-6 py-2 rounded-full bg-primary text-white !rounded-button whitespace-nowrap active" data-filter="all">All Photos</button>
-                <button class="filter-btn px-6 py-2 rounded-full text-gray-700 hover:bg-gray-200 !rounded-button whitespace-nowrap" data-filter="festivals">Festivals</button>
-                <button class="filter-btn px-6 py-2 rounded-full text-gray-700 hover:bg-gray-200 !rounded-button whitespace-nowrap" data-filter="nature">Nature</button>
-                <button class="filter-btn px-6 py-2 rounded-full text-gray-700 hover:bg-gray-200 !rounded-button whitespace-nowrap" data-filter="people">People</button>
-                <button class="filter-btn px-6 py-2 rounded-full text-gray-700 hover:bg-gray-200 !rounded-button whitespace-nowrap" data-filter="heritage">Heritage</button>
-            </div>
-        </div>
-
-        <!-- Gallery Grid -->
-        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-            <div class="gallery-item rounded-lg overflow-hidden shadow-md h-64 scroll-animation slideInLeft delay-1" data-category="festivals">
-                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj5AJERFDtKzOYJaXmbxxbRm-i1zaZJbijjGecpvo91jpJAvYDczRD4p1dcS-STF1MG8WHdkfcvEYsy4NU_rO2KZeotgsEfhJqM7xTI5hpTZ5_ekQ-NVdzOWbMwB7qmlBbFkd2szsMncKI/s1600/MUHSSS.jpg" alt="Temple Festival" class="w-full h-full object-cover">
-            </div>
-            <div class="gallery-item rounded-lg overflow-hidden shadow-md h-64 scroll-animation slideInLeft delay-2" data-category="nature">
-                <img src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4nrZtuyroLxp_l0XlM3kw1T6mJyn6HSHNirXe2AL9FsNPypHNCGLthNOKFRB9oWDFlJqHqh62VOUXrhUR8mtuakEHmkye2ZPze_ikjg9spwoPdK5yQx3ddGoc3X8BPtdF_emhMe1=w540-h312-n-k-no" alt="Backwaters" class="w-full h-full object-cover">
-            </div>
-            <div class="gallery-item rounded-lg overflow-hidden shadow-md h-64 scroll-animation slideInLeft delay-3" data-category="people">
-                <img src="https://yt3.googleusercontent.com/EfjccgglH3n-4liAFf3l-PM8BuOH5DdxEudpKYZ2lX0HBwm7y44hkiQkqCXvFjbyJo1qpXWdMw=s900-c-k-c0x00ffffff-no-rj" alt="Village Elder" class="w-full h-full object-cover">
-            </div>
-            <div class="gallery-item rounded-lg overflow-hidden shadow-md h-64 scroll-animation slideInLeft delay-4" data-category="heritage">
-                <img src="https://schoolwiki.in/images/thumb/4/42/19879_school.jpeg/1200px-19879_school.jpeg" alt="Temple Architecture" class="w-full h-full object-cover">
-            </div>
-            <div class="gallery-item rounded-lg overflow-hidden shadow-md h-64 scroll-animation slideInLeft delay-5" data-category="festivals">
-                <img src="https://content3.jdmagicbox.com/comp/malappuram/w6/9999px483.x483.181011110345.q4w6/catalogue/al-ihsan-dawa-college-vengara-malappuram-colleges-onnbmanexf.jpg" alt="Theyyam Performance" class="w-full h-full object-cover">
-            </div>
-            <div class="gallery-item rounded-lg overflow-hidden shadow-md h-64 scroll-animation slideInLeft delay-6" data-category="nature">
-                <img src="https://content.jdmagicbox.com/comp/malappuram/e5/9999px483.x483.231201191857.i4e5/catalogue/al-ihsan-language-academy-vengara-malappuram-language-classes-for-english-ry4xsrxwge-250.jpg" alt="Rice Harvest" class="w-full h-full object-cover">
-            </div>
-            <div class="gallery-item rounded-lg overflow-hidden shadow-md h-64 scroll-animation slideInLeft delay-7" data-category="festivals">
-                <img src="https://scontent.fcok6-1.fna.fbcdn.net/v/t39.30808-6/491467786_2794898700696936_2102955950658071177_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=833d8c&_nc_ohc=4cL66qBtyfwQ7kNvwGjF-Hv&_nc_oc=AdnADT8-OeTZLtBuXGDJX4dDZcUXzZ5SaNKlyMjmHalzm28EPANEbiWmExPEqZp4CGM&_nc_zt=23&_nc_ht=scontent.fcok6-1.fna&_nc_gid=znsBTCZRDizW-s_GlEjZmw&oh=00_AfJ9uezsf27NVyjBkMpaZOuFRHLwaerW_ioNaOc-HE1UEA&oe=683B433E" alt="Village President" class="w-full h-full object-cover">
-            </div>
-            <div class="gallery-item rounded-lg overflow-hidden shadow-md h-64 scroll-animation slideInLeft delay-8" data-category="heritage">
-                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjzUOfSQTFIeJxKOAF_0MEZyHTHJIusjREORbbbFWI0UHmrvzLjNIKMkUFKTmmQNoRUQY1YzfST50NHtwq_B6qkj-iV7ZPdBtJpfB3ZWWdx7-zk3HoZQfFz0x_xqwF-asr1GjTmZlEMr5nstKHQ0Zrp3Q808gCtMfa1BjA-svM-Ikx6Ohs1o2p_yE-6/w1200-h675-p-k-no-nu/IMG_20221015_112321.jpg" alt="Traditional Home" class="w-full h-full object-cover">
-            </div>
-        </div>
-
-        <!-- From Uiverse.io by adamgiebl --> 
-        
-<!-- From Uiverse.io by doniaskima --> 
- <a href="https://www.pexels.com/search/beautiful/"><button class="btn-53">
-  <div class="original">More</div>
-  <div class="letters">
-    
-    <span>I</span>
-    <span>M</span>
-    <span>A</span>
-    <span>G</span>
-    <span>E</span>
-    <span>S</span>
-  </div>
-  </a>
-</button>
+                </button>
 
 
-    </div>
-</section>
-
-    <!-- News & Events -->
-    <section class="py-20 relative overflow-hidden scroll-animation fadeInUp">
-        <div class="kerala-pattern absolute inset-0"></div>
-        <div class="container mx-auto px-6 relative z-10">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold playfair mb-4 custom-border inline-block">News & Events</h2>
-                <p class="text-gray-600 max-w-3xl mx-auto">Stay updated with the latest happenings in our vibrant
-                    community</p>
             </div>
+        </section>
 
-            <div class="flex flex-col lg:flex-row gap-12">
-                <!-- Timeline Events -->
-                <div class="w-full lg:w-2/3">
-                    <h3 class="text-2xl font-semibold mb-8 playfair">Village Events</h3>
+        <!-- News & Events -->
+        <section class="py-20 relative overflow-hidden scroll-animation fadeInUp">
+            <div class="kerala-pattern absolute inset-0"></div>
+            <div class="container mx-auto px-6 relative z-10">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold playfair mb-4 custom-border inline-block">News & Events</h2>
+                    <p class="text-gray-600 max-w-3xl mx-auto">Stay updated with the latest happenings in our vibrant
+                        community</p>
+                </div>
 
-                    <div class="relative timeline pl-12">
-                        <div class="event-card mb-10 scroll-animation fadeInUp delay-1">
-                            <div class="bg-white p-6 rounded-lg shadow-md">
-                                <div class="flex items-center mb-4">
-                                    <div
-                                        class="bg-primary bg-opacity-10 text-primary px-3 py-1 rounded text-sm font-medium">
-                                        February</div>
-                                </div>
-                                <h4 class="text-xl font-semibold mb-2 playfair">Annual Temple Festival</h4>
-                                <p class="text-gray-600 mb-4">The grand celebration at Sri Mahadeva Temple featuring
-                                    traditional rituals, cultural performances, and a community feast.</p>
-                                <div class="flex items-center text-primary font-medium"><a
-                                        href="https://en.wikipedia.org/wiki/Temple_festivals_of_Kerala">
-                                        <span>Learn more</span>
-                                        <span class="w-5 h-5 flex items-center justify-center ml-1">
-                                            <i class="ri-arrow-right-line"></i>
-                                        </span>
-                                    </a>
+                <div class="flex flex-col lg:flex-row gap-12">
+                    <!-- Timeline Events -->
+                    <div class="w-full lg:w-2/3">
+                        <h3 class="text-2xl font-semibold mb-8 playfair">Village Events</h3>
+
+                        <div class="relative timeline pl-12">
+                            <div class="event-card mb-10 scroll-animation fadeInUp delay-1">
+                                <div class="bg-white p-6 rounded-lg shadow-md">
+                                    <div class="flex items-center mb-4">
+                                        <div
+                                            class="bg-primary bg-opacity-10 text-primary px-3 py-1 rounded text-sm font-medium">
+                                            February</div>
+                                    </div>
+                                    <h4 class="text-xl font-semibold mb-2 playfair">Annual Temple Festival</h4>
+                                    <p class="text-gray-600 mb-4">The grand celebration at Sri Mahadeva Temple featuring
+                                        traditional rituals, cultural performances, and a community feast.</p>
+                                    <div class="flex items-center text-primary font-medium"><a
+                                            href="https://en.wikipedia.org/wiki/Temple_festivals_of_Kerala">
+                                            <span>Learn more</span>
+                                            <span class="w-5 h-5 flex items-center justify-center ml-1">
+                                                <i class="ri-arrow-right-line"></i>
+                                            </span>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="event-card mb-10 scroll-animation fadeInUp delay-2">
-                            <div class="bg-white p-6 rounded-lg shadow-md">
-                                <div class="flex items-center mb-4">
-                                    <div
-                                        class="bg-primary bg-opacity-10 text-primary px-3 py-1 rounded text-sm font-medium">
-                                        June 5, 2025</div>
-                                </div>
-                                <h4 class="text-xl font-semibold mb-2 playfair">World Environment Day</h4>
-                                <p class="text-gray-600 mb-4">World Environment Day, observed annually on June 5th, is a
-                                    global initiative to raise awareness and promote action on environmental issues.</p>
-                                <div class="flex items-center text-primary font-medium"><a
-                                        href="https://www.worldenvironmentday.global/">
-                                        <span>Learn more</span>
-                                        <span class="w-5 h-5 flex items-center justify-center ml-1">
-                                            <i class="ri-arrow-right-line"></i>
-                                        </span>
-                                    </a>
+                            <div class="event-card mb-10 scroll-animation fadeInUp delay-2">
+                                <div class="bg-white p-6 rounded-lg shadow-md">
+                                    <div class="flex items-center mb-4">
+                                        <div
+                                            class="bg-primary bg-opacity-10 text-primary px-3 py-1 rounded text-sm font-medium">
+                                            June 5, 2025</div>
+                                    </div>
+                                    <h4 class="text-xl font-semibold mb-2 playfair">World Environment Day</h4>
+                                    <p class="text-gray-600 mb-4">World Environment Day, observed annually on June 5th,
+                                        is a
+                                        global initiative to raise awareness and promote action on environmental issues.
+                                    </p>
+                                    <div class="flex items-center text-primary font-medium"><a
+                                            href="https://www.worldenvironmentday.global/">
+                                            <span>Learn more</span>
+                                            <span class="w-5 h-5 flex items-center justify-center ml-1">
+                                                <i class="ri-arrow-right-line"></i>
+                                            </span>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="event-card mb-10 scroll-animation fadeInUp delay-3">
-                            <div class="bg-white p-6 rounded-lg shadow-md">
-                                <div class="flex items-center mb-4">
-                                    <div
-                                        class="bg-primary bg-opacity-10 text-primary px-3 py-1 rounded text-sm font-medium">
-                                        Sept, 4</div>
-                                </div>
-                                <h4 class="text-xl font-semibold mb-2 playfair">Onam Celebrations</h4>
-                                <p class="text-gray-600 mb-4">Village-wide celebration of Kerala's harvest festival with
-                                    floral carpets (pookalam), traditional games, Onasadya feast, and cultural
-                                    performances.</p>
-                                <div class="flex items-center text-primary font-medium">
-                                    <span>Learn more</span><a href="https://en.wikipedia.org/wiki/Onam">
-                                        <span class="w-5 h-5 flex items-center justify-center ml-1">
-                                            <i class="ri-arrow-right-line"></i>
-                                        </span>
-                                    </a>
+                            <div class="event-card mb-10 scroll-animation fadeInUp delay-3">
+                                <div class="bg-white p-6 rounded-lg shadow-md">
+                                    <div class="flex items-center mb-4">
+                                        <div
+                                            class="bg-primary bg-opacity-10 text-primary px-3 py-1 rounded text-sm font-medium">
+                                            Sept, 4</div>
+                                    </div>
+                                    <h4 class="text-xl font-semibold mb-2 playfair">Onam Celebrations</h4>
+                                    <p class="text-gray-600 mb-4">Village-wide celebration of Kerala's harvest festival
+                                        with
+                                        floral carpets (pookalam), traditional games, Onasadya feast, and cultural
+                                        performances.</p>
+                                    <div class="flex items-center text-primary font-medium">
+                                        <span>Learn more</span><a href="https://en.wikipedia.org/wiki/Onam">
+                                            <span class="w-5 h-5 flex items-center justify-center ml-1">
+                                                <i class="ri-arrow-right-line"></i>
+                                            </span>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="event-card scroll-animation fadeInUp delay-4">
-                            <div class="bg-white p-6 rounded-lg shadow-md">
-                                <div class="flex items-center mb-4">
-                                    <div
-                                        class="bg-primary bg-opacity-10 text-primary px-3 py-1 rounded text-sm font-medium">
-                                        Jan, 1</div>
-                                </div>
-                                <h4 class="text-xl font-semibold mb-2 playfair">New Year Celebration</h4>
-                                <p class="text-gray-600 mb-4">Here are some New Year quotes that could resonate with
-                                    people in a village setting, incorporating themes of nature, community, and simple
-                                    living.</p>
-                                <div class="flex items-center text-primary font-medium">
-                                    <a href="https://en.wikipedia.org/wiki/New_Year%27s_Eve"> <span>Learn more</span>
-                                        <span class="w-5 h-5 flex items-center justify-center ml-1">
-                                            <i class="ri-arrow-right-line"></i>
-                                        </span>
-                                    </a>
+                            <div class="event-card scroll-animation fadeInUp delay-4">
+                                <div class="bg-white p-6 rounded-lg shadow-md">
+                                    <div class="flex items-center mb-4">
+                                        <div
+                                            class="bg-primary bg-opacity-10 text-primary px-3 py-1 rounded text-sm font-medium">
+                                            Jan, 1</div>
+                                    </div>
+                                    <h4 class="text-xl font-semibold mb-2 playfair">New Year Celebration</h4>
+                                    <p class="text-gray-600 mb-4">Here are some New Year quotes that could resonate with
+                                        people in a village setting, incorporating themes of nature, community, and
+                                        simple
+                                        living.</p>
+                                    <div class="flex items-center text-primary font-medium">
+                                        <a href="https://en.wikipedia.org/wiki/New_Year%27s_Eve"> <span>Learn
+                                                more</span>
+                                            <span class="w-5 h-5 flex items-center justify-center ml-1">
+                                                <i class="ri-arrow-right-line"></i>
+                                            </span>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- Newsletter -->
-                <div class="w-full lg:w-1/3 scroll-animation fadeInUp">
-                    <div class="bg-white p-8 rounded-lg shadow-md">
-                        <h3 class="text-2xl font-semibold mb-6 playfair">Stay Connected</h3>
-                        <p class="text-gray-600 mb-6">Subscribe to our newsletter to receive updates about village
-                            events, cultural programs, and community initiatives.</p>
+                    <!-- Newsletter -->
+                    <div class="w-full lg:w-1/3 scroll-animation fadeInUp">
+                        <div class="bg-white p-8 rounded-lg shadow-md">
+                            <h3 class="text-2xl font-semibold mb-6 playfair">Stay Connected</h3>
+                            <p class="text-gray-600 mb-6">Subscribe to our newsletter to receive updates about village
+                                events, cultural programs, and community initiatives.</p>
 
-                        <form>
-                            <div class="mb-4">
-                                <label for="name" class="block text-gray-700 mb-2">Full Name</label>
-                                <input type="text" id="name"
-                                    class="w-full px-4 py-3 border border-gray-300 rounded focus:border-primary"
-                                    placeholder="Your name">
-                            </div>
-
-                            <div class="mb-4">
-                                <label for="email" class="block text-gray-700 mb-2">Email Address</label>
-                                <input type="email" id="email"
-                                    class="w-full px-4 py-3 border border-gray-300 rounded focus:border-primary"
-                                    placeholder="Your email">
-                            </div>
-
-                            <!-- From Uiverse.io by PriyanshuGupta28 -->
-                            <div class="checkbox-wrapper">
-                                <input id="terms-checkbox-37" name="checkbox" type="checkbox">
-                                <label class="terms-label" for="terms-checkbox-37">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 200 200"
-                                        class="checkbox-svg">
-                                        <mask fill="white" id="path-1-inside-1_476_5-37">
-                                            <rect height="200" width="200"></rect>
-                                        </mask>
-                                        <rect mask="url(#path-1-inside-1_476_5-37)" stroke-width="40"
-                                            class="checkbox-box" height="200" width="200"></rect>
-                                        <path stroke-width="15" d="M52 111.018L76.9867 136L149 64"
-                                            class="checkbox-tick"></path>
-                                    </svg>
-                                    <span class="label-text" style="margin-top: 20px;">I agree to receive updates about
-                                        village events and news</span>
-                                </label>
-                            </div>
-
-                            <div class="relative inline-flex items-center justify-center gap-4 group "
-                                style="margin-top: 30px;">
-                                <div
-                                    class="absolute inset-0 duration-1000 opacity-60 transition-all bg-gradient-to-r from-indigo-500 via-pink-500 to-yellow-400 rounded-xl blur-lg filter group-hover:opacity-100 group-hover:duration-200">
+                            <form>
+                                <div class="mb-4">
+                                    <label for="name" class="block text-gray-700 mb-2">Full Name</label>
+                                    <input type="text" id="name"
+                                        class="w-full px-4 py-3 border border-gray-300 rounded focus:border-primary"
+                                        placeholder="Your name">
                                 </div>
-                                <a role="button"
-                                    class="group relative inline-flex items-center justify-center text-base rounded-xl bg-gray-900 px-8 py-3 font-semibold text-white transition-all duration-200 hover:bg-gray-800 hover:shadow-lg hover:-translate-y-0.5 hover:shadow-gray-600/30"
-                                    title="payment" href="https://jasim8606.github.io/payment/">Subscribe Now <svg aria-hidden="true" viewBox="0 0 10 10"
-                                        height="10" width="10" fill="none"
-                                        class="mt-0.5 ml-2 -mr-1 stroke-white stroke-2 ">
-                                        <path d="M0 5h7" class="transition opacity-0 group-hover:opacity-100"></path>
-                                        <path d="M1 1l4 4-4 4" class="transition group-hover:translate-x-[3px]"></path>
-                                    </svg>
-                                </a>
-                            </div>
-                        </form>
 
-                        <div class="mt-8">
-                            <p class="text-gray-700 font-medium mb-4"></p>
+                                <div class="mb-4">
+                                    <label for="email" class="block text-gray-700 mb-2">Email Address</label>
+                                    <input type="email" id="email"
+                                        class="w-full px-4 py-3 border border-gray-300 rounded focus:border-primary"
+                                        placeholder="Your email">
+                                </div>
+
+                                <!-- From Uiverse.io by PriyanshuGupta28 -->
+                                <div class="checkbox-wrapper">
+                                    <input id="terms-checkbox-37" name="checkbox" type="checkbox">
+                                    <label class="terms-label" for="terms-checkbox-37">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 200 200"
+                                            class="checkbox-svg">
+                                            <mask fill="white" id="path-1-inside-1_476_5-37">
+                                                <rect height="200" width="200"></rect>
+                                            </mask>
+                                            <rect mask="url(#path-1-inside-1_476_5-37)" stroke-width="40"
+                                                class="checkbox-box" height="200" width="200"></rect>
+                                            <path stroke-width="15" d="M52 111.018L76.9867 136L149 64"
+                                                class="checkbox-tick"></path>
+                                        </svg>
+                                        <span class="label-text" style="margin-top: 20px;">I agree to receive updates
+                                            about
+                                            village events and news</span>
+                                    </label>
+                                </div>
+
+                                <div class="relative inline-flex items-center justify-center gap-4 group "
+                                    style="margin-top: 30px;">
+                                    <div
+                                        class="absolute inset-0 duration-1000 opacity-60 transition-all bg-gradient-to-r from-indigo-500 via-pink-500 to-yellow-400 rounded-xl blur-lg filter group-hover:opacity-100 group-hover:duration-200">
+                                    </div>
+                                    <a role="button"
+                                        class="group relative inline-flex items-center justify-center text-base rounded-xl bg-gray-900 px-8 py-3 font-semibold text-white transition-all duration-200 hover:bg-gray-800 hover:shadow-lg hover:-translate-y-0.5 hover:shadow-gray-600/30"
+                                        title="payment" href="https://jasim8606.github.io/payment/">Subscribe Now <svg
+                                            aria-hidden="true" viewBox="0 0 10 10" height="10" width="10" fill="none"
+                                            class="mt-0.5 ml-2 -mr-1 stroke-white stroke-2 ">
+                                            <path d="M0 5h7" class="transition opacity-0 group-hover:opacity-100">
+                                            </path>
+                                            <path d="M1 1l4 4-4 4" class="transition group-hover:translate-x-[3px]">
+                                            </path>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </form>
+
                             <div class="mt-8">
-                                <p class="text-gray-700 font-medium mb-4">Follow us on social media</p>
-                                <div class="social-icons">
-                                    <a href="https://www.facebook.com/share/15KG3u6mv3/" class="facebook"
-                                        target="_blank">
-                                        <i class="ri-facebook-fill"></i>
-                                    </a>
-                                    <a href="https://www.instagram.com/_jaasimm.__/?hl=en" class="instagram"
-                                        target="_blank">
-                                        <i class="ri-instagram-line"></i>
-                                    </a>
-                                    <a href="https://x.com/Jasim8606" class="twitter" target="_blank">
-                                        <i class="ri-twitter-x-line"></i>
-                                    </a>
-                                    <a href="https://www.youtube.com/results?search_query=youtube" class="youtube"
-                                        target="_blank">
-                                        <i class="ri-youtube-line"></i>
-                                    </a>
+                                <p class="text-gray-700 font-medium mb-4"></p>
+                                <div class="mt-8">
+                                    <p class="text-gray-700 font-medium mb-4">Follow us on social media</p>
+                                    <div class="social-icons">
+                                        <a href="https://www.facebook.com/share/15KG3u6mv3/" class="facebook"
+                                            target="_blank">
+                                            <i class="ri-facebook-fill"></i>
+                                        </a>
+                                        <a href="https://www.instagram.com/_jaasimm.__/?hl=en" class="instagram"
+                                            target="_blank">
+                                            <i class="ri-instagram-line"></i>
+                                        </a>
+                                        <a href="https://x.com/Jasim8606" class="twitter" target="_blank">
+                                            <i class="ri-twitter-x-line"></i>
+                                        </a>
+                                        <a href="https://www.youtube.com/results?search_query=youtube" class="youtube"
+                                            target="_blank">
+                                            <i class="ri-youtube-line"></i>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-20 bg-gray-50 scroll-animation fadeInUp">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold playfair mb-4 custom-border inline-block">Contact Us</h2>
-                <p class="text-gray-600 max-w-3xl mx-auto">Reach out to us for more information about visiting or
-                    collaborating with our village</p>
-            </div>
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 bg-gray-50 scroll-animation fadeInUp">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold playfair mb-4 custom-border inline-block">Contact Us</h2>
+                    <p class="text-gray-600 max-w-3xl mx-auto">Reach out to us for more information about visiting or
+                        collaborating with our village</p>
+                </div>
 
-            <div class="flex flex-col lg:flex-row gap-12">
-                <div class="w-full lg:w-1/2">
-                    <form class="bg-white p-8 rounded-lg shadow-md" action="https://jasim8606.github.io/thankyou/">
-                        <h3 class="text-2xl font-semibold mb-6 playfair">Send us a Message</h3>
+                <div class="flex flex-col lg:flex-row gap-12">
+                    <div class="w-full lg:w-1/2">
+                        <form class="bg-white p-8 rounded-lg shadow-md" action="https://jasim8606.github.io/thankyou/">
+                            <h3 class="text-2xl font-semibold mb-6 playfair">Send us a Message</h3>
 
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-                            <div>
-                                <label for="contact-name" class="block text-gray-700 mb-2">Full Name</label>
-                                <input type="text" id="contact-name"
-                                    class="w-full px-4 py-3 border border-gray-300 rounded focus:border-primary"
-                                    placeholder="Your name">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                                <div>
+                                    <label for="contact-name" class="block text-gray-700 mb-2">Full Name</label>
+                                    <input type="text" id="contact-name"
+                                        class="w-full px-4 py-3 border border-gray-300 rounded focus:border-primary"
+                                        placeholder="Your name">
+                                </div>
+
+                                <div>
+                                    <label for="contact-email" class="block text-gray-700 mb-2">Email Address</label>
+                                    <input type="email" id="contact-email"
+                                        class="w-full px-4 py-3 border border-gray-300 rounded focus:border-primary"
+                                        placeholder="Your email">
+                                </div>
                             </div>
 
-                            <div>
-                                <label for="contact-email" class="block text-gray-700 mb-2">Email Address</label>
-                                <input type="email" id="contact-email"
+                            <div class="mb-6">
+                                <label for="contact-subject" class="block text-gray-700 mb-2">Subject</label>
+                                <input type="text" id="contact-subject"
                                     class="w-full px-4 py-3 border border-gray-300 rounded focus:border-primary"
-                                    placeholder="Your email">
+                                    placeholder="Message subject">
                             </div>
-                        </div>
 
-                        <div class="mb-6">
-                            <label for="contact-subject" class="block text-gray-700 mb-2">Subject</label>
-                            <input type="text" id="contact-subject"
-                                class="w-full px-4 py-3 border border-gray-300 rounded focus:border-primary"
-                                placeholder="Message subject">
-                        </div>
-
-                        <div class="mb-6">
-                            <label for="contact-message" class="block text-gray-700 mb-2">Message</label>
-                            <textarea id="contact-message" rows="5"
-                                class="w-full px-4 py-3 border border-gray-300 rounded focus:border-primary resize-none"
-                                placeholder="Your message"></textarea>
-                        </div>
+                            <div class="mb-6">
+                                <label for="contact-message" class="block text-gray-700 mb-2">Message</label>
+                                <textarea id="contact-message" rows="5"
+                                    class="w-full px-4 py-3 border border-gray-300 rounded focus:border-primary resize-none"
+                                    placeholder="Your message"></textarea>
+                            </div>
 
 
-                        <!-- From Uiverse.io by Cornerstone-04 -->
+                            <!-- From Uiverse.io by Cornerstone-04 -->
 
-                                                <button>
+                            <button>
                                 <span class="box">Submit Now</span>
                             </button>
-                       
 
 
-                    </form>
-                </div>
-                <!-- From Uiverse.io by Mohammad-Rahme-576 -->
+
+                        </form>
+                    </div>
+                    <!-- From Uiverse.io by Mohammad-Rahme-576 -->
 
 
-                <div class="w-full lg:w-1/2">
-                    <div class="bg-white p-8 rounded-lg shadow-md h-full">
-                        <h3 class="text-2xl font-semibold mb-6 playfair">Contact Information</h3>
+                    <div class="w-full lg:w-1/2">
+                        <div class="bg-white p-8 rounded-lg shadow-md h-full">
+                            <h3 class="text-2xl font-semibold mb-6 playfair">Contact Information</h3>
 
-                        <div class="space-y-6">
-                            <div class="flex items-start">
-                                <div
-                                    class="w-12 h-12 rounded-full bg-primary bg-opacity-10 flex items-center justify-center text-primary mr-4 flex-shrink-0">
-                                    <a href="https://maps.app.goo.gl/No9ZSPAUexevskLYA" class="map" target="_blank">
-                                        <i class="ri-map-pin-line ri-lg"></i>
-                                    </a>
+                            <div class="space-y-6">
+                                <div class="flex items-start">
+                                    <div
+                                        class="w-12 h-12 rounded-full bg-primary bg-opacity-10 flex items-center justify-center text-primary mr-4 flex-shrink-0">
+                                        <a href="https://maps.app.goo.gl/No9ZSPAUexevskLYA" class="map" target="_blank">
+                                            <i class="ri-map-pin-line ri-lg"></i>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-medium text-gray-900 mb-1">Address</h4>
+                                        <p class="text-gray-600">Oorakam Village<br>Panchayat Road<br>Kerala, India -
+                                            676519
+                                        </p>
+                                    </div>
                                 </div>
-                                <div>
-                                    <h4 class="font-medium text-gray-900 mb-1">Address</h4>
-                                    <p class="text-gray-600">Oorakam Village<br>Panchayat Road<br>Kerala, India - 676519
-                                    </p>
+
+                                <div class="flex items-start">
+                                    <div
+                                        class="w-12 h-12 rounded-full bg-primary bg-opacity-10 flex items-center justify-center text-primary mr-4 flex-shrink-0">
+                                        <a href="https://www.poptox.com/" class="map" target="_blank">
+                                            <i class="ri-phone-line ri-lg"></i>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-medium text-gray-900 mb-1">Phone</h4>
+                                        <p class="text-gray-600">Village Office: +91 495 2862 147</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start">
+                                    <div
+                                        class="w-12 h-12 rounded-full bg-primary bg-opacity-10 flex items-center justify-center text-primary mr-4 flex-shrink-0">
+                                        <a href="https://mail.google.com/mail/u/0/#inbox"> <i
+                                                class="ri-mail-line ri-lg"></i>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-medium text-gray-900 mb-1">Email</h4>
+                                        <p class="text-gray-600">oorakam@gmail.com</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start">
+                                    <div
+                                        class="w-12 h-12 rounded-full bg-primary bg-opacity-10 flex items-center justify-center text-primary mr-4 flex-shrink-0">
+                                        <a href="https://www.timeanddate.com/worldclock/india"> <i
+                                                class="ri-time-line ri-lg"></i>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-medium text-gray-900 mb-1">Panchayath Office Time</h4>
+                                        <p class="text-gray-600">Monday to Saturday: 9:00 AM - 5:00 PM<br>Closed on
+                                            Sundays
+                                            and public holidays</p>
+                                    </div>
                                 </div>
                             </div>
 
-                            <div class="flex items-start">
-                                <div
-                                    class="w-12 h-12 rounded-full bg-primary bg-opacity-10 flex items-center justify-center text-primary mr-4 flex-shrink-0">
-                                    <a href="https://www.poptox.com/" class="map" target="_blank">
-                                        <i class="ri-phone-line ri-lg"></i>
-                                    </a>
-                                </div>
-                                <div>
-                                    <h4 class="font-medium text-gray-900 mb-1">Phone</h4>
-                                    <p class="text-gray-600">Village Office: +91 495 2862 147</p>
-                                </div>
+                            <div class="mt-8">
+                                <h4 class="font-medium text-gray-900 mb-4">How to Reach Us</h4>
+                                <p class="text-gray-600 mb-2">• 45 km from Kozhikode International Airport</p>
+                                <p class="text-gray-600 mb-2">• 12 km from nearest railway station</p>
+                                <p class="text-gray-600">• Regular bus services from major towns</p>
                             </div>
-
-                            <div class="flex items-start">
-                                <div
-                                    class="w-12 h-12 rounded-full bg-primary bg-opacity-10 flex items-center justify-center text-primary mr-4 flex-shrink-0">
-                                    <a href="https://mail.google.com/mail/u/0/#inbox"> <i
-                                            class="ri-mail-line ri-lg"></i>
-                                    </a>
-                                </div>
-                                <div>
-                                    <h4 class="font-medium text-gray-900 mb-1">Email</h4>
-                                    <p class="text-gray-600">oorakam@gmail.com</p>
-                                </div>
-                            </div>
-
-                            <div class="flex items-start">
-                                <div
-                                    class="w-12 h-12 rounded-full bg-primary bg-opacity-10 flex items-center justify-center text-primary mr-4 flex-shrink-0">
-                                    <a href="https://www.timeanddate.com/worldclock/india"> <i
-                                            class="ri-time-line ri-lg"></i>
-                                    </a>
-                                </div>
-                                <div>
-                                    <h4 class="font-medium text-gray-900 mb-1">Panchayath Office Time</h4>
-                                    <p class="text-gray-600">Monday to Saturday: 9:00 AM - 5:00 PM<br>Closed on Sundays
-                                        and public holidays</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="mt-8">
-                            <h4 class="font-medium text-gray-900 mb-4">How to Reach Us</h4>
-                            <p class="text-gray-600 mb-2">• 45 km from Kozhikode International Airport</p>
-                            <p class="text-gray-600 mb-2">• 12 km from nearest railway station</p>
-                            <p class="text-gray-600">• Regular bus services from major towns</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- From Uiverse.io by csozidev --> 
-<div class="buttons">
-  <button class="main-button">
-  <svg width="30" height="30" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-     <path d="M15.75 5.125a3.125 3.125 0 1 1 .754 2.035l-8.397 3.9a3.124 3.124 0 0 1 0 1.88l8.397 3.9a3.125 3.125 0 1 1-.61 1.095l-8.397-3.9a3.125 3.125 0 1 1 0-4.07l8.397-3.9a3.125 3.125 0 0 1-.144-.94Z"></path>
-  </svg>
-</button>
-<a href="https://discord.com/">
+        </section>
+        <!-- From Uiverse.io by csozidev -->
+        <div class="buttons">
+            <button class="main-button">
+                <svg width="30" height="30" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M15.75 5.125a3.125 3.125 0 1 1 .754 2.035l-8.397 3.9a3.124 3.124 0 0 1 0 1.88l8.397 3.9a3.125 3.125 0 1 1-.61 1.095l-8.397-3.9a3.125 3.125 0 1 1 0-4.07l8.397-3.9a3.125 3.125 0 0 1-.144-.94Z">
+                    </path>
+                </svg>
+            </button>
+            <a href="https://discord.com/">
 
-<button class="discord-button button" style="transition-delay: 0s, 0s, 0s; transition-property: translate, background, box-shadow;">
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" height="30" width="30">
-     <path d="M18.654 6.368a15.87 15.87 0 0 0-3.908-1.213.06.06 0 0 0-.062.03c-.17.3-.357.693-.487 1a14.628 14.628 0 0 0-4.39 0 9.911 9.911 0 0 0-.494-1 .061.061 0 0 0-.063-.03c-1.35.233-2.664.64-3.908 1.213a.05.05 0 0 0-.025.022c-2.49 3.719-3.172 7.346-2.837 10.928a.068.068 0 0 0 .025.045 15.936 15.936 0 0 0 4.794 2.424.06.06 0 0 0 .067-.023c.37-.504.699-1.036.982-1.595a.06.06 0 0 0-.034-.084 10.65 10.65 0 0 1-1.497-.714.06.06 0 0 1-.024-.08.06.06 0 0 1 .018-.022c.1-.075.201-.155.297-.234a.06.06 0 0 1 .061-.008c3.143 1.435 6.545 1.435 9.65 0a.062.062 0 0 1 .033-.005.061.061 0 0 1 .03.013c.096.08.197.159.298.234a.06.06 0 0 1 .016.081.062.062 0 0 1-.021.021c-.479.28-.98.518-1.499.713a.06.06 0 0 0-.032.085c.288.558.618 1.09.98 1.595a.06.06 0 0 0 .067.023 15.885 15.885 0 0 0 4.802-2.424.06.06 0 0 0 .025-.045c.4-4.14-.671-7.738-2.84-10.927a.04.04 0 0 0-.024-.023Zm-9.837 8.769c-.947 0-1.726-.87-1.726-1.935 0-1.066.765-1.935 1.726-1.935.968 0 1.74.876 1.726 1.935 0 1.066-.765 1.935-1.726 1.935Zm6.38 0c-.946 0-1.726-.87-1.726-1.935 0-1.066.764-1.935 1.725-1.935.969 0 1.741.876 1.726 1.935 0 1.066-.757 1.935-1.726 1.935Z"></path>
-  </svg>
-  </a>
-</button>
-<a href="https://x.com/">
-<button class="twitter-button button" style="transition-delay: 0.1s, 0s, 0.1s; transition-property: translate, background, box-shadow;">
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" height="30" width="30">
-     <path d="M8.432 19.8c7.245 0 11.209-6.005 11.209-11.202 0-.168 0-.338-.007-.506A8.023 8.023 0 0 0 21.6 6.049a7.99 7.99 0 0 1-2.266.622 3.961 3.961 0 0 0 1.736-2.18 7.84 7.84 0 0 1-2.505.951 3.943 3.943 0 0 0-6.715 3.593A11.19 11.19 0 0 1 3.73 4.92a3.947 3.947 0 0 0 1.222 5.259 3.989 3.989 0 0 1-1.784-.49v.054a3.946 3.946 0 0 0 3.159 3.862 3.964 3.964 0 0 1-1.775.069 3.939 3.939 0 0 0 3.68 2.733 7.907 7.907 0 0 1-4.896 1.688 7.585 7.585 0 0 1-.936-.054A11.213 11.213 0 0 0 8.432 19.8Z"></path>
-  </svg>
-  </a>
-</button>
-<a href="https://www.reddit.com/">
-<button class="reddit-button button" style="transition-delay: 0.2s, 0s, 0.2s; transition-property: translate, background, box-shadow;">
-  <svg width="30" height="30" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-     <path d="M9.708 12a1.039 1.039 0 0 0-1.037 1.037c0 .574.465 1.05 1.037 1.04a1.04 1.04 0 0 0 0-2.077Zm2.304 4.559c.394 0 1.754-.048 2.47-.764a.29.29 0 0 0 0-.383.266.266 0 0 0-.382 0c-.442.454-1.408.61-2.088.61-.681 0-1.635-.156-2.089-.61a.266.266 0 0 0-.382 0 .266.266 0 0 0 0 .383c.705.704 2.065.763 2.471.763Zm1.24-3.509a1.04 1.04 0 0 0 1.039 1.037c.572 0 1.037-.476 1.037-1.037a1.039 1.039 0 0 0-2.075 0Z"></path>
-     <path d="M22 12a10 10 0 1 1-20 0 10 10 0 0 1 20 0Zm-4.785-1.456c-.394 0-.753.155-1.015.406-1.001-.716-2.375-1.181-3.901-1.241l.667-3.127 2.173.466a1.038 1.038 0 1 0 1.037-1.087 1.037 1.037 0 0 0-.93.585l-2.422-.512a.254.254 0 0 0-.264.106.232.232 0 0 0-.035.096l-.74 3.485c-1.55.048-2.947.513-3.963 1.24a1.466 1.466 0 0 0-1.927-.082 1.454 1.454 0 0 0 .318 2.457 2.542 2.542 0 0 0-.037.441c0 2.244 2.614 4.07 5.836 4.07 3.222 0 5.835-1.813 5.835-4.07a2.73 2.73 0 0 0-.036-.44c.502-.227.86-.74.86-1.337 0-.813-.656-1.456-1.456-1.456Z"></path>
-</svg>
-</a>
-</button>
-<a href="https://www.messenger.com/">
-<button class="messenger-button button" style="transition-delay: 0.3s, 0s, 0.3s; transition-property: translate, background, box-shadow;">
-  <svg width="30" height="30" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-     <path d="M2 11.7C2 6.126 6.366 2 12 2s10 4.126 10 9.7c0 5.574-4.366 9.7-10 9.7-1.012 0-1.982-.134-2.895-.384a.799.799 0 0 0-.534.038l-1.985.877a.8.8 0 0 1-1.122-.707l-.055-1.779a.799.799 0 0 0-.269-.57C3.195 17.135 2 14.615 2 11.7Zm6.932-1.824-2.937 4.66c-.281.448.268.952.689.633l3.156-2.395a.6.6 0 0 1 .723-.003l2.336 1.753a1.501 1.501 0 0 0 2.169-.4l2.937-4.66c.283-.448-.267-.952-.689-.633l-3.156 2.395a.6.6 0 0 1-.723.003l-2.336-1.754a1.5 1.5 0 0 0-2.169.4v.001Z"></path>
-  </svg>
-    </a>
-</button>
-<a href="https://www.pinterest.com/">
-<button class="pinterest-button button" style="transition-delay: 0.4s, 0s, 0.4s; transition-property: translate, background, box-shadow;">
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" height="30" width="30">
-     <path d="M12.48 2.4a9.6 9.6 0 0 0-3.498 18.543c-.084-.76-.16-1.927.033-2.757.175-.75 1.125-4.772 1.125-4.772s-.287-.575-.287-1.424c0-1.336.774-2.332 1.738-2.332.818 0 1.214.614 1.214 1.352 0 .824-.524 2.055-.795 3.196-.226.955.48 1.735 1.422 1.735 1.706 0 3.018-1.8 3.018-4.397 0-2.298-1.653-3.904-4.01-3.904-2.732 0-4.335 2.048-4.335 4.165 0 .825.318 1.71.714 2.191a.288.288 0 0 1 .067.276c-.073.302-.235.955-.266 1.088-.042.176-.14.213-.322.129-1.2-.558-1.949-2.311-1.949-3.72 0-3.028 2.201-5.808 6.344-5.808 3.33 0 5.918 2.372 5.918 5.544 0 3.308-2.087 5.971-4.981 5.971-.974 0-1.888-.505-2.201-1.103l-.598 2.283c-.217.834-.803 1.879-1.194 2.516A9.6 9.6 0 1 0 12.48 2.4Z"></path>
-  </svg>
-  </a>
-</button>
-<a href="https://www.instagram.com/">
-<button class="instagram-button button" style="transition-delay: 0.5s, 0s, 0.5s; transition-property: translate, background, box-shadow;">
-  <svg width="30" height="30" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-     <path d="M12 2c-2.714 0-3.055.013-4.121.06-1.066.05-1.793.217-2.429.465a4.896 4.896 0 0 0-1.771 1.154A4.909 4.909 0 0 0 2.525 5.45c-.248.635-.416 1.362-.465 2.425C2.013 8.944 2 9.284 2 12.001c0 2.715.013 3.055.06 4.121.05 1.066.217 1.792.465 2.428a4.91 4.91 0 0 0 1.154 1.771 4.88 4.88 0 0 0 1.77 1.154c.637.247 1.362.416 2.427.465 1.068.047 1.408.06 4.124.06 2.716 0 3.055-.012 4.122-.06 1.064-.05 1.793-.218 2.43-.465a4.893 4.893 0 0 0 1.77-1.154 4.91 4.91 0 0 0 1.153-1.771c.246-.636.415-1.363.465-2.428.047-1.066.06-1.406.06-4.122s-.012-3.056-.06-4.124c-.05-1.064-.219-1.791-.465-2.426a4.907 4.907 0 0 0-1.154-1.771 4.888 4.888 0 0 0-1.771-1.154c-.637-.248-1.365-.416-2.429-.465-1.067-.047-1.406-.06-4.123-.06H12Zm-.896 1.803H12c2.67 0 2.987.008 4.04.057.975.044 1.505.208 1.858.344.466.181.8.399 1.15.748.35.35.566.683.747 1.15.138.352.3.882.344 1.857.049 1.053.059 1.37.059 4.039 0 2.668-.01 2.986-.059 4.04-.044.974-.207 1.503-.344 1.856a3.09 3.09 0 0 1-.748 1.149 3.09 3.09 0 0 1-1.15.747c-.35.137-.88.3-1.857.345-1.053.047-1.37.059-4.04.059s-2.987-.011-4.041-.059c-.975-.045-1.504-.208-1.856-.345a3.097 3.097 0 0 1-1.15-.747 3.1 3.1 0 0 1-.75-1.15c-.136-.352-.3-.882-.344-1.857-.047-1.054-.057-1.37-.057-4.041 0-2.67.01-2.985.057-4.039.045-.975.208-1.505.345-1.857.181-.466.399-.8.749-1.15a3.09 3.09 0 0 1 1.15-.748c.352-.137.881-.3 1.856-.345.923-.042 1.28-.055 3.144-.056v.003Zm6.235 1.66a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4ZM12 6.865a5.136 5.136 0 1 0-.16 10.272A5.136 5.136 0 0 0 12 6.865Zm0 1.801a3.334 3.334 0 1 1 0 6.668 3.334 3.334 0 0 1 0-6.668Z"></path>
-  </svg>
-  </a>
-</button>
-<a href="https://www.snapchat.com/">
-<button class="snapchat-button button" style="transition-delay: 0.6s, 0s, 0.6s; transition-property: translate, background, box-shadow;">
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" height="30" width="30">
-     <path d="M21.929 16.407c-.139-.378-.404-.58-.705-.748a1.765 1.765 0 0 0-.154-.08l-.273-.139c-.94-.499-1.674-1.127-2.183-1.872a4.234 4.234 0 0 1-.375-.664c-.043-.125-.04-.195-.01-.259a.424.424 0 0 1 .121-.125l.44-.289a14.1 14.1 0 0 0 .464-.306c.386-.27.656-.558.825-.878a1.745 1.745 0 0 0 .086-1.45c-.256-.672-.891-1.09-1.661-1.09-.206 0-.41.027-.609.082.008-.46-.002-.947-.043-1.424-.146-1.68-.734-2.56-1.347-3.263a5.367 5.367 0 0 0-1.368-1.1C14.204 2.27 13.15 2 11.998 2c-1.15 0-2.2.27-3.131.801-.515.29-.978.663-1.371 1.104-.613.703-1.2 1.584-1.347 3.263-.041.477-.05.965-.045 1.422a2.288 2.288 0 0 0-.608-.081c-.77 0-1.405.418-1.66 1.091a1.747 1.747 0 0 0 .083 1.451c.17.32.44.608.825.877.103.072.263.174.464.307l.424.276c.054.036.1.083.136.138.033.066.034.137-.015.271a4.204 4.204 0 0 1-.369.65c-.497.729-1.21 1.346-2.12 1.84-.481.255-.982.425-1.193 1-.16.435-.055.929.35 1.344.148.156.32.287.51.387a5.54 5.54 0 0 0 1.25.5c.09.023.176.061.253.113.148.13.128.325.324.61.099.147.225.275.37.375.413.286.876.303 1.369.322.444.018.947.038 1.521.225.238.08.486.233.773.41.687.423 1.63 1.003 3.207 1.003s2.525-.583 3.22-1.008c.284-.175.53-.325.761-.401.575-.19 1.079-.21 1.523-.226.491-.019.955-.038 1.369-.323.172-.12.315-.277.42-.46.142-.24.137-.409.27-.525a.783.783 0 0 1 .238-.108 5.552 5.552 0 0 0 1.268-.506c.2-.108.382-.25.536-.42l.005-.006c.38-.406.475-.886.32-1.309Zm-1.401.753c-.855.473-1.424.421-1.866.706-.375.242-.153.763-.425.95-.337.233-1.327-.015-2.607.408-1.056.349-1.73 1.352-3.629 1.352-1.898 0-2.556-1.001-3.63-1.355-1.277-.422-2.27-.175-2.604-.406-.273-.188-.052-.71-.427-.951-.442-.285-1.011-.234-1.865-.704-.545-.3-.236-.488-.055-.575 3.098-1.499 3.592-3.813 3.613-3.985.027-.207.056-.371-.173-.582-.221-.206-1.202-.813-1.475-1.003-.45-.315-.65-.629-.502-1.015.102-.268.351-.369.612-.369.083 0 .166.01.247.028.495.107.975.356 1.252.422a.477.477 0 0 0 .103.014c.147 0 .2-.075.19-.244-.033-.541-.11-1.596-.024-2.582.117-1.355.555-2.028 1.074-2.622.25-.286 1.42-1.525 3.662-1.525 2.24 0 3.415 1.234 3.664 1.52.52.593.957 1.265 1.073 2.622.085.985.012 2.04-.023 2.581-.013.178.042.244.19.244a.442.442 0 0 0 .102-.013c.278-.067.759-.316 1.253-.422a1.14 1.14 0 0 1 .246-.029c.262 0 .511.102.612.369.147.386-.05.7-.5 1.015-.273.19-1.255.797-1.476 1.002-.23.212-.2.375-.174.583.023.175.517 2.489 3.613 3.986.184.091.492.278-.051.58Z"></path>
-  </svg>
-    </a>
-</button>
-<a href="https://www.whatsapp.com/">
-<button class="whatsapp-button button" style="transition-delay: 0.7s, 0s, 0.7s; transition-property: translate, background, box-shadow;">
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" height="30" width="30">
-     <path d="M19.001 4.908A9.817 9.817 0 0 0 11.992 2C6.534 2 2.085 6.448 2.08 11.908c0 1.748.458 3.45 1.321 4.956L2 22l5.255-1.377a9.916 9.916 0 0 0 4.737 1.206h.005c5.46 0 9.908-4.448 9.913-9.913A9.872 9.872 0 0 0 19 4.908h.001ZM11.992 20.15A8.216 8.216 0 0 1 7.797 19l-.3-.18-3.117.818.833-3.041-.196-.314a8.2 8.2 0 0 1-1.258-4.381c0-4.533 3.696-8.23 8.239-8.23a8.2 8.2 0 0 1 5.825 2.413 8.196 8.196 0 0 1 2.41 5.825c-.006 4.55-3.702 8.24-8.24 8.24Zm4.52-6.167c-.247-.124-1.463-.723-1.692-.808-.228-.08-.394-.123-.556.124-.166.246-.641.808-.784.969-.143.166-.29.185-.537.062-.247-.125-1.045-.385-1.99-1.23-.738-.657-1.232-1.47-1.38-1.716-.142-.247-.013-.38.11-.504.11-.11.247-.29.37-.432.126-.143.167-.248.248-.413.082-.167.043-.31-.018-.433-.063-.124-.557-1.345-.765-1.838-.2-.486-.404-.419-.557-.425-.142-.009-.309-.009-.475-.009a.911.911 0 0 0-.661.31c-.228.247-.864.845-.864 2.067 0 1.22.888 2.395 1.013 2.56.122.167 1.742 2.666 4.229 3.74.587.257 1.05.408 1.41.523.595.19 1.13.162 1.558.1.475-.072 1.464-.6 1.673-1.178.205-.58.205-1.075.142-1.18-.061-.104-.227-.165-.475-.29Z"></path>
-  </svg>
-  </a>
-</button>
-</div>
-    <!-- From Uiverse.io by SelfMadeSystem -->
-    <div class="rating">
-        <input type="radio" id="star-1" name="star-radio" value="star-1">
-        <label for="star-1">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                <path pathLength="360"
-                    d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z">
-                </path>
-            </svg>
-        </label>
-        <input type="radio" id="star-2" name="star-radio" value="star-1">
-        <label for="star-2">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                <path pathLength="360"
-                    d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z">
-                </path>
-            </svg>
-        </label>
-        <input type="radio" id="star-3" name="star-radio" value="star-1">
-        <label for="star-3">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                <path pathLength="360"
-                    d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z">
-                </path>
-            </svg>
-        </label>
-        <input type="radio" id="star-4" name="star-radio" value="star-1">
-        <label for="star-4">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                <path pathLength="360"
-                    d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z">
-                </path>
-            </svg>
-        </label>
-        <input type="radio" id="star-5" name="star-radio" value="star-1">
-        <label for="star-5">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                <path pathLength="360"
-                    d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z">
-                </path>
-            </svg>
-        </label>
-    </div>
-
-
-
-
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-white pt-16 pb-8">
-        <div class="container mx-auto px-6">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
-                <div>
-                <a href="#" class="text-3xl font-['Pacifico'] text-white mb-6 inline-block">Oorakam</a>
-                    <p class="text-gray-400 mb-6">Experience the authentic charm of Kerala's hidden gem, where tradition
-                        meets natural beauty in a harmonious blend of culture and hospitality.</p>
-                    <div class="flex space-x-4">
-                        <a href="https://www.facebook.com/share/15KG3u6mv3/"
-                            class="w-10 h-10 rounded-full bg-[#1877F2] flex items-center justify-center text-white hover:bg-[#145DBF] transition duration-300">
-                            <i class="ri-facebook-fill animate-bounce"></i>
-                        </a>
-                        <a href="https://www.instagram.com/_jaasimm.__/?hl=en"
-                            class="w-10 h-10 rounded-full bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600 flex items-center justify-center text-white hover:opacity-90 transition duration-300">
-                            <i class="ri-instagram-fill animate-bounce"></i>
-                        </a>
-                        <a href="https://x.com/Jasim8606"
-                            class="w-10 h-10 rounded-full bg-black flex items-center justify-center text-white hover:bg-gray-800 transition duration-300">
-                            <i class="ri-twitter-x-line animate-bounce"></i>
-                        </a>
-                        <a href="https://www.youtube.com/results?search_query=youtube"
-                            class="w-10 h-10 rounded-full bg-[#FF0000] flex items-center justify-center text-white hover:bg-red-700 transition duration-300">
-                            <i class="ri-youtube-fill animate-bounce"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <div>
-                    <h4 class="text-xl font-semibold mb-6">Quick Links</h4>
-                    <ul class="space-y-3">
-                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Home</a></li>
-                        <li><a href="#about" class="text-gray-400 hover:text-white transition duration-300">About Us</a>
-                        </li>
-                        <li><a href="#gallery" class="text-gray-400 hover:text-white transition duration-300">Photo
-                                Gallery</a></li>
-                        <li><a href="#contact" class="text-gray-400 hover:text-white transition duration-300">Contact
-                                Us</a></li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h4 class="text-xl font-semibold mb-6">Visitor Information</h4>
-                    <ul class="space-y-3">
-                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">How to Reach</a>
-                        </li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Accommodation</a>
-                        </li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Local Cuisine</a>
-                        </li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Festivals &
-                                Events</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Travel Tips</a>
-                        </li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">FAQ</a></li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h4 class="text-xl font-semibold mb-6">Newsletter</h4>
-                    <p class="text-gray-400 mb-4">Subscribe to receive updates about our village events and activities.
-                    </p>
-                    <form action="https://mail.google.com/mail/u/0/#inbox">
-                        <div class="flex">
-                            <input type="email" placeholder="Your email address "
-                                class="px-4 py-3 w-full rounded-l bg-gray-800 border-none text-gray-300 focus:bg-gray-700">
-                            <button type="submit"
-                                class="bg-primary text-white px-4 rounded-r hover:bg-opacity-90 transition duration-300 !rounded-button whitespace-nowrap">
-                                <i class="ri-send-plane-fill"></i>
-                            </button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-
-            <div class="border-t border-gray-800 mt-12 pt-8">
-                <div class="flex flex-col md:flex-row justify-between items-center">
-                    <p class="text-gray-400 text-sm mb-4 md:mb-0">© 2025 Oorakam Kunnath Village. All rights reserved.
-                        Created By Jasim</p>
-                    <div class="flex space-x-6">
-                        <a href="#" class="text-gray-400 hover:text-white text-sm transition duration-300">Privacy
-                            Policy</a>
-                        <a href="#" class="text-gray-400 hover:text-white text-sm transition duration-300">Terms of
-                            Service</a>
-                        <a href="#" class="text-gray-400 hover:text-white text-sm transition duration-300">Cookie
-                            Policy</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Back to Top Button -->
-    <button
-        class="back-to-top w-12 h-12 rounded-full bg-primary text-white shadow-lg flex items-center justify-center hover:bg-opacity-90 transition duration-300">
-        <i class="ri-arrow-up-line ri-lg"></i>
-    </button>
-
-    <!-- Mobile Navigation Menu (Hidden by default) -->
-    <div class="fixed inset-0 bg-gray-900 bg-opacity-90 z-50 hidden" id="mobile-menu">
-        <div class="flex justify-end p-6">
-            <button id="close-menu" class="w-10 h-10 flex items-center justify-center text-white">
-                <i class="ri-close-line ri-lg"></i>
+                <button class="discord-button button"
+                    style="transition-delay: 0s, 0s, 0s; transition-property: translate, background, box-shadow;">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" height="30"
+                        width="30">
+                        <path
+                            d="M18.654 6.368a15.87 15.87 0 0 0-3.908-1.213.06.06 0 0 0-.062.03c-.17.3-.357.693-.487 1a14.628 14.628 0 0 0-4.39 0 9.911 9.911 0 0 0-.494-1 .061.061 0 0 0-.063-.03c-1.35.233-2.664.64-3.908 1.213a.05.05 0 0 0-.025.022c-2.49 3.719-3.172 7.346-2.837 10.928a.068.068 0 0 0 .025.045 15.936 15.936 0 0 0 4.794 2.424.06.06 0 0 0 .067-.023c.37-.504.699-1.036.982-1.595a.06.06 0 0 0-.034-.084 10.65 10.65 0 0 1-1.497-.714.06.06 0 0 1-.024-.08.06.06 0 0 1 .018-.022c.1-.075.201-.155.297-.234a.06.06 0 0 1 .061-.008c3.143 1.435 6.545 1.435 9.65 0a.062.062 0 0 1 .033-.005.061.061 0 0 1 .03.013c.096.08.197.159.298.234a.06.06 0 0 1 .016.081.062.062 0 0 1-.021.021c-.479.28-.98.518-1.499.713a.06.06 0 0 0-.032.085c.288.558.618 1.09.98 1.595a.06.06 0 0 0 .067.023 15.885 15.885 0 0 0 4.802-2.424.06.06 0 0 0 .025-.045c.4-4.14-.671-7.738-2.84-10.927a.04.04 0 0 0-.024-.023Zm-9.837 8.769c-.947 0-1.726-.87-1.726-1.935 0-1.066.765-1.935 1.726-1.935.968 0 1.74.876 1.726 1.935 0 1.066-.765 1.935-1.726 1.935Zm6.38 0c-.946 0-1.726-.87-1.726-1.935 0-1.066.764-1.935 1.725-1.935.969 0 1.741.876 1.726 1.935 0 1.066-.757 1.935-1.726 1.935Z">
+                        </path>
+                    </svg>
+            </a>
+            </button>
+            <a href="https://x.com/">
+                <button class="twitter-button button"
+                    style="transition-delay: 0.1s, 0s, 0.1s; transition-property: translate, background, box-shadow;">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" height="30"
+                        width="30">
+                        <path
+                            d="M8.432 19.8c7.245 0 11.209-6.005 11.209-11.202 0-.168 0-.338-.007-.506A8.023 8.023 0 0 0 21.6 6.049a7.99 7.99 0 0 1-2.266.622 3.961 3.961 0 0 0 1.736-2.18 7.84 7.84 0 0 1-2.505.951 3.943 3.943 0 0 0-6.715 3.593A11.19 11.19 0 0 1 3.73 4.92a3.947 3.947 0 0 0 1.222 5.259 3.989 3.989 0 0 1-1.784-.49v.054a3.946 3.946 0 0 0 3.159 3.862 3.964 3.964 0 0 1-1.775.069 3.939 3.939 0 0 0 3.68 2.733 7.907 7.907 0 0 1-4.896 1.688 7.585 7.585 0 0 1-.936-.054A11.213 11.213 0 0 0 8.432 19.8Z">
+                        </path>
+                    </svg>
+            </a>
+            </button>
+            <a href="https://www.reddit.com/">
+                <button class="reddit-button button"
+                    style="transition-delay: 0.2s, 0s, 0.2s; transition-property: translate, background, box-shadow;">
+                    <svg width="30" height="30" fill="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M9.708 12a1.039 1.039 0 0 0-1.037 1.037c0 .574.465 1.05 1.037 1.04a1.04 1.04 0 0 0 0-2.077Zm2.304 4.559c.394 0 1.754-.048 2.47-.764a.29.29 0 0 0 0-.383.266.266 0 0 0-.382 0c-.442.454-1.408.61-2.088.61-.681 0-1.635-.156-2.089-.61a.266.266 0 0 0-.382 0 .266.266 0 0 0 0 .383c.705.704 2.065.763 2.471.763Zm1.24-3.509a1.04 1.04 0 0 0 1.039 1.037c.572 0 1.037-.476 1.037-1.037a1.039 1.039 0 0 0-2.075 0Z">
+                        </path>
+                        <path
+                            d="M22 12a10 10 0 1 1-20 0 10 10 0 0 1 20 0Zm-4.785-1.456c-.394 0-.753.155-1.015.406-1.001-.716-2.375-1.181-3.901-1.241l.667-3.127 2.173.466a1.038 1.038 0 1 0 1.037-1.087 1.037 1.037 0 0 0-.93.585l-2.422-.512a.254.254 0 0 0-.264.106.232.232 0 0 0-.035.096l-.74 3.485c-1.55.048-2.947.513-3.963 1.24a1.466 1.466 0 0 0-1.927-.082 1.454 1.454 0 0 0 .318 2.457 2.542 2.542 0 0 0-.037.441c0 2.244 2.614 4.07 5.836 4.07 3.222 0 5.835-1.813 5.835-4.07a2.73 2.73 0 0 0-.036-.44c.502-.227.86-.74.86-1.337 0-.813-.656-1.456-1.456-1.456Z">
+                        </path>
+                    </svg>
+            </a>
+            </button>
+            <a href="https://www.messenger.com/">
+                <button class="messenger-button button"
+                    style="transition-delay: 0.3s, 0s, 0.3s; transition-property: translate, background, box-shadow;">
+                    <svg width="30" height="30" fill="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M2 11.7C2 6.126 6.366 2 12 2s10 4.126 10 9.7c0 5.574-4.366 9.7-10 9.7-1.012 0-1.982-.134-2.895-.384a.799.799 0 0 0-.534.038l-1.985.877a.8.8 0 0 1-1.122-.707l-.055-1.779a.799.799 0 0 0-.269-.57C3.195 17.135 2 14.615 2 11.7Zm6.932-1.824-2.937 4.66c-.281.448.268.952.689.633l3.156-2.395a.6.6 0 0 1 .723-.003l2.336 1.753a1.501 1.501 0 0 0 2.169-.4l2.937-4.66c.283-.448-.267-.952-.689-.633l-3.156 2.395a.6.6 0 0 1-.723.003l-2.336-1.754a1.5 1.5 0 0 0-2.169.4v.001Z">
+                        </path>
+                    </svg>
+            </a>
+            </button>
+            <a href="https://www.pinterest.com/">
+                <button class="pinterest-button button"
+                    style="transition-delay: 0.4s, 0s, 0.4s; transition-property: translate, background, box-shadow;">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" height="30"
+                        width="30">
+                        <path
+                            d="M12.48 2.4a9.6 9.6 0 0 0-3.498 18.543c-.084-.76-.16-1.927.033-2.757.175-.75 1.125-4.772 1.125-4.772s-.287-.575-.287-1.424c0-1.336.774-2.332 1.738-2.332.818 0 1.214.614 1.214 1.352 0 .824-.524 2.055-.795 3.196-.226.955.48 1.735 1.422 1.735 1.706 0 3.018-1.8 3.018-4.397 0-2.298-1.653-3.904-4.01-3.904-2.732 0-4.335 2.048-4.335 4.165 0 .825.318 1.71.714 2.191a.288.288 0 0 1 .067.276c-.073.302-.235.955-.266 1.088-.042.176-.14.213-.322.129-1.2-.558-1.949-2.311-1.949-3.72 0-3.028 2.201-5.808 6.344-5.808 3.33 0 5.918 2.372 5.918 5.544 0 3.308-2.087 5.971-4.981 5.971-.974 0-1.888-.505-2.201-1.103l-.598 2.283c-.217.834-.803 1.879-1.194 2.516A9.6 9.6 0 1 0 12.48 2.4Z">
+                        </path>
+                    </svg>
+            </a>
+            </button>
+            <a href="https://www.instagram.com/">
+                <button class="instagram-button button"
+                    style="transition-delay: 0.5s, 0s, 0.5s; transition-property: translate, background, box-shadow;">
+                    <svg width="30" height="30" fill="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12 2c-2.714 0-3.055.013-4.121.06-1.066.05-1.793.217-2.429.465a4.896 4.896 0 0 0-1.771 1.154A4.909 4.909 0 0 0 2.525 5.45c-.248.635-.416 1.362-.465 2.425C2.013 8.944 2 9.284 2 12.001c0 2.715.013 3.055.06 4.121.05 1.066.217 1.792.465 2.428a4.91 4.91 0 0 0 1.154 1.771 4.88 4.88 0 0 0 1.77 1.154c.637.247 1.362.416 2.427.465 1.068.047 1.408.06 4.124.06 2.716 0 3.055-.012 4.122-.06 1.064-.05 1.793-.218 2.43-.465a4.893 4.893 0 0 0 1.77-1.154 4.91 4.91 0 0 0 1.153-1.771c.246-.636.415-1.363.465-2.428.047-1.066.06-1.406.06-4.122s-.012-3.056-.06-4.124c-.05-1.064-.219-1.791-.465-2.426a4.907 4.907 0 0 0-1.154-1.771 4.888 4.888 0 0 0-1.771-1.154c-.637-.248-1.365-.416-2.429-.465-1.067-.047-1.406-.06-4.123-.06H12Zm-.896 1.803H12c2.67 0 2.987.008 4.04.057.975.044 1.505.208 1.858.344.466.181.8.399 1.15.748.35.35.566.683.747 1.15.138.352.3.882.344 1.857.049 1.053.059 1.37.059 4.039 0 2.668-.01 2.986-.059 4.04-.044.974-.207 1.503-.344 1.856a3.09 3.09 0 0 1-.748 1.149 3.09 3.09 0 0 1-1.15.747c-.35.137-.88.3-1.857.345-1.053.047-1.37.059-4.04.059s-2.987-.011-4.041-.059c-.975-.045-1.504-.208-1.856-.345a3.097 3.097 0 0 1-1.15-.747 3.1 3.1 0 0 1-.75-1.15c-.136-.352-.3-.882-.344-1.857-.047-1.054-.057-1.37-.057-4.041 0-2.67.01-2.985.057-4.039.045-.975.208-1.505.345-1.857.181-.466.399-.8.749-1.15a3.09 3.09 0 0 1 1.15-.748c.352-.137.881-.3 1.856-.345.923-.042 1.28-.055 3.144-.056v.003Zm6.235 1.66a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4ZM12 6.865a5.136 5.136 0 1 0-.16 10.272A5.136 5.136 0 0 0 12 6.865Zm0 1.801a3.334 3.334 0 1 1 0 6.668 3.334 3.334 0 0 1 0-6.668Z">
+                        </path>
+                    </svg>
+            </a>
+            </button>
+            <a href="https://www.snapchat.com/">
+                <button class="snapchat-button button"
+                    style="transition-delay: 0.6s, 0s, 0.6s; transition-property: translate, background, box-shadow;">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" height="30"
+                        width="30">
+                        <path
+                            d="M21.929 16.407c-.139-.378-.404-.58-.705-.748a1.765 1.765 0 0 0-.154-.08l-.273-.139c-.94-.499-1.674-1.127-2.183-1.872a4.234 4.234 0 0 1-.375-.664c-.043-.125-.04-.195-.01-.259a.424.424 0 0 1 .121-.125l.44-.289a14.1 14.1 0 0 0 .464-.306c.386-.27.656-.558.825-.878a1.745 1.745 0 0 0 .086-1.45c-.256-.672-.891-1.09-1.661-1.09-.206 0-.41.027-.609.082.008-.46-.002-.947-.043-1.424-.146-1.68-.734-2.56-1.347-3.263a5.367 5.367 0 0 0-1.368-1.1C14.204 2.27 13.15 2 11.998 2c-1.15 0-2.2.27-3.131.801-.515.29-.978.663-1.371 1.104-.613.703-1.2 1.584-1.347 3.263-.041.477-.05.965-.045 1.422a2.288 2.288 0 0 0-.608-.081c-.77 0-1.405.418-1.66 1.091a1.747 1.747 0 0 0 .083 1.451c.17.32.44.608.825.877.103.072.263.174.464.307l.424.276c.054.036.1.083.136.138.033.066.034.137-.015.271a4.204 4.204 0 0 1-.369.65c-.497.729-1.21 1.346-2.12 1.84-.481.255-.982.425-1.193 1-.16.435-.055.929.35 1.344.148.156.32.287.51.387a5.54 5.54 0 0 0 1.25.5c.09.023.176.061.253.113.148.13.128.325.324.61.099.147.225.275.37.375.413.286.876.303 1.369.322.444.018.947.038 1.521.225.238.08.486.233.773.41.687.423 1.63 1.003 3.207 1.003s2.525-.583 3.22-1.008c.284-.175.53-.325.761-.401.575-.19 1.079-.21 1.523-.226.491-.019.955-.038 1.369-.323.172-.12.315-.277.42-.46.142-.24.137-.409.27-.525a.783.783 0 0 1 .238-.108 5.552 5.552 0 0 0 1.268-.506c.2-.108.382-.25.536-.42l.005-.006c.38-.406.475-.886.32-1.309Zm-1.401.753c-.855.473-1.424.421-1.866.706-.375.242-.153.763-.425.95-.337.233-1.327-.015-2.607.408-1.056.349-1.73 1.352-3.629 1.352-1.898 0-2.556-1.001-3.63-1.355-1.277-.422-2.27-.175-2.604-.406-.273-.188-.052-.71-.427-.951-.442-.285-1.011-.234-1.865-.704-.545-.3-.236-.488-.055-.575 3.098-1.499 3.592-3.813 3.613-3.985.027-.207.056-.371-.173-.582-.221-.206-1.202-.813-1.475-1.003-.45-.315-.65-.629-.502-1.015.102-.268.351-.369.612-.369.083 0 .166.01.247.028.495.107.975.356 1.252.422a.477.477 0 0 0 .103.014c.147 0 .2-.075.19-.244-.033-.541-.11-1.596-.024-2.582.117-1.355.555-2.028 1.074-2.622.25-.286 1.42-1.525 3.662-1.525 2.24 0 3.415 1.234 3.664 1.52.52.593.957 1.265 1.073 2.622.085.985.012 2.04-.023 2.581-.013.178.042.244.19.244a.442.442 0 0 0 .102-.013c.278-.067.759-.316 1.253-.422a1.14 1.14 0 0 1 .246-.029c.262 0 .511.102.612.369.147.386-.05.7-.5 1.015-.273.19-1.255.797-1.476 1.002-.23.212-.2.375-.174.583.023.175.517 2.489 3.613 3.986.184.091.492.278-.051.58Z">
+                        </path>
+                    </svg>
+            </a>
+            </button>
+            <a href="https://www.whatsapp.com/">
+                <button class="whatsapp-button button"
+                    style="transition-delay: 0.7s, 0s, 0.7s; transition-property: translate, background, box-shadow;">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" height="30"
+                        width="30">
+                        <path
+                            d="M19.001 4.908A9.817 9.817 0 0 0 11.992 2C6.534 2 2.085 6.448 2.08 11.908c0 1.748.458 3.45 1.321 4.956L2 22l5.255-1.377a9.916 9.916 0 0 0 4.737 1.206h.005c5.46 0 9.908-4.448 9.913-9.913A9.872 9.872 0 0 0 19 4.908h.001ZM11.992 20.15A8.216 8.216 0 0 1 7.797 19l-.3-.18-3.117.818.833-3.041-.196-.314a8.2 8.2 0 0 1-1.258-4.381c0-4.533 3.696-8.23 8.239-8.23a8.2 8.2 0 0 1 5.825 2.413 8.196 8.196 0 0 1 2.41 5.825c-.006 4.55-3.702 8.24-8.24 8.24Zm4.52-6.167c-.247-.124-1.463-.723-1.692-.808-.228-.08-.394-.123-.556.124-.166.246-.641.808-.784.969-.143.166-.29.185-.537.062-.247-.125-1.045-.385-1.99-1.23-.738-.657-1.232-1.47-1.38-1.716-.142-.247-.013-.38.11-.504.11-.11.247-.29.37-.432.126-.143.167-.248.248-.413.082-.167.043-.31-.018-.433-.063-.124-.557-1.345-.765-1.838-.2-.486-.404-.419-.557-.425-.142-.009-.309-.009-.475-.009a.911.911 0 0 0-.661.31c-.228.247-.864.845-.864 2.067 0 1.22.888 2.395 1.013 2.56.122.167 1.742 2.666 4.229 3.74.587.257 1.05.408 1.41.523.595.19 1.13.162 1.558.1.475-.072 1.464-.6 1.673-1.178.205-.58.205-1.075.142-1.18-.061-.104-.227-.165-.475-.29Z">
+                        </path>
+                    </svg>
+            </a>
             </button>
         </div>
-        <div class="flex flex-col items-center justify-center h-full">
-            <a href="#" class="text-white text-2xl mb-8 hover:text-secondary transition duration-300">Home</a>
-            <a href="#about" class="text-white text-2xl mb-8 hover:text-secondary transition duration-300">About</a>
-            <a href="#gallery" class="text-white text-2xl mb-8 hover:text-secondary transition duration-300">Gallery</a>
-            <a href="#contact" class="text-white text-2xl hover:text-secondary transition duration-300">Contact</a>
+
+
+
+
+
+        <!-- Footer -->
+        <footer class="bg-gray-900 text-white pt-16 pb-8">
+            <div class="container mx-auto px-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+                    <div>
+                        <a href="#" class="text-3xl font-['Pacifico'] text-white mb-6 inline-block">Oorakam</a>
+                        <p class="text-gray-400 mb-6">Experience the authentic charm of Kerala's hidden gem, where
+                            tradition
+                            meets natural beauty in a harmonious blend of culture and hospitality.</p>
+                        <div class="flex space-x-4">
+                            <a href="https://www.facebook.com/share/15KG3u6mv3/"
+                                class="w-10 h-10 rounded-full bg-[#1877F2] flex items-center justify-center text-white hover:bg-[#145DBF] transition duration-300">
+                                <i class="ri-facebook-fill animate-bounce"></i>
+                            </a>
+                            <a href="https://www.instagram.com/_jaasimm.__/?hl=en"
+                                class="w-10 h-10 rounded-full bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600 flex items-center justify-center text-white hover:opacity-90 transition duration-300">
+                                <i class="ri-instagram-fill animate-bounce"></i>
+                            </a>
+                            <a href="https://x.com/Jasim8606"
+                                class="w-10 h-10 rounded-full bg-black flex items-center justify-center text-white hover:bg-gray-800 transition duration-300">
+                                <i class="ri-twitter-x-line animate-bounce"></i>
+                            </a>
+                            <a href="https://www.youtube.com/results?search_query=youtube"
+                                class="w-10 h-10 rounded-full bg-[#FF0000] flex items-center justify-center text-white hover:bg-red-700 transition duration-300">
+                                <i class="ri-youtube-fill animate-bounce"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h4 class="text-xl font-semibold mb-6">Quick Links</h4>
+                        <ul class="space-y-3">
+                            <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Home</a></li>
+                            <li><a href="#about" class="text-gray-400 hover:text-white transition duration-300">About
+                                    Us</a>
+                            </li>
+                            <li><a href="#gallery" class="text-gray-400 hover:text-white transition duration-300">Photo
+                                    Gallery</a></li>
+                            <li><a href="#contact"
+                                    class="text-gray-400 hover:text-white transition duration-300">Contact
+                                    Us</a></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h4 class="text-xl font-semibold mb-6">Visitor Information</h4>
+                        <ul class="space-y-3">
+                            <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">How to
+                                    Reach</a>
+                            </li>
+                            <li><a href="#"
+                                    class="text-gray-400 hover:text-white transition duration-300">Accommodation</a>
+                            </li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Local
+                                    Cuisine</a>
+                            </li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Festivals &
+                                    Events</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Travel
+                                    Tips</a>
+                            </li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">FAQ</a></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h4 class="text-xl font-semibold mb-6">Newsletter</h4>
+                        <p class="text-gray-400 mb-4">Subscribe to receive updates about our village events and
+                            activities.
+                        </p>
+                        <form action="https://mail.google.com/mail/u/0/#inbox">
+                            <div class="flex">
+                                <input type="email" placeholder="Your email address "
+                                    class="px-4 py-3 w-full rounded-l bg-gray-800 border-none text-gray-300 focus:bg-gray-700">
+                                <button type="submit"
+                                    class="bg-primary text-white px-4 rounded-r hover:bg-opacity-90 transition duration-300 !rounded-button whitespace-nowrap">
+                                    <i class="ri-send-plane-fill"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                   
+                </div>
+
+                <div class="border-t border-gray-800 mt-12 pt-8">
+                    <div class="flex flex-col md:flex-row justify-between items-center">
+                        <p class="text-gray-400 text-sm mb-4 md:mb-0">© 2025 Oorakam Kunnath Village. All rights
+                            reserved.
+                            Created By Jasim</p>
+                        <div class="flex space-x-6">
+                            <a href="#" class="text-gray-400 hover:text-white text-sm transition duration-300">Privacy
+                                Policy</a>
+                            <a href="#" class="text-gray-400 hover:text-white text-sm transition duration-300">Terms of
+                                Service</a>
+                            <a href="#" class="text-gray-400 hover:text-white text-sm transition duration-300">Cookie
+                                Policy</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Back to Top Button -->
+        <button
+            class="back-to-top w-12 h-12 rounded-full bg-primary text-white shadow-lg flex items-center justify-center hover:bg-opacity-90 transition duration-300">
+            <i class="ri-arrow-up-line ri-lg"></i>
+        </button>
+
+        <!-- Mobile Navigation Menu (Hidden by default) -->
+        <div class="fixed inset-0 bg-gray-900 bg-opacity-90 z-50 hidden" id="mobile-menu">
+            <div class="flex justify-end p-6">
+                <button id="close-menu" class="w-10 h-10 flex items-center justify-center text-white">
+                    <i class="ri-close-line ri-lg"></i>
+                </button>
+            </div>
+            <div class="flex flex-col items-center justify-center h-full">
+                <a href="#" class="text-white text-2xl mb-8 hover:text-secondary transition duration-300">Home</a>
+                <a href="#about" class="text-white text-2xl mb-8 hover:text-secondary transition duration-300">About</a>
+                <a href="#gallery"
+                    class="text-white text-2xl mb-8 hover:text-secondary transition duration-300">Gallery</a>
+                <a href="#contact" class="text-white text-2xl hover:text-secondary transition duration-300">Contact</a>
+            </div>
         </div>
-    </div>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            // Back to top button
-            const backToTopButton = document.querySelector('.back-to-top');
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                // Back to top button
+                const backToTopButton = document.querySelector('.back-to-top');
 
-            window.addEventListener('scroll', function () {
-                if (window.pageYOffset > 300) {
-                    backToTopButton.classList.add('active');
-                } else {
-                    backToTopButton.classList.remove('active');
-                }
-            });
-
-            backToTopButton.addEventListener('click', function () {
-                window.scrollTo({
-                    top: 0,
-                    behavior: 'smooth'
+                window.addEventListener('scroll', function () {
+                    if (window.pageYOffset > 300) {
+                        backToTopButton.classList.add('active');
+                    } else {
+                        backToTopButton.classList.remove('active');
+                    }
                 });
-            });
 
-            // Mobile menu toggle
-            const menuButton = document.querySelector('.ri-menu-line').parentElement;
-            const mobileMenu = document.getElementById('mobile-menu');
-            const closeButton = document.getElementById('close-menu');
+                backToTopButton.addEventListener('click', function () {
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth'
+                    });
+                });
 
-            menuButton.addEventListener('click', function () {
-                mobileMenu.classList.remove('hidden');
-            });
+                // Mobile menu toggle
+                const menuButton = document.querySelector('.ri-menu-line').parentElement;
+                const mobileMenu = document.getElementById('mobile-menu');
+                const closeButton = document.getElementById('close-menu');
 
-            closeButton.addEventListener('click', function () {
-                mobileMenu.classList.add('hidden');
-            });
+                menuButton.addEventListener('click', function () {
+                    mobileMenu.classList.remove('hidden');
+                });
 
-            // Close mobile menu when clicking on a link
-            const mobileLinks = mobileMenu.querySelectorAll('a');
-            mobileLinks.forEach(link => {
-                link.addEventListener('click', function () {
+                closeButton.addEventListener('click', function () {
                     mobileMenu.classList.add('hidden');
                 });
-            });
 
+                // Close mobile menu when clicking on a link
+                const mobileLinks = mobileMenu.querySelectorAll('a');
+                mobileLinks.forEach(link => {
+                    link.addEventListener('click', function () {
+                        mobileMenu.classList.add('hidden');
+                    });
+                });
+
+                // Smooth scrolling for anchor links
+                document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                    anchor.addEventListener('click', function (e) {
+                        e.preventDefault();
+
+                        const targetId = this.getAttribute('href');
+                        if (targetId === '#') {
+                            // Scroll to top for "Home" link
+                            window.scrollTo({
+                                top: 0,
+                                behavior: 'smooth'
+                            });
+                            return;
+                        }
+
+                        const targetElement = document.querySelector(targetId);
+                        if (targetElement) {
+                            const headerHeight = document.querySelector('nav').offsetHeight || 80;
+                            const offsetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - headerHeight;
+
+                            window.scrollTo({
+                                top: offsetPosition,
+                                behavior: 'smooth'
+                            });
+                        }
+                    });
+                });
+
+                // Scroll animation observer
+                const scrollElements = document.querySelectorAll('.scroll-animation');
+                const observer = new IntersectionObserver(
+                    (entries) => {
+                        entries.forEach(entry => {
+                            if (entry.isIntersecting) {
+                                entry.target.classList.add('animate');
+                            }
+                        });
+                    },
+                    { threshold: 0.15 }
+                );
+
+                scrollElements.forEach(el => observer.observe(el));
+            });
             // Smooth scrolling for anchor links
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 anchor.addEventListener('click', function (e) {
@@ -1067,7 +1176,6 @@
 
                     const targetId = this.getAttribute('href');
                     if (targetId === '#') {
-                        // Scroll to top for "Home" link
                         window.scrollTo({
                             top: 0,
                             behavior: 'smooth'
@@ -1087,132 +1195,92 @@
                     }
                 });
             });
+            // Hide scroll-down button when scrolled past hero section
+            window.addEventListener('scroll', function () {
+                const scrollDownButton = document.querySelector('.scroll-down');
+                const heroSection = document.querySelector('.hero-section');
+                const heroHeight = heroSection.offsetHeight;
 
-            // Scroll animation observer
-            const scrollElements = document.querySelectorAll('.scroll-animation');
-            const observer = new IntersectionObserver(
-                (entries) => {
-                    entries.forEach(entry => {
-                        if (entry.isIntersecting) {
-                            entry.target.classList.add('animate');
+                if (window.pageYOffset > heroHeight / 2) {
+                    scrollDownButton.classList.add('hidden');
+                } else {
+                    scrollDownButton.classList.remove('hidden');
+                }
+            });
+            // Filter attractions based on category
+            const buttons = document.querySelectorAll('.category-btn');
+            const cards = document.querySelectorAll('.attraction-card');
+
+            buttons.forEach(button => {
+                button.addEventListener('click', () => {
+                    // Remove active class from all buttons
+                    buttons.forEach(btn => btn.classList.remove('active-category', 'bg-primary', 'text-white'));
+                    // Add active class to clicked button
+                    button.classList.add('active-category', 'bg-primary', 'text-white');
+
+                    const category = button.getAttribute('data-category');
+
+                    cards.forEach(card => {
+                        const cardCategory = card.getAttribute('data-category');
+                        if (category === 'all' || cardCategory === category) {
+                            card.classList.remove('hidden-card');
+                        } else {
+                            card.classList.add('hidden-card');
                         }
                     });
-                },
-                { threshold: 0.15 }
-            );
-
-            scrollElements.forEach(el => observer.observe(el));
-        });
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-
-                const targetId = this.getAttribute('href');
-                if (targetId === '#') {
-                    window.scrollTo({
-                        top: 0,
-                        behavior: 'smooth'
-                    });
-                    return;
-                }
-
-                const targetElement = document.querySelector(targetId);
-                if (targetElement) {
-                    const headerHeight = document.querySelector('nav').offsetHeight || 80;
-                    const offsetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - headerHeight;
-
-                    window.scrollTo({
-                        top: offsetPosition,
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-        // Hide scroll-down button when scrolled past hero section
-        window.addEventListener('scroll', function () {
-            const scrollDownButton = document.querySelector('.scroll-down');
-            const heroSection = document.querySelector('.hero-section');
-            const heroHeight = heroSection.offsetHeight;
-
-            if (window.pageYOffset > heroHeight / 2) {
-                scrollDownButton.classList.add('hidden');
-            } else {
-                scrollDownButton.classList.remove('hidden');
-            }
-        });
-        // Filter attractions based on category
-        const buttons = document.querySelectorAll('.category-btn');
-        const cards = document.querySelectorAll('.attraction-card');
-
-        buttons.forEach(button => {
-            button.addEventListener('click', () => {
-                // Remove active class from all buttons
-                buttons.forEach(btn => btn.classList.remove('active-category', 'bg-primary', 'text-white'));
-                // Add active class to clicked button
-                button.classList.add('active-category', 'bg-primary', 'text-white');
-
-                const category = button.getAttribute('data-category');
-
-                cards.forEach(card => {
-                    const cardCategory = card.getAttribute('data-category');
-                    if (category === 'all' || cardCategory === category) {
-                        card.classList.remove('hidden-card');
-                    } else {
-                        card.classList.add('hidden-card');
-                    }
                 });
             });
-        });
 
 
-        // Trigger scroll animations when elements come into view
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('fadeInUp');
-                    observer.unobserve(entry.target);
-                }
+            // Trigger scroll animations when elements come into view
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('fadeInUp');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            document.querySelectorAll('.scroll-animation').forEach(el => observer.observe(el));
+            function toggleTheme() {
+                document.body.classList.toggle('dark');
+            }
+
+
+            document.addEventListener('DOMContentLoaded', () => {
+                const filterButtons = document.querySelectorAll('.filter-btn');
+                const galleryItems = document.querySelectorAll('.gallery-item');
+
+                filterButtons.forEach(button => {
+                    button.addEventListener('click', () => {
+                        // Remove active class from all buttons
+                        filterButtons.forEach(btn => btn.classList.remove('active'));
+                        // Add active class to clicked button
+                        button.classList.add('active');
+
+                        // Get the filter category
+                        const filter = button.getAttribute('data-filter');
+
+                        // Filter gallery items
+                        galleryItems.forEach(item => {
+                            const category = item.getAttribute('data-category');
+                            if (filter === 'all' || category === filter) {
+                                item.classList.remove('hidden');
+                            } else {
+                                item.classList.add('hidden');
+                            }
+                        });
+                    });
+                });
             });
-        }, { threshold: 0.1 });
+            
 
-        document.querySelectorAll('.scroll-animation').forEach(el => observer.observe(el));
-        function toggleTheme() {
-    document.body.classList.toggle('dark');
-}
+        </script>
 
+    </body>
 
- document.addEventListener('DOMContentLoaded', () => {
-    const filterButtons = document.querySelectorAll('.filter-btn');
-    const galleryItems = document.querySelectorAll('.gallery-item');
-
-    filterButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            // Remove active class from all buttons
-            filterButtons.forEach(btn => btn.classList.remove('active'));
-            // Add active class to clicked button
-            button.classList.add('active');
-
-            // Get the filter category
-            const filter = button.getAttribute('data-filter');
-
-            // Filter gallery items
-            galleryItems.forEach(item => {
-                const category = item.getAttribute('data-category');
-                if (filter === 'all' || category === filter) {
-                    item.classList.remove('hidden');
-                } else {
-                    item.classList.add('hidden');
-                }
-            });
-        });
-    });
-});
-
-    </script>
-
+    </html>
 </body>
 
-</html>
-</body>
 </html>
